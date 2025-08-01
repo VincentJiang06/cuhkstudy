@@ -1,0 +1,21 @@
+languageCode = "zh-cn"
+languageName = "简体中文"
+weight = 4
+title = "我的博客站"
+
+[params]
+  displayName = "简体中文"
+  isoCode = "zh-cn"
+  rtl = false
+  dateFormat = "2006-01-02"
+  # logo = "img/logo.png"
+  description = "一个专注于知识分享的博客网站"
+
+[params.author]
+  name = "博客站管理员"
+  # image = "img/avatar.png"
+  headline = "欢迎来到我的博客站"
+  bio = "这里分享优质的博客内容、PDF资料和学习资源"
+  links = [
+    { github = "https://github.com/VincentJiang06/cuhkstudy" },
+  ]
