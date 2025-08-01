@@ -1,0 +1,110 @@
+baseURL = 'https://您的域名/'  # 请替换为您的实际域名
+title = '我的博客站'
+theme = 'PaperMod'
+
+# 默认语言设置
+defaultContentLanguage = 'zh-cn'
+hasCJKLanguage = true
+
+# 多语言配置
+[languages]
+  [languages.zh-cn]
+    languageName = "简体中文"
+    weight = 1
+    title = "我的博客站"
+    [languages.zh-cn.params]
+      description = "一个专注于知识分享的博客网站"
+      keywords = ["博客", "知识分享", "学习"]
+      
+  [languages.zh-tw]
+    languageName = "繁體中文"
+    weight = 2
+    title = "我的博客站"
+    [languages.zh-tw.params]
+      description = "一個專注於知識分享的博客網站"
+      keywords = ["博客", "知識分享", "學習"]
+
+# PaperMod 主题配置
+[params]
+  env = "production"
+  description = "一个专注于知识分享的博客网站"
+  keywords = ["博客", "知识分享", "学习", "PDF", "资源下载"]
+  author = "博客站管理员"
+  
+  # 显示设置
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  comments = false
+  hidemeta = false
+  hideSummary = false
+  showtoc = false
+  tocopen = false
+  
+  # 首页设置
+  [params.homeInfoParams]
+    Title = "欢迎来到我的博客站 👋"
+    Content = "这里分享优质的博客内容、PDF资料和学习资源。支持在线阅读和下载，提供简体中文和繁体中文两种语言版本。"
+  
+  # 社交链接（可选）
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/"
+  
+  # 搜索功能
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 0
+    keys = ["title", "permalink", "summary", "content"]
+
+# 菜单配置
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "首页"
+    url = "/"
+    weight = 10
+    
+  [[menu.main]]
+    identifier = "posts"
+    name = "博客"
+    url = "/posts/"
+    weight = 20
+    
+  [[menu.main]]
+    identifier = "resources"
+    name = "资源下载"
+    url = "/resources/"
+    weight = 30
+    
+  [[menu.main]]
+    identifier = "about"
+    name = "关于"
+    url = "/about/"
+    weight = 40
+
+# 输出格式
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# Markdown 配置
+[markup]
+  [markup.highlight]
+    noClasses = false
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    style = "github"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
