@@ -4,7 +4,7 @@ date: 2024-08-03
 author: "xiajiang"
 tags: ["UG", "UGFN", "text", "text1"]
 categories: ["课程内容"]
-featured_image: "/img/cover/1.svg"
+featured_image: "./img/cover/1.svg"
 description: "柏拉图《理想国》课程材料"
 ---
 

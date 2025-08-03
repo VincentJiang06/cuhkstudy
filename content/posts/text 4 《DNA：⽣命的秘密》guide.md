@@ -4,7 +4,7 @@ date: 2024-08-03
 author: "xiajiang"
 tags: ["UG", "UGFN", "guide", "text4"]
 categories: ["UGFN课程"]
-featured_image: "/img/cover/6.svg"
+featured_image: "./img/cover/6.svg"
 description: "DNA与生命科学学习指南"
 ---
 

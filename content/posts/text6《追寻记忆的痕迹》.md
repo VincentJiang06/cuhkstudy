@@ -4,7 +4,7 @@ date: 2024-08-03
 author: "xiajiang"
 tags: ["UG", "UGFN", "text", "text6"]
 categories: ["UGFN课程"]
-featured_image: "/img/cover/6.svg"
+featured_image: "./img/cover/6.svg"
 description: "神经科学与记忆研究课程材料"
 ---
 

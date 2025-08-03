@@ -4,7 +4,7 @@ date: 2024-08-03
 author: "xiajiang"
 tags: ["UG", "UGFN", "text", "text4"]
 categories: ["UGFN课程"]
-featured_image: "/img/cover/4.svg"
+featured_image: "./img/cover/4.svg"
 description: "DNA与生命科学课程材料"
 ---
 

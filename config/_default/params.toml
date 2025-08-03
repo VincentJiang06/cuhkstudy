@@ -41,7 +41,7 @@ body {
 
 /* Background image opacity for non-homepage pages */
 .article-wrapper, .list-wrapper, .term-wrapper {
-  background-image: url('/img/CU_pic.png');
+  background-image: url('./img/CU_pic.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -73,9 +73,9 @@ disableImageOptimizationMD = false
 disableTextInHeader = false
 # backgroundImageWidth = 1200
 
-defaultBackgroundImage = "/img/CU_pic.png"
-defaultFeaturedImage = "/img/featured.svg"
-defaultSocialImage = "/img/blowfish_banner.png"
+defaultBackgroundImage = "./img/CU_pic.png"
+defaultFeaturedImage = "./img/featured.svg"
+defaultSocialImage = "./img/blowfish_banner.png"
 
 highlightCurrentMenuArea = true
 smartTOC = true
@@ -98,7 +98,7 @@ fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384",
 
 [homepage]
   layout = "hero" # valid options: page, profile, hero, card, background, custom
-  homepageImage = "/img/CU_pic.png" # used in: hero, and card
+  homepageImage = "./img/CU_pic.png" # used in: hero, and card
   showRecent = true
   showRecentItems = 12
   showMoreLink = true
