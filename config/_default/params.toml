@@ -65,7 +65,7 @@ enableCodeCopy = true
 
 replyByEmail = false
 
-mainSections = ["posts"]
+mainSections = ["main"]
 # robots = ""
 
 disableImageOptimization = false
@@ -140,21 +140,21 @@ fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384",
   showZenMode = true
 
 [list]
-  showHero = true
-  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
-  layoutBackgroundBlur = true # only used when heroStyle equals background
+  showHero = false
+  heroStyle = "basic" # valid options: basic, big, background, thumbAndBackground
+  layoutBackgroundBlur = false # only used when heroStyle equals background
   layoutBackgroundHeaderSpace = false
-  showBreadcrumbs = false
-  showSummary = false
+  showBreadcrumbs = true
+  showSummary = true
   showViews = false
   showLikes = false
-  showTableOfContents = true
-  showCards = true
+  showTableOfContents = false
+  showCards = false
   orderByWeight = true
   groupByYear = false
-  cardView = true
+  cardView = false
   cardViewScreenWidth = false
-  constrainItemsWidth = false
+  constrainItemsWidth = true
 
 [sitemap]
   excludedKinds = []
