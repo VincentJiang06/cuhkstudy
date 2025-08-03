@@ -32,7 +32,7 @@
 
 [[main]]
   name = "杂聊"
-  pageRef = "tags/chat"
+  pageRef = "tags/mess"
   weight = 50
 
 [[main]]
