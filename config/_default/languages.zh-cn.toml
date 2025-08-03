@@ -9,13 +9,13 @@ title = "CUHKstudy"
   rtl = false
   dateFormat = "2006-01-02"
   # logo = "img/logo.png"
-  description = "香港中文大学学习资源分享平台"
+  description = "cu课程资料分享"
 
 [params.author]
   name = "小蒋"
   image = "img/Author_icon.jpg"
   headline = "欢迎来到CUHKstudy"
-  bio = "香港中文大学学习资源分享，永久免费"
+  bio = "CS Major，UGFN/H中文版编者"
   links = [
     { github = "https://github.com/VincentJiang06/cuhkstudy" },
   ]

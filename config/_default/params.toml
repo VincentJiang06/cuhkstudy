@@ -5,7 +5,7 @@
 # Refer to the theme docs for more details about each of these parameters.
 # https://blowfish.page/docs/configuration/#theme-parameters
 
-colorScheme = "blowfish"
+  colorScheme = "slate"
 defaultAppearance = "dark" # valid options: light or dark
 autoSwitchAppearance = true
 
@@ -58,9 +58,25 @@ body {
   background: rgba(255, 255, 255, 0.5);
   z-index: -1;
 }
+
+/* Homepage recent articles styling with slate theme gradient */
+.recent-articles .article {
+  background: linear-gradient(135deg, #64748b, #94a3b8);
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.recent-articles .article:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
 """
 
 enableSearch = true
+showBuyMeACoffee = false
 enableCodeCopy = true
 
 replyByEmail = false
@@ -91,21 +107,29 @@ fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384",
 [footer]
   showMenu = true
   showCopyright = true
+  copyrightNotice = "2025 CUHKstudy"
   showThemeAttribution = true
   showAppearanceSwitcher = true
   showScrollToTop = true
 
 [homepage]
-  layout = "hero" # valid options: page, profile, hero, card, background, custom
+  layout = "background" # valid options: page, profile, hero, card, background, custom
   homepageImage = "img/background.svg" # used in: hero, and card
   showRecent = true
-  showRecentItems = 2
+  showRecentItems = 3
   showMoreLink = true
   showMoreLinkDest = "main"
-  cardView = true
-  cardViewScreenWidth = true
+  cardView = false
+  cardViewScreenWidth = false
   layoutBackgroundBlur = true # only used when layout equals background
   disableHeroImageFilter = true # only used when layout equals hero
+  
+  # 独立的首页网站信息（不是作者信息）
+  [homepage.site]
+    name = "CUHKstudy"
+    image = "img/logo.png"
+    headline = "cu课程资料分享"
+    bio = "小蒋的cuhk学习资料分享网站，永久不收费"
 
 [article]
   showDate = false
@@ -167,6 +191,7 @@ fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384",
   showLikes = false
   showTableOfContents = true
   cardView = true
+  cardViewScreenWidth = true
 
 [term]
   showHero = true
@@ -177,7 +202,7 @@ fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384",
   showTableOfContents = true
   groupByYear = false
   cardView = true
-  cardViewScreenWidth = false
+  cardViewScreenWidth = true
   
 [firebase]
   #apiKey = "AIzaSyB5tqlqDky77Vb4Tc4apiHV4hRZI18KGiY"

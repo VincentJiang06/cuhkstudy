@@ -10,7 +10,13 @@ links:
 我们是一群热爱分享的香港中文大学在读学生 (well, 现在只有一个)，致力于为同学们提供和腐学生会无关的优质的学习资源。
 
 **联系方式：**
-- 微信：![微信二维码](/img/wechat_info.jpg)
+- 微信：{{< icon "eye" >}} 点击查看二维码
+<details>
+<summary>微信二维码</summary>
+
+![微信二维码](/img/wechat_info.jpg)
+
+</details>
 - QQ号：2568574560
 - GitHub：[VincentJiang06](https://github.com/VincentJiang06)
 - 知乎：[蒋文轩](https://www.zhihu.com/people/jiang-wen-xuan-73-92)
