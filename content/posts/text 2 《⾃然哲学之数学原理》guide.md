@@ -4,7 +4,7 @@ date: 2024-08-03
 author: "xiajiang"
 tags: ["UG", "UGFN", "guide", "text2"]
 categories: ["课程内容"]
-featured_image: "/img/cover/4.svg"
+featureimage: "/img/cover/4.svg"
 ---
 
 # text 2 《⾃然哲学之数学原理》

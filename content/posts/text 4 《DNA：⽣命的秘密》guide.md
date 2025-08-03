@@ -4,7 +4,7 @@ date: 2024-08-03
 author: "xiajiang"
 tags: ["UG", "UGFN", "guide", "text4"]
 categories: ["UGFN课程"]
-featured_image: "/img/cover/6.svg"
+featureimage: "/img/cover/6.svg"
 ---
 
 # text 4 《DNA：⽣命的秘密》
