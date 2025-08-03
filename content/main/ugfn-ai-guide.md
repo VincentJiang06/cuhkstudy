@@ -1,6 +1,6 @@
 ---
 title: "UGFN AI GUIDE V2.1"
-date: 2024-08-03
+date: 2024-08-05
 author: "xiajiang"
 tags: ["UG", "UGFN", "Guide", "Main"]
 categories: ["课程资料"]

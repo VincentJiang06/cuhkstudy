@@ -19,6 +19,9 @@ buildFuture = false
 
 enableEmoji = true
 
+# 首页显示的section
+mainSections = ["main"]
+
 # googleAnalytics = "G-PEDMYR1V0K"  # 请配置您自己的Google Analytics ID
 
 [pagination]

@@ -1,6 +1,6 @@
 ---
 title: "UGFN中文版ver2.1"
-date: 2024-08-03
+date: 2024-08-04
 author: "xiajiang"
 tags: ["UG", "UGFN", "Text", "Main"]
 categories: ["课程资料"]

@@ -13,7 +13,7 @@ title = "CUHKstudy"
 
 [params.author]
   name = "小蒋"
-  # image = "img/avatar.png"
+  image = "img/Author_icon.jpg"
   headline = "欢迎来到CUHKstudy"
   bio = "香港中文大学学习资源分享，永久免费"
   links = [
