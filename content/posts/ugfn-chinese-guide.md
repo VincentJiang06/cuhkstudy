@@ -2,7 +2,7 @@
 title: "UGFN中文版ver2.1"
 date: 2024-08-03
 author: "xiajiang"
-tags: ["UG", "UGFN", "中文", "guide"]
+tags: ["UG", "UGFN", "Text", "Main"]
 categories: ["课程资料"]
 featured_image: "/img/cover/3.svg"
 description: "香港中文大学UGFN课程中文指南，版本2.1"

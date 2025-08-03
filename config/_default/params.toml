@@ -38,6 +38,26 @@ content = """
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
+
+/* Background image opacity for non-homepage pages */
+.article-wrapper, .list-wrapper, .term-wrapper {
+  background-image: url('/img/CU_pic.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.article-wrapper::before, .list-wrapper::before, .term-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: -1;
+}
 """
 
 enableSearch = true
@@ -53,7 +73,7 @@ disableImageOptimizationMD = false
 disableTextInHeader = false
 # backgroundImageWidth = 1200
 
-defaultBackgroundImage = "/img/background.svg"
+defaultBackgroundImage = "/img/CU_pic.png"
 defaultFeaturedImage = "/img/featured.svg"
 defaultSocialImage = "/img/blowfish_banner.png"
 
@@ -77,12 +97,12 @@ fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384",
   showScrollToTop = true
 
 [homepage]
-  layout = "background" # valid options: page, profile, hero, card, background, custom
-  homepageImage = "/img/cover/1.svg" # used in: hero, and card
+  layout = "hero" # valid options: page, profile, hero, card, background, custom
+  homepageImage = "/img/CU_pic.png" # used in: hero, and card
   showRecent = true
   showRecentItems = 12
   showMoreLink = true
-  showMoreLinkDest = "posts"
+  showMoreLinkDest = "tags/main"
   cardView = true
   cardViewScreenWidth = true
   layoutBackgroundBlur = true # only used when layout equals background
