@@ -74,7 +74,7 @@ disableTextInHeader = false
 # backgroundImageWidth = 1200
 
 defaultBackgroundImage = "/img/CU_pic.png"
-defaultFeaturedImage = "/img/featured.svg"
+defaultFeaturedImage = "/img/cover/1.svg"
 defaultSocialImage = "/img/blowfish_banner.png"
 
 highlightCurrentMenuArea = true

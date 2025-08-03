@@ -4,7 +4,6 @@ date: 2024-08-03
 author: "xiajiang"
 tags: ["UG", "UGFN", "text", "text5"]
 categories: ["UGFN课程"]
-featureimage: "/img/cover/5.svg"
 ---
 
 ## text5《科学与⽅法》

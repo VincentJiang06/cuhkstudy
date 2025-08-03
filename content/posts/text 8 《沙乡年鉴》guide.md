@@ -4,7 +4,6 @@ date: 2024-08-03
 author: "xiajiang"
 tags: ["UG", "UGFN", "guide", "text8"]
 categories: ["UGFN课程"]
-featureimage: "/img/cover/4.svg"
 ---
 
 # text 8 《沙乡年鉴》

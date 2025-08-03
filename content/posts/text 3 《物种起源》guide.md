@@ -4,7 +4,6 @@ date: 2024-08-03
 author: "xiajiang"
 tags: ["UG", "UGFN", "guide", "text3"]
 categories: ["UGFN课程"]
-featureimage: "/img/cover/5.svg"
 ---
 
 # text 3 《物种起源》
