@@ -1,6 +1,6 @@
 ---
 title: "小蒋"
-image: "/static/img/Author_icon.jpg"
+image: "/img/Author_icon.jpg"
 email: "1155233504@link.cuhk.edu.hk"
 links:
   - github: "https://github.com/VincentJiang06"

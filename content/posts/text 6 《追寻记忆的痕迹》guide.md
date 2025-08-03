@@ -4,7 +4,7 @@ date: 2024-08-03
 author: "xiajiang"
 tags: ["UG", "UGFN", "guide", "text6"]
 categories: ["UGFN课程"]
-featured_image: "/static/img/cover/2.svg"
+featured_image: "/img/cover/2.svg"
 ---
 
 # text 6 《追寻记忆的痕迹》

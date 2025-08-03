@@ -4,7 +4,7 @@ date: 2024-08-03
 author: "xiajiang"
 tags: ["UG", "UGFN", "guide", "text1"]
 categories: ["课程内容"]
-featured_image: "/static/img/cover/3.svg"
+featured_image: "/img/cover/3.svg"
 ---
 
 # text 1 《理想国》
