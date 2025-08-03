@@ -12,29 +12,18 @@
 
 [[main]]
   name = "首页"
-  pageRef = ""
+  url = "/"
   weight = 10
 
 [[main]]
-  name = "博客"
-  pageRef = "posts"
+  name = "UGFN"
+  pageRef = "tags/ugfn"
   weight = 20
 
 [[main]]
-  name = "资源下载"
-  pageRef = "resources"
-  weight = 30
-
-[[main]]
   name = "关于"
-  pageRef = "about"
-  weight = 40
-
-[[main]]
-  identifier = "github"
-  pre = "github"
-  url = "https://github.com/VincentJiang06/cuhkstudy"
-  weight = 100
+  pageRef = "info"
+  weight = 30
 
 
 # -- Footer Menu --

@@ -3,6 +3,7 @@
 # https://blowfish.page/docs/getting-started/
 
 theme = "blowfish"
+title = "CUHKstudy"
 baseURL = "https://您的域名/"  # 请替换为您的实际域名
 defaultContentLanguage = "zh-cn"
 disableLanguages = [] #to allow translation work requiring shipping to production
