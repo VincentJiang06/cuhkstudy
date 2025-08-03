@@ -4,8 +4,7 @@ date: 2024-08-03
 author: "xiajiang"
 tags: ["UG", "UGFN", "text", "text8"]
 categories: ["UGFN课程"]
-featured_image: "./img/cover/2.svg"
-description: "生态学与环境保护课程材料"
+featured_image: "/static/img/cover/2.svg"
 ---
 
 ## text8 《沙乡年鉴》

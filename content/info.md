@@ -15,7 +15,7 @@ layout: "simple"
 
 **主要维护者：小蒋**
 - 微信：
-![微信二维码](./img/wechat_info.jpg)
+![微信二维码](/static/img/wechat_info.jpg)
 - QQ号：2568574560
 - GitHub：[VincentJiang06](https://github.com/VincentJiang06)
 - 知乎：[蒋文轩](https://www.zhihu.com/people/jiang-wen-xuan-73-92)

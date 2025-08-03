@@ -4,8 +4,7 @@ date: 2024-08-03
 author: "xiajiang"
 tags: ["UG", "UGFN", "guide", "text7"]
 categories: ["UGFN课程"]
-featured_image: "./img/cover/3.svg"
-description: "中华科技文明史学习指南"
+featured_image: "/static/img/cover/3.svg"
 ---
 
 # text 7 《中华科技⽂明史》
