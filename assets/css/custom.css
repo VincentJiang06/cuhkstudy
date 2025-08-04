@@ -47,13 +47,18 @@ body:has([id="background-blur"]) .single_hero_background {
   transition: opacity 0.3s ease !important;
 }
 
-/* TopBar模糊效果 - 始终可见，强化模糊 */
+/* TopBar模糊效果 - 始终可见，参考Blowfish默认 */
 #menu-blur {
-  background-color: rgba(255, 255, 255, 0.15) !important;
-  backdrop-filter: blur(25px) !important;
-  -webkit-backdrop-filter: blur(25px) !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
   opacity: 1 !important; /* 始终可见 */
   transition: all 0.3s ease !important;
+}
+
+/* 暗色模式下降低背景亮度 */
+.dark #menu-blur {
+  background-color: rgba(0, 0, 0, 0.1) !important;
 }
 
 /* 增强首页Hero区域的渐变效果 */

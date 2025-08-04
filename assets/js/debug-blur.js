@@ -19,12 +19,17 @@ document.addEventListener('DOMContentLoaded', function() {
         menuBlur.style.opacity = '1';
         console.log('TopBar set to always visible');
         
-        // 可选：保留滚动效果但调整背景透明度
+        // 保留滚动效果但调整背景透明度 - 更温和的参数
         let scrollHandler = function() {
             let scroll = window.pageYOffset || document.documentElement.scrollTop || 0;
-            let bgOpacity = Math.min(0.15 + (scroll / 1000) * 0.1, 0.25); // 从0.15增加到0.25
-            menuBlur.style.backgroundColor = `rgba(255, 255, 255, ${bgOpacity})`;
-            console.log('Scroll:', scroll, 'Background opacity:', bgOpacity);
+            let bgOpacity = Math.min(0.1 + (scroll / 1500) * 0.05, 0.15); // 从0.1增加到0.15，更温和
+            
+            // 根据主题调整颜色
+            let isDark = document.documentElement.classList.contains('dark');
+            let bgColor = isDark ? `rgba(0, 0, 0, ${bgOpacity})` : `rgba(255, 255, 255, ${bgOpacity})`;
+            
+            menuBlur.style.backgroundColor = bgColor;
+            console.log('Scroll:', scroll, 'Background opacity:', bgOpacity, 'Dark mode:', isDark);
         };
         
         window.addEventListener('scroll', scrollHandler);
