@@ -16,6 +16,4 @@ title = "CUHKstudy"
   image = "img/Author_icon.jpg"
   headline = "欢迎来到CUHKstudy"
   bio = "CS Major，UGFN/H中文版编者"
-  links = [
-    { github = "https://github.com/VincentJiang06/cuhkstudy" },
-  ]
+  links = []
