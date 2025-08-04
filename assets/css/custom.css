@@ -20,10 +20,13 @@ body {
 }
 
 /* 设置页面背景图片透明度为50%，并确保在最底层 */
-.single_hero_background {
+.fixed.inset-x-0.top-0.-z-10 img {
   opacity: 0.5 !important;
-  z-index: -1 !important;
-  position: fixed !important;
+}
+
+/* 确保背景容器在最底层 */
+.fixed.inset-x-0.top-0.-z-10 {
+  z-index: -10 !important;
 }
 
 /* 确保所有页面内容在背景图片之上 */
