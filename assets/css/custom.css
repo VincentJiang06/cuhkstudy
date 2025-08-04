@@ -141,31 +141,16 @@ body:has([id="background-blur"]) .single_hero_background {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3) !important; /* 暗色模式更强阴影 */
 }
 
-/* 强制文章宽样式展示 - 无论作者信息状态 */
+/* 锁定文章容器为最大适合宽度 - 简化方案 */
+.max-w-prose {
+  max-width: -moz-fit-content !important;
+  max-width: fit-content !important;
+  width: 100% !important;
+}
+
+/* 确保文章内容占用全宽 */
+.article-content.max-w-prose,
 .prose {
-  max-width: none !important;
-  width: 100% !important;
-}
-
-article.max-w-prose {
-  max-width: none !important;
-  width: 100% !important;
-}
-
-/* 针对所有可能的文章容器强制宽版 */
-.single .prose,
-.single article,
-article.prose,
-.max-w-prose.prose,
-.prose.max-w-prose,
-main .prose,
-.article-content .prose {
-  max-width: none !important;
-  width: 100% !important;
-}
-
-/* 确保作者信息不影响文章宽度 */
-.single .max-w-prose {
   max-width: none !important;
   width: 100% !important;
 }
