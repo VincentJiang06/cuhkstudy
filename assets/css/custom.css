@@ -19,13 +19,29 @@ body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-/* 设置页面背景图片透明度为50% */
+/* 设置页面背景图片透明度为50%，并确保在最底层 */
 .single_hero_background {
   opacity: 0.5 !important;
+  z-index: -1 !important;
+  position: fixed !important;
 }
 
-/* 确保背景图片不影响页面内容的可读性 */
-.prose {
+/* 确保所有页面内容在背景图片之上 */
+.prose, 
+.article-list,
+.recent-articles,
+main,
+.container {
+  position: relative;
+  z-index: 10;
+}
+
+/* 确保卡片内容清晰可见 */
+.article-card,
+.summary-card {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
   position: relative;
   z-index: 10;
 }
