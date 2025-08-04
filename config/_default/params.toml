@@ -36,12 +36,13 @@ content = """
   font-display: swap;
 }
 
-body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+/* 字体和背景设置 - 使用最高优先级 */
+html {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
 }
 
-/* Background image for non-homepage pages */
-body:not(.home) {
+/* 全局背景图片设置 */
+.bg-neutral {
   background-image: url('/img/CU_pic.png') !important;
   background-size: cover !important;
   background-position: center !important;
@@ -49,6 +50,16 @@ body:not(.home) {
   background-attachment: fixed !important;
 }
 
+/* 专门针对主内容区域的背景 */
+.max-w-7xl {
+  background-image: url('/img/CU_pic.png') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+}
+
+/* 半透明覆盖层，但不应用到首页 */
 body:not(.home)::before {
   content: '';
   position: fixed;
