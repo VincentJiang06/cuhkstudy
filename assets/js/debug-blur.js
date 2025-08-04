@@ -15,22 +15,20 @@ document.addEventListener('DOMContentLoaded', function() {
         // 移除调试类，使用正常效果
         // menuBlur.classList.add('debug-visible');
         
-        // 手动实现滚动监听以测试
+        // 让TopBar始终可见，不受滚动影响
+        menuBlur.style.opacity = '1';
+        console.log('TopBar set to always visible');
+        
+        // 可选：保留滚动效果但调整背景透明度
         let scrollHandler = function() {
             let scroll = window.pageYOffset || document.documentElement.scrollTop || 0;
-            let opacity = Math.min(scroll / 300, 1);
-            menuBlur.style.opacity = opacity;
-            console.log('Scroll:', scroll, 'Opacity:', opacity);
+            let bgOpacity = Math.min(0.15 + (scroll / 1000) * 0.1, 0.25); // 从0.15增加到0.25
+            menuBlur.style.backgroundColor = `rgba(255, 255, 255, ${bgOpacity})`;
+            console.log('Scroll:', scroll, 'Background opacity:', bgOpacity);
         };
         
         window.addEventListener('scroll', scrollHandler);
-        console.log('Custom scroll listener added');
-        
-        // 测试立即设置
-        setTimeout(() => {
-            menuBlur.style.opacity = '0.8';
-            console.log('Test opacity set to 0.8');
-        }, 1000);
+        console.log('Enhanced scroll effect added');
         
     } else {
         console.error('menu-blur element NOT found!');

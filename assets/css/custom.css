@@ -47,10 +47,13 @@ body:has([id="background-blur"]) .single_hero_background {
   transition: opacity 0.3s ease !important;
 }
 
-/* TopBar模糊效果 - 使用工作的逻辑 */
+/* TopBar模糊效果 - 始终可见，强化模糊 */
 #menu-blur {
-  background-color: rgba(255, 255, 255, 0.1) !important;
-  transition: opacity 0.3s ease !important;
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  backdrop-filter: blur(25px) !important;
+  -webkit-backdrop-filter: blur(25px) !important;
+  opacity: 1 !important; /* 始终可见 */
+  transition: all 0.3s ease !important;
 }
 
 /* 增强首页Hero区域的渐变效果 */
@@ -103,7 +106,7 @@ body:has([id="background-blur"]) .single_hero_background {
   left: 0;
   right: 0;
   height: 600px;
-  background: linear-gradient(to bottom, transparent 0%, rgba(255,255,255,0.9) 100%);
+  background: linear-gradient(to bottom, transparent 0%, rgb(245, 245, 245) 100%); /* neutral-100 */
   z-index: 3;
   pointer-events: none;
 }
@@ -115,6 +118,12 @@ body:has([id="background-blur"]) .single_hero_background {
 
 .dark .fixed.inset-x-0.top-0.-z-10 img.object-contain::after {
   background: linear-gradient(to bottom, transparent 0%, rgb(38, 38, 38) 100%); /* neutral-800 */
+}
+
+/* 首页头像橙色边框 */
+.mb-2.rounded-full.h-36.w-36 {
+  border: 3px solid #fb923c !important; /* orange-400 */
+  box-shadow: 0 0 20px rgba(251, 146, 60, 0.3) !important;
 }
 
 /* 保持文章宽样式展示 */
