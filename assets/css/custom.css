@@ -19,9 +19,14 @@ body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-/* 设置背景图片透明度为75%，增加浓度 */
+/* 设置背景图片透明度 - 主页保持15%，其他页面85% */
 .single_hero_background {
-  opacity: 0.15 !important;
+  opacity: 0.85 !important;
+}
+
+/* 主页背景图片保持较低透明度 */
+body:has([id="background-blur"]) .single_hero_background {
+  opacity: 0.35 !important;
 }
 
 /* 增加背景图片浓度 */
@@ -43,9 +48,15 @@ body {
 }
 
 /* 调试：强制显示menu-blur以测试 */
-#menu-blur[style*="opacity"] {
+#menu-blur {
   background-color: rgba(255, 255, 255, 0.1) !important;
   border: 1px solid rgba(255, 0, 0, 0.3) !important; /* 临时红色边框用于调试 */
+}
+
+/* 强制让menu-blur可见以测试JavaScript */
+#menu-blur.debug-visible {
+  opacity: 0.5 !important;
+  background-color: rgba(0, 255, 0, 0.2) !important;
 }
 
 /* 增强首页Hero区域的渐变效果 */

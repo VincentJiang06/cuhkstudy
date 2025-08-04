@@ -1,0 +1,6 @@
+{{ $debugBlur := resources.Get "js/debug-blur.js" }}
+{{ $debugBlur = $debugBlur | resources.Minify | resources.Fingerprint (.Site.Params.fingerprintAlgorithm | default "sha512") }}
+<script
+  type="text/javascript"
+  src="{{ $debugBlur.RelPermalink }}"
+  integrity="{{ $debugBlur.Data.Integrity }}"></script>
