@@ -486,8 +486,9 @@ if ! command -v nano &> /dev/null; then
     apt update && apt install -y nano
 fi
 
-# 首次运行选择编辑器
-choose_editor
+# 默认使用VS Code
+EDITOR_CHOICE="vscode"
+setup_vscode
 
 # 首次运行检查Git状态
 check_git_status

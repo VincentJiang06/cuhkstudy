@@ -54,8 +54,3 @@
    name = "标签"
    pageRef = "tags"
    weight = 10
-
- [[footer]]
-   name = "作者"
-   pageRef = "authors"
-   weight = 20
