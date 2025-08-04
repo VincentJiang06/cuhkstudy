@@ -40,10 +40,10 @@ body:has([id="background-blur"]) .single_hero_background {
   -webkit-backdrop-filter: blur(8px) !important;
 }
 
-/* 顶部导航栏模糊效果 - 确保覆盖Tailwind默认值 */
+/* 顶部导航栏模糊效果 - 增强模糊让效果更明显 */
 #menu-blur {
-  backdrop-filter: blur(12px) !important;
-  -webkit-backdrop-filter: blur(12px) !important;
+  backdrop-filter: blur(25px) !important;
+  -webkit-backdrop-filter: blur(25px) !important;
   transition: opacity 0.3s ease !important;
 }
 
@@ -108,13 +108,13 @@ body:has([id="background-blur"]) .single_hero_background {
   pointer-events: none;
 }
 
-/* 暗色模式下的蒙版调整 */
+/* 暗色模式下的蒙版调整 - 匹配neutral-800背景色 */
 .dark .fixed.inset-x-0.top-0.-z-10::after {
-  background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.8) 100%);
+  background: linear-gradient(to bottom, transparent 0%, rgb(38, 38, 38) 100%); /* neutral-800 */
 }
 
 .dark .fixed.inset-x-0.top-0.-z-10 img.object-contain::after {
-  background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.8) 100%);
+  background: linear-gradient(to bottom, transparent 0%, rgb(38, 38, 38) 100%); /* neutral-800 */
 }
 
 /* 保持文章宽样式展示 */
