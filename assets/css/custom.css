@@ -90,39 +90,17 @@ body:has([id="background-blur"]) .single_hero_background {
   filter: hue-rotate(210deg) saturate(0.7) contrast(1.3) !important;
 }
 
-/* 为其他页面固定背景添加渐变蒙版 - 仅限600px高度 */
-.fixed.inset-x-0.top-0.-z-10::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 600px;
-  background: linear-gradient(to bottom, transparent 0%, rgba(255,255,255,0.9) 100%);
-  z-index: 1;
-  pointer-events: none;
+/* 使用Blowfish原生渐变，只调整颜色匹配 */
+/* 增强原生渐变效果的透明度 */
+.fixed.inset-x-0.top-0.-z-10 > div[class*="bg-gradient-to-t"] {
+  opacity: 0.9 !important;
+  display: block !important;
 }
 
-/* 首页专用蒙版 - 完全覆盖object-contain图片 */
-.fixed.inset-x-0.top-0.-z-10 img.object-contain::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0; /* 覆盖整个图片高度，而不是固定600px */
-  background: linear-gradient(to bottom, transparent 0%, rgb(243, 244, 246) 100%); /* slate theme neutral-100 */
-  z-index: 3;
-  pointer-events: none;
-}
-
-/* 暗色模式下的蒙版调整 - 匹配neutral-800背景色 */
-.dark .fixed.inset-x-0.top-0.-z-10::after {
-  background: linear-gradient(to bottom, transparent 0%, rgb(31, 41, 55) 100%); /* slate theme neutral-800 */
-}
-
-.dark .fixed.inset-x-0.top-0.-z-10 img.object-contain::after {
-  background: linear-gradient(to bottom, transparent 0%, rgb(31, 41, 55) 100%); /* slate theme neutral-800 */
+/* 暗色模式下确保原生渐变正常显示 */
+.dark .fixed.inset-x-0.top-0.-z-10 > div[class*="bg-gradient-to-t"] {
+  opacity: 0.95 !important;
+  display: block !important;
 }
 
 /* 首页头像橙色边框 */
