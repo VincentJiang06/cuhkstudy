@@ -33,8 +33,8 @@
       </nav>
     {{ end }}
   {{ end }}
-  <div class="flex items-center justify-between">
-    {{/* Copyright */}}
+  <div class="flex items-start">
+    {{/* Copyright and attribution on the left */}}
     {{ if .Site.Params.footer.showCopyright | default true }}
       <div class="text-sm text-neutral-500 dark:text-neutral-400">
         <p>
@@ -50,14 +50,11 @@
             {{ $blowfish := printf `<a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
               href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a>`
             }}
-            由 {{ $hugo }} &amp; {{ $blowfish }} 强力驱动
+            {{ printf "由 %s &amp; %s 强力驱动" $hugo $blowfish | safeHTML }}
           </p>
         {{ end }}
       </div>
     {{ end }}
-
-    {{/* Right side can be used for additional content */}}
-    <div></div>
   </div>
   {{ if not .Site.Params.disableImageZoom | default true }}
     <script>
