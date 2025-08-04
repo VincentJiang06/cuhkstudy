@@ -36,25 +36,28 @@
   <div class="flex items-center justify-between">
     {{/* Copyright */}}
     {{ if .Site.Params.footer.showCopyright | default true }}
-      <p class="text-sm text-neutral-500 dark:text-neutral-400">
-        <a href="/info/" class="hover:underline hover:decoration-primary-400 hover:text-primary-500">
-          &copy; {{ now.Format "2006" }} CUHKstudy
-        </a>
-      </p>
+      <div class="text-sm text-neutral-500 dark:text-neutral-400">
+        <p>
+          <a href="/info/" class="hover:underline hover:decoration-primary-400 hover:text-primary-500">
+            &copy; {{ now.Format "2006" }} CUHKstudy
+          </a>
+        </p>
+        {{ if .Site.Params.footer.showThemeAttribution | default true }}
+          <p class="text-xs mt-1">
+            {{ $hugo := printf `<a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+              href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a>`
+            }}
+            {{ $blowfish := printf `<a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+              href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a>`
+            }}
+            由 {{ $hugo }} &amp; {{ $blowfish }} 强力驱动
+          </p>
+        {{ end }}
+      </div>
     {{ end }}
 
-    {{/* Theme attribution */}}
-    {{ if .Site.Params.footer.showThemeAttribution | default true }}
-      <p class="text-xs text-neutral-500 dark:text-neutral-400">
-        {{ $hugo := printf `<a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
-          href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a>`
-        }}
-        {{ $blowfish := printf `<a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
-          href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a>`
-        }}
-        {{ i18n "footer.powered_by" (dict "Hugo" $hugo "Theme" $blowfish) | safeHTML }}
-      </p>
-    {{ end }}
+    {{/* Right side can be used for additional content */}}
+    <div></div>
   </div>
   {{ if not .Site.Params.disableImageZoom | default true }}
     <script>
