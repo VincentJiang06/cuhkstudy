@@ -18,3 +18,14 @@
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
+
+/* 设置页面背景图片透明度为50% */
+.single_hero_background {
+  opacity: 0.5 !important;
+}
+
+/* 确保背景图片不影响页面内容的可读性 */
+.prose {
+  position: relative;
+  z-index: 10;
+}
