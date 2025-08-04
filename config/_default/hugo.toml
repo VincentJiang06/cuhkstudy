@@ -4,7 +4,8 @@
 
 theme = "blowfish"
 title = "CUHKstudy"
-baseURL = "https://您的域名/"  # 请替换为您的实际域名
+# baseURL = "https://cuhkstudy.com/"  # 域名尚未备案，暂时注释
+baseURL = "/"  # 临时使用相对路径进行测试
 defaultContentLanguage = "zh-cn"
 disableLanguages = ["en", "it", "ja"] # 只保留简体中文
 
