@@ -6,7 +6,7 @@ theme = "blowfish"
 title = "CUHKstudy"
 baseURL = "https://您的域名/"  # 请替换为您的实际域名
 defaultContentLanguage = "zh-cn"
-disableLanguages = [] #to allow translation work requiring shipping to production
+disableLanguages = ["en", "it", "ja"] # 只保留简体中文
 
 # pluralizeListTitles = "true" # hugo function useful for non-english languages, find out more in  https://gohugo.io/getting-started/configuration/#pluralizelisttitles
 

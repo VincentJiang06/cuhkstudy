@@ -1,0 +1,50 @@
+{{ define "main" }}
+<div class="flex flex-col space-y-6">
+  <header>
+    <h1 class="mt-5 text-4xl font-extrabold text-neutral-900 dark:text-neutral">{{ .Title }}</h1>
+    <div class="mt-1 mb-2 text-base text-neutral-500 dark:text-neutral-400">
+      {{ with .Content }}{{ . }}{{ end }}
+    </div>
+  </header>
+
+  <section class="w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+    {{ range .Pages }}
+    <article class="rounded-lg border border-neutral-200 dark:border-neutral-700 overflow-hidden bg-white dark:bg-neutral-800">
+      <div class="p-6">
+        {{ with .Params.image }}
+        <div class="flex justify-center mb-4">
+          <img src="{{ . }}" alt="{{ $.Title }}" class="h-24 w-24 rounded-full object-cover">
+        </div>
+        {{ end }}
+        
+        <h2 class="text-xl font-bold text-center mb-2">
+          <a href="{{ .RelPermalink }}" class="hover:text-primary-600 dark:hover:text-primary-400">
+            {{ .Title }}
+          </a>
+        </h2>
+        
+        {{ with .Params.description }}
+        <p class="text-neutral-600 dark:text-neutral-400 text-center mb-4">{{ . }}</p>
+        {{ end }}
+        
+        {{ with .Params.email }}
+        <p class="text-sm text-neutral-500 dark:text-neutral-500 text-center">{{ . }}</p>
+        {{ end }}
+        
+        {{ with .Params.links }}
+        <div class="flex justify-center space-x-2 mt-4">
+          {{ range . }}
+            {{ range $key, $value := . }}
+            <a href="{{ $value }}" target="_blank" rel="noopener" class="text-neutral-600 hover:text-primary-600 dark:text-neutral-400 dark:hover:text-primary-400">
+              {{ partial "icon.html" $key }}
+            </a>
+            {{ end }}
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+    </article>
+    {{ end }}
+  </section>
+</div>
+{{ end }}
