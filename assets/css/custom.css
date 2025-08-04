@@ -111,18 +111,18 @@ body:has([id="background-blur"]) .single_hero_background {
   left: 0;
   right: 0;
   height: 600px;
-  background: linear-gradient(to bottom, transparent 0%, rgb(245, 245, 245) 100%); /* neutral-100 */
+  background: linear-gradient(to bottom, transparent 0%, rgb(243, 244, 246) 100%); /* slate theme neutral-100 */
   z-index: 3;
   pointer-events: none;
 }
 
 /* 暗色模式下的蒙版调整 - 匹配neutral-800背景色 */
 .dark .fixed.inset-x-0.top-0.-z-10::after {
-  background: linear-gradient(to bottom, transparent 0%, rgb(38, 38, 38) 100%); /* neutral-800 */
+  background: linear-gradient(to bottom, transparent 0%, rgb(31, 41, 55) 100%); /* slate theme neutral-800 */
 }
 
 .dark .fixed.inset-x-0.top-0.-z-10 img.object-contain::after {
-  background: linear-gradient(to bottom, transparent 0%, rgb(38, 38, 38) 100%); /* neutral-800 */
+  background: linear-gradient(to bottom, transparent 0%, rgb(31, 41, 55) 100%); /* slate theme neutral-800 */
 }
 
 /* 首页头像橙色边框 */
