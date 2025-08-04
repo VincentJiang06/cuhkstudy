@@ -36,6 +36,11 @@
   weight = 50
 
 [[main]]
+  name = "AI Literacy"
+  pageRef = "ai-literacy"
+  weight = 55
+
+[[main]]
   name = "关于"
   pageRef = "info"
   weight = 60

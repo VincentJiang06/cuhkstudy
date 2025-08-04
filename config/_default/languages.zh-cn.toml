@@ -16,4 +16,5 @@ title = "cu课程资料分享"
   image = "img/Author_icon.jpg"
   headline = "欢迎来到CUHKstudy"
   bio = "CS Major，UGFN/H中文版编者"
+  link = "/info/"
   links = []
