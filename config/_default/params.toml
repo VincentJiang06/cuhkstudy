@@ -17,8 +17,9 @@ layout = "fixed"
 fontFace = "Inter"
 
 [[params.customCSS]]
-name = "custom-fonts"
+name = "custom-styles"
 content = """
+/* Inter font */
 @font-face {
   font-family: 'Inter';
   src: url('/fonts/InterVariable.woff2') format('woff2');
@@ -39,25 +40,15 @@ body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-/* Background image for non-homepage pages */
-body:not(.home) {
-  background-image: url('/img/CU_pic.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-body:not(.home)::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(255, 255, 255, 0.5);
-  z-index: -1;
-  pointer-events: none;
+/* Background image for all hero backgrounds */
+.single_hero_background,
+.list_hero_background,
+.taxonomy_hero_background,
+.term_hero_background {
+  background-image: url('/img/CU_pic.png') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
 }
 
 /* Homepage recent articles styling with slate theme gradient */
@@ -164,10 +155,10 @@ fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384",
   showZenMode = true
 
 [list]
-  showHero = false
-  heroStyle = "basic" # valid options: basic, big, background, thumbAndBackground
-  layoutBackgroundBlur = false # only used when heroStyle equals background
-  layoutBackgroundHeaderSpace = false
+  showHero = true
+  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  layoutBackgroundBlur = true # only used when heroStyle equals background
+  layoutBackgroundHeaderSpace = true
   showBreadcrumbs = true
   showSummary = false
   showViews = false

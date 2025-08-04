@@ -17,22 +17,22 @@
 
 [[main]]
   name = "Main"
-  pageRef = "tags/main"
+  pageRef = "main"
   weight = 20
 
 [[main]]
   name = "UGFN"
-  pageRef = "tags/ugfn"
+  pageRef = "ugfn"
   weight = 30
 
 [[main]]
   name = "UGFH"
-  pageRef = "tags/ugfh"
+  pageRef = "ugfh"
   weight = 40
 
 [[main]]
   name = "杂聊"
-  pageRef = "tags/mess"
+  pageRef = "mess"
   weight = 50
 
 [[main]]
