@@ -1,7 +1,7 @@
 languageCode = "zh-cn"
 languageName = "简体中文"
 weight = 4
-title = "cu课程资料分享"
+title = "CU课程资料分享"
 
 [params]
   displayName = "简体中文"
@@ -9,7 +9,7 @@ title = "cu课程资料分享"
   rtl = false
   dateFormat = "2006-01-02"
   # logo = "img/logo.png"
-  description = "cu课程资料分享"
+  description = "CU课程资料分享"
 
 [params.author]
   name = "小蒋"

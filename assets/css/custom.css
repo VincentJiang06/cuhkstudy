@@ -131,6 +131,16 @@ body:has([id="background-blur"]) .single_hero_background {
   box-shadow: 0 0 20px rgba(251, 146, 60, 0.3) !important;
 }
 
+/* 亮色模式下削弱首页卡片阴影 */
+.group.relative.rounded-lg.border.p-6 {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important; /* 削弱阴影 */
+}
+
+/* 暗色模式保持原有阴影强度 */
+.dark .group.relative.rounded-lg.border.p-6 {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3) !important; /* 暗色模式更强阴影 */
+}
+
 /* 保持文章宽样式展示 */
 .prose {
   max-width: none !important;
