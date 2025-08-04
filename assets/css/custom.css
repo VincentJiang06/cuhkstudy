@@ -19,73 +19,102 @@ body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-/* 设置页面背景图片透明度为50%，并确保在最底层 */
+/* 设置背景图片透明度为75%，增加浓度 */
+.single_hero_background {
+  opacity: 0.15 !important;
+}
+
+/* 增加背景图片浓度 */
 .fixed.inset-x-0.top-0.-z-10 img {
-  opacity: 0.5 !important;
+  opacity: 0.8 !important;
 }
 
-/* 确保背景容器在最底层 */
-.fixed.inset-x-0.top-0.-z-10 {
-  z-index: -10 !important;
-}
-
-/* 确保所有页面内容在背景图片之上 */
-.prose, 
-.article-list,
-.recent-articles,
-main,
-.container,
-section {
-  position: relative;
-  z-index: 10;
-}
-
-/* 确保最近文章的网格容器在背景之上 */
-.w-full.grid {
-  position: relative;
-  z-index: 20;
-}
-
-/* 确保所有卡片在背景图片之上 */
-.group-hover-card,
-.article-card,
-.summary-card {
-  position: relative !important;
-  z-index: 25 !important;
-  background: rgba(255, 255, 255, 0.95) !important;
-  backdrop-filter: blur(8px) !important;
-}
-
-/* 专门针对最近文章卡片 */
-.group-hover-card.group.relative {
-  z-index: 30 !important;
-  position: relative !important;
-}
-
-/* 强制设置最近文章标题的层级 */
-h2 {
-  position: relative;
-  z-index: 20;
-}
-
-/* 最强力的通用规则：确保main内容区域的所有内容都在背景之上 */
-main * {
-  position: relative !important;
-  z-index: 100 !important;
-}
-
-/* 专门重置背景图片容器 */
-.fixed.inset-x-0.top-0.-z-10,
-.fixed.inset-x-0.top-0.-z-10 * {
-  z-index: -10 !important;
-}
-
-/* Blur overlay container from Blowfish */
+/* 背景模糊容器正确层级 - 增强效果 */
 #background-blur {
-  z-index: -5 !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
 }
 
-/* 保持背景图片色彩与主题一致，允许默认滤镜 */
-.fixed.inset-x-0.top-0.-z-10 img {
-  mix-blend-mode: normal !important;
+/* 增强首页Hero区域的渐变效果 */
+.fixed.inset-x-0.top-0.-z-10 > div[class*="bg-gradient-to-t"] {
+  opacity: 0.8 !important;
+}
+
+/* 增强渐变的混合模式效果 */
+.fixed.inset-x-0.top-0.-z-10 > div[class*="bg-gradient-to-t"]:last-child {
+  opacity: 0.9 !important;
+}
+
+/* ========== 动态主题色彩滤镜系统 ========== */
+
+/* 默认背景滤镜 */
+#homepage-background-image {
+  filter: saturate(1.3) contrast(1.1) !important;
+  transition: filter 0.3s ease !important;
+}
+
+/* Avocado 主题 (绿色系) */
+[data-theme="avocado"] #homepage-background-image,
+.theme-avocado #homepage-background-image {
+  filter: hue-rotate(80deg) saturate(1.3) contrast(1.1) !important;
+}
+
+[data-theme="avocado"].dark #homepage-background-image,
+.dark.theme-avocado #homepage-background-image {
+  filter: hue-rotate(80deg) saturate(1.2) contrast(1.2) !important;
+}
+
+/* Slate 主题 (蓝灰色系) */
+[data-theme="slate"] #homepage-background-image,
+.theme-slate #homepage-background-image {
+  filter: hue-rotate(210deg) saturate(0.8) contrast(1.2) !important;
+}
+
+[data-theme="slate"].dark #homepage-background-image,
+.dark.theme-slate #homepage-background-image {
+  filter: hue-rotate(210deg) saturate(0.7) contrast(1.3) !important;
+}
+
+/* Congo 主题 (橙红色系) */
+[data-theme="congo"] #homepage-background-image,
+.theme-congo #homepage-background-image {
+  filter: hue-rotate(15deg) saturate(1.4) contrast(1.1) !important;
+}
+
+[data-theme="congo"].dark #homepage-background-image,
+.dark.theme-congo #homepage-background-image {
+  filter: hue-rotate(15deg) saturate(1.2) contrast(1.2) !important;
+}
+
+/* Fire 主题 (红色系) */
+[data-theme="fire"] #homepage-background-image,
+.theme-fire #homepage-background-image {
+  filter: hue-rotate(350deg) saturate(1.5) contrast(1.1) !important;
+}
+
+[data-theme="fire"].dark #homepage-background-image,
+.dark.theme-fire #homepage-background-image {
+  filter: hue-rotate(350deg) saturate(1.3) contrast(1.2) !important;
+}
+
+/* Ocean 主题 (蓝色系) */
+[data-theme="ocean"] #homepage-background-image,
+.theme-ocean #homepage-background-image {
+  filter: hue-rotate(200deg) saturate(1.2) contrast(1.1) !important;
+}
+
+[data-theme="ocean"].dark #homepage-background-image,
+.dark.theme-ocean #homepage-background-image {
+  filter: hue-rotate(200deg) saturate(1.1) contrast(1.2) !important;
+}
+
+/* Neon 主题 (霓虹色系) */
+[data-theme="neon"] #homepage-background-image,
+.theme-neon #homepage-background-image {
+  filter: hue-rotate(290deg) saturate(1.6) contrast(1.2) !important;
+}
+
+[data-theme="neon"].dark #homepage-background-image,
+.dark.theme-neon #homepage-background-image {
+  filter: hue-rotate(290deg) saturate(1.4) contrast(1.3) !important;
 }

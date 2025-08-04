@@ -6,8 +6,8 @@ theme = "blowfish"
 title = "CUHKstudy"
 # baseURL = "https://cuhkstudy.com/"  # 域名尚未备案，暂时注释
 baseURL = "/"  # 临时使用相对路径进行测试
-defaultContentLanguage = "zh-cn"
-disableLanguages = ["en", "it", "ja"] # 只保留简体中文
+defaultContentLanguage = "avocado"
+disableLanguages = ["en", "it", "ja", "zh-cn"] # 启用主题选择器
 
 # pluralizeListTitles = "true" # hugo function useful for non-english languages, find out more in  https://gohugo.io/getting-started/configuration/#pluralizelisttitles
 
