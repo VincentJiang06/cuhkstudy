@@ -56,26 +56,28 @@ body {
   filter: hue-rotate(210deg) saturate(0.7) contrast(1.3) !important;
 }
 
-/* 为每个背景图片添加从下方全透明到上方全不透明的渐变蒙版 */
-.single_hero_background::after {
+/* 为固定定位的背景图片添加渐变蒙版 */
+.fixed.inset-x-0.top-0.-z-10::after {
   content: '';
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to top, transparent 0%, rgba(0,0,0,0.8) 100%);
-  z-index: 1;
+  background: linear-gradient(to top, transparent 0%, rgba(0,0,0,0.7) 100%);
+  z-index: -5;
   pointer-events: none;
 }
 
-/* 确保背景图片容器是相对定位 */
-.single_hero_background {
-  position: relative !important;
-}
-
-/* 确保内容在渐变蒙版之上 */
-.single_hero_background + * {
-  position: relative;
-  z-index: 2;
+/* 为首页背景模糊容器添加渐变蒙版 */
+#background-blur::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, transparent 0%, rgba(0,0,0,0.7) 100%);
+  z-index: -5;
+  pointer-events: none;
 }
