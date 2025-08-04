@@ -1,6 +1,6 @@
 ---
 title: "UGFN"
-description: "UGFN课程相关资料"
+description: "UGFN课程相关资料" 
 draft: false
 ---
 
