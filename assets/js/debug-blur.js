@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('menu-blur classes:', menuBlur.className);
         console.log('menu-blur style:', menuBlur.style.cssText);
         
-        // 添加调试类
-        menuBlur.classList.add('debug-visible');
+        // 移除调试类，使用正常效果
+        // menuBlur.classList.add('debug-visible');
         
         // 手动实现滚动监听以测试
         let scrollHandler = function() {

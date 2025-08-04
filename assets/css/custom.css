@@ -21,52 +21,54 @@ body {
 
 /* 设置背景图片透明度 - 主页保持15%，其他页面85% */
 .single_hero_background {
-  opacity: 0.85 !important;
+  opacity: 1 !important;
 }
 
 /* 主页背景图片保持较低透明度 */
 body:has([id="background-blur"]) .single_hero_background {
-  opacity: 0.35 !important;
+  opacity: 0.3 !important;
 }
 
 /* 增加背景图片浓度 */
 .fixed.inset-x-0.top-0.-z-10 img {
-  opacity: 0.8 !important;
+  opacity: 1 !important;
 }
 
-/* 背景模糊容器正确层级 - 增强效果 */
+/* 背景模糊容器正确层级 - 减少模糊让背景更清晰 */
 #background-blur {
-  backdrop-filter: blur(20px) !important;
-  -webkit-backdrop-filter: blur(20px) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
 }
 
 /* 顶部导航栏模糊效果 - 确保覆盖Tailwind默认值 */
 #menu-blur {
-  backdrop-filter: blur(20px) !important;
-  -webkit-backdrop-filter: blur(20px) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
   transition: opacity 0.3s ease !important;
 }
 
-/* 调试：强制显示menu-blur以测试 */
+/* TopBar模糊效果 - 使用工作的逻辑 */
 #menu-blur {
   background-color: rgba(255, 255, 255, 0.1) !important;
-  border: 1px solid rgba(255, 0, 0, 0.3) !important; /* 临时红色边框用于调试 */
-}
-
-/* 强制让menu-blur可见以测试JavaScript */
-#menu-blur.debug-visible {
-  opacity: 0.5 !important;
-  background-color: rgba(0, 255, 0, 0.2) !important;
+  transition: opacity 0.3s ease !important;
 }
 
 /* 增强首页Hero区域的渐变效果 */
 .fixed.inset-x-0.top-0.-z-10 > div[class*="bg-gradient-to-t"] {
   opacity: 0.8 !important;
+  display: block !important;
 }
 
 /* 增强渐变的混合模式效果 */
 .fixed.inset-x-0.top-0.-z-10 > div[class*="bg-gradient-to-t"]:last-child {
   opacity: 0.9 !important;
+  display: block !important;
+}
+
+/* 确保暗色模式下渐变正常显示 */
+.dark .fixed.inset-x-0.top-0.-z-10 > div[class*="bg-gradient-to-t"] {
+  opacity: 0.9 !important;
+  display: block !important;
 }
 
 /* Slate 主题背景色彩滤镜 */
