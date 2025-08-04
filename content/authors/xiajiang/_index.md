@@ -1,7 +1,10 @@
 ---
 title: "小蒋"
+draft: false
 image: "/img/Author_icon.jpg"
 email: "1155233504@link.cuhk.edu.hk"
+description: "CS Major，UGFN/H中文版编者"
+weight: 1
 links:
   - github: "https://github.com/VincentJiang06"
   - zhihu: "https://www.zhihu.com/people/jiang-wen-xuan-73-92"
