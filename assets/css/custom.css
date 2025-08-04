@@ -35,6 +35,19 @@ body {
   -webkit-backdrop-filter: blur(20px) !important;
 }
 
+/* 顶部导航栏模糊效果 - 确保覆盖Tailwind默认值 */
+#menu-blur {
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  transition: opacity 0.3s ease !important;
+}
+
+/* 调试：强制显示menu-blur以测试 */
+#menu-blur[style*="opacity"] {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255, 0, 0, 0.3) !important; /* 临时红色边框用于调试 */
+}
+
 /* 增强首页Hero区域的渐变效果 */
 .fixed.inset-x-0.top-0.-z-10 > div[class*="bg-gradient-to-t"] {
   opacity: 0.8 !important;
