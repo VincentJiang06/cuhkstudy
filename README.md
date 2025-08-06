@@ -1,16 +1,52 @@
-# Hugo 播客网站管理手册
+# CUHKstudy - 香港中文大学课程资料分享平台 v1.1
+
+[![版本](https://img.shields.io/badge/版本-v1.1.0-blue)](./VERSION)
+[![系统状态](https://img.shields.io/badge/系统状态-良好_84.6%25-green)](./system_health_report.json)
+[![Hugo](https://img.shields.io/badge/Hugo-0.148.2-ff4088)](https://gohugo.io/)
+[![Python](https://img.shields.io/badge/Python-3.x-3776ab)](https://python.org/)
 
 ## 🎯 项目概述
 
-这是一个基于 Hugo 的静态播客网站，支持：
-- ✅ 中繁双语切换
-- ✅ PDF 在线阅读和下载
-- ✅ 音频播放器
-- ✅ 响应式设计
-- ✅ 高性能静态部署
+这是一个现代化的香港中文大学课程资料分享平台，基于 Hugo 构建，集成了：
+- ✅ **阅读量统计系统** - 自建轻量级页面访问跟踪
+- ✅ **智能CDN加速** - Cloudflare R2 优化大文件加载
+- ✅ **在线Markdown编辑器** - 支持语法高亮和文件分类
+- ✅ **中文优化** - 完整的中文字体和编码支持
+- ✅ **现代化设计** - 响应式布局和Tokyo Night主题
+- ✅ **系统监控** - 自动健康检查和性能监控
 - ✅ Cloudflare R2 CDN 加速
 
 ## 🚀 快速开始
+
+### 📊 v1.1 新功能
+
+#### 阅读量统计系统
+- **自动跟踪**: 页面访问和卡片点击自动记录
+- **实时显示**: 在页面卡片上显示👁️阅读量标记
+- **隐私保护**: 仅存储hash化访客信息，不记录IP地址
+- **API接口**: 支持编程访问统计数据
+
+```bash
+# 查看热门页面
+curl http://localhost/api/popular
+
+# 查看特定页面统计
+curl "http://localhost/api/stats?url=/ugfn/"
+```
+
+#### 在线Markdown编辑器 (端口8888)
+- **访问地址**: http://localhost:8888/editor
+- **文件分类**: 智能分类课程内容、基础文件、标签分类
+- **语法高亮**: CodeMirror支持Markdown语法高亮
+- **Hugo支持**: 自动识别和渲染Hugo Front Matter
+- **快捷键**: Ctrl+S保存, Ctrl+R刷新
+
+#### 系统健康监控
+```bash
+# 运行系统健康检查
+cd /root/cuhkstudy
+python3 scripts/system_health_check.py
+```
 
 ### 创建新播客文章
 ```bash
