@@ -92,9 +92,9 @@ class MarkdownEditorHandler(http.server.SimpleHTTPRequestHandler):
                 'Microsoft YaHei UI', 'Microsoft YaHei', 
                 'Source Han Sans SC', 'Noto Sans CJK SC', 
                 'WenQuanYi Micro Hei', sans-serif;
-            font-size: 14px;
+            font-size: 16px;
             line-height: 1.8;
-            color: #2c3e50;
+            color: #000;
         }
         textarea { 
             width: 100%; 
@@ -106,12 +106,12 @@ class MarkdownEditorHandler(http.server.SimpleHTTPRequestHandler):
                 'Source Code Pro', 'Menlo', 'Consolas', 
                 'DejaVu Sans Mono', 'Ubuntu Mono', 'Courier New',
                 'Microsoft YaHei UI', 'Microsoft YaHei', monospace;
-            font-size: 14px; 
+            font-size: 16px; 
             line-height: 1.8;
             resize: none; 
             outline: none; 
             background: #fff;
-            color: #2c3e50;
+            color: #000;
             font-feature-settings: "liga" 0;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
@@ -122,136 +122,24 @@ class MarkdownEditorHandler(http.server.SimpleHTTPRequestHandler):
             border-radius: 8px; 
             margin: 4px 0; 
             transition: all 0.2s ease;
-            border: 1px solid transparent;
-            font-size: 14px;
-            position: relative;
-            overflow: hidden;
+            border: 1px solid #e9ecef;
+            font-size: 15px;
+            background: #fff;
+            color: #000;
         }
         .file-item:hover { 
-            transform: translateY(-2px);
-            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+            transform: translateY(-1px);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            background: #f8f9fa;
         }
         .file-item.active { 
+            background: #667eea;
             color: white; 
-            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+            box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
             font-weight: 500;
         }
         
-        /* 配色方案 - README文件 */
-        .file-item.readme {
-            background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%);
-            border-left: 4px solid #FF4757;
-        }
-        .file-item.readme:hover {
-            background: linear-gradient(135deg, #FF5252 0%, #FF7043 100%);
-        }
-        .file-item.readme.active {
-            background: linear-gradient(135deg, #E53E3E 0%, #DD6B20 100%);
-        }
-        
-        /* 配色方案 - 基础页面 */
-        .file-item.basic-page {
-            background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
-            border-left: 4px solid #26D0CE;
-        }
-        .file-item.basic-page:hover {
-            background: linear-gradient(135deg, #38B2AC 0%, #319795 100%);
-        }
-        .file-item.basic-page.active {
-            background: linear-gradient(135deg, #2C7A7B 0%, #285E61 100%);
-        }
-        
-        /* 配色方案 - 主要内容 */
-        .file-item.main-content {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-left: 4px solid #5A67D8;
-        }
-        .file-item.main-content:hover {
-            background: linear-gradient(135deg, #5A67D8 0%, #6B46C1 100%);
-        }
-        .file-item.main-content.active {
-            background: linear-gradient(135deg, #4C51BF 0%, #553C9A 100%);
-        }
-        
-        /* 配色方案 - UGFN课程 */
-        .file-item.ugfn {
-            background: linear-gradient(135deg, #FEE68A 0%, #FBBF24 100%);
-            border-left: 4px solid #F59E0B;
-            color: #744210;
-        }
-        .file-item.ugfn:hover {
-            background: linear-gradient(135deg, #FDE047 0%, #FACC15 100%);
-        }
-        .file-item.ugfn.active {
-            background: linear-gradient(135deg, #EAB308 0%, #CA8A04 100%);
-            color: white;
-        }
-        
-        /* 配色方案 - UGFH课程 */
-        .file-item.ugfh {
-            background: linear-gradient(135deg, #A78BFA 0%, #8B5CF6 100%);
-            border-left: 4px solid #7C3AED;
-        }
-        .file-item.ugfh:hover {
-            background: linear-gradient(135deg, #9333EA 0%, #7C2D12 100%);
-        }
-        .file-item.ugfh.active {
-            background: linear-gradient(135deg, #7C2D12 0%, #581C87 100%);
-        }
-        
-        /* 配色方案 - 杂项内容 */
-        .file-item.misc {
-            background: linear-gradient(135deg, #F687B3 0%, #ED64A6 100%);
-            border-left: 4px solid #D53F8C;
-        }
-        .file-item.misc:hover {
-            background: linear-gradient(135deg, #ED64A6 0%, #D53F8C 100%);
-        }
-        .file-item.misc.active {
-            background: linear-gradient(135deg, #C53030 0%, #9C4221 100%);
-        }
-        
-        /* 配色方案 - 文档资料 */
-        .file-item.docs {
-            background: linear-gradient(135deg, #90CDF4 0%, #63B3ED 100%);
-            border-left: 4px solid #3182CE;
-            color: #1A365D;
-        }
-        .file-item.docs:hover {
-            background: linear-gradient(135deg, #63B3ED 0%, #4299E1 100%);
-        }
-        .file-item.docs.active {
-            background: linear-gradient(135deg, #3182CE 0%, #2C5282 100%);
-            color: white;
-        }
-        
-        /* 配色方案 - 上传文件 */
-        .file-item.uploads {
-            background: linear-gradient(135deg, #68D391 0%, #48BB78 100%);
-            border-left: 4px solid #38A169;
-            color: #1A202C;
-        }
-        .file-item.uploads:hover {
-            background: linear-gradient(135deg, #48BB78 0%, #38A169 100%);
-        }
-        .file-item.uploads.active {
-            background: linear-gradient(135deg, #2F855A 0%, #276749 100%);
-            color: white;
-        }
-        
-        /* 配色方案 - 备份文件 */
-        .file-item.backup {
-            background: linear-gradient(135deg, #CBD5E0 0%, #A0AEC0 100%);
-            border-left: 4px solid #718096;
-            color: #2D3748;
-        }
-        .file-item.backup:hover {
-            background: linear-gradient(135deg, #A0AEC0 0%, #718096 100%);
-        }
-        .file-item.backup.active {
-            background: linear-gradient(135deg, #718096 0%, #4A5568 100%);
-            color: white;
-        }
+
         
         /* 文件类型图标 */
         .file-item::before {
@@ -310,7 +198,7 @@ class MarkdownEditorHandler(http.server.SimpleHTTPRequestHandler):
                 'PingFang SC', 'Hiragino Sans GB', 
                 'Microsoft YaHei UI', 'Microsoft YaHei', 
                 'Source Han Sans SC', 'Noto Sans CJK SC', sans-serif;
-            color: #2c3e50;
+            color: #000;
             font-weight: 600;
             margin-top: 1.5em;
             margin-bottom: 0.5em;
@@ -318,10 +206,11 @@ class MarkdownEditorHandler(http.server.SimpleHTTPRequestHandler):
         }
         .preview p, .preview li {
             line-height: 1.8;
-            color: #34495e;
+            color: #000;
             margin: 0.8em 0;
             word-break: break-word;
             word-wrap: break-word;
+            font-size: 16px;
         }
         .preview code {
             background: #f1f3f4;
@@ -414,8 +303,9 @@ class MarkdownEditorHandler(http.server.SimpleHTTPRequestHandler):
             border-left: 4px solid #dfe2e5;
             padding-left: 16px;
             margin: 16px 0;
-            color: #6a737d;
+            color: #333;
             font-style: italic;
+            font-size: 16px;
         }
         .preview table {
             border-collapse: collapse;
@@ -433,6 +323,11 @@ class MarkdownEditorHandler(http.server.SimpleHTTPRequestHandler):
         }
     </style>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- CodeMirror for markdown syntax highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/theme/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/markdown/markdown.min.js"></script>
 </head>
 <body>
     <div class="container">
@@ -476,8 +371,34 @@ Ctrl+S: 保存文件" disabled></textarea>
         const preview = document.getElementById('preview');
         const currentFileSpan = document.getElementById('currentFile');
         const saveBtn = document.getElementById('saveBtn');
+        let codeMirrorEditor = null;
         
-        editor.addEventListener('input', updatePreview);
+        // 初始化 CodeMirror
+        window.addEventListener('load', function() {
+            codeMirrorEditor = CodeMirror.fromTextArea(editor, {
+                mode: 'markdown',
+                lineNumbers: false,
+                lineWrapping: true,
+                theme: 'default',
+                styleActiveLine: true,
+                matchBrackets: true,
+                autoCloseBrackets: true,
+                styleSelectedText: true,
+                fontSize: 16,
+                extraKeys: {
+                    "Ctrl-S": function() { saveFile(); },
+                    "Ctrl-R": function() { refreshFiles(); }
+                }
+            });
+            
+            codeMirrorEditor.on('change', function() {
+                updatePreview();
+            });
+            
+            // 设置编辑器字体大小
+            codeMirrorEditor.getWrapperElement().style.fontSize = '16px';
+            codeMirrorEditor.refresh();
+        });
         
         // 文件分类函数
         function getFileCategory(filePath) {
@@ -555,7 +476,7 @@ Ctrl+S: 保存文件" disabled></textarea>
         });
         
         function updatePreview() {
-            const markdown = editor.value;
+            const markdown = codeMirrorEditor ? codeMirrorEditor.getValue() : editor.value;
             try {
                 // 处理 Hugo Front Matter
                 const processedMarkdown = processHugoFrontMatter(markdown);
@@ -721,8 +642,12 @@ Ctrl+S: 保存文件" disabled></textarea>
                 const response = await fetch(`/api/read/${encodeURIComponent(filename)}`);
                 const content = await response.text();
                 
-                editor.value = content;
-                editor.disabled = false;
+                if (codeMirrorEditor) {
+                    codeMirrorEditor.setValue(content);
+                } else {
+                    editor.value = content;
+                    editor.disabled = false;
+                }
                 currentFile = filename;
                 currentFileSpan.textContent = filename;
                 saveBtn.disabled = false;
@@ -742,10 +667,11 @@ Ctrl+S: 保存文件" disabled></textarea>
             if (!currentFile) return;
             
             try {
+                const content = codeMirrorEditor ? codeMirrorEditor.getValue() : editor.value;
                 const response = await fetch(`/api/save/${encodeURIComponent(currentFile)}`, {
                     method: 'POST',
                     headers: { 'Content-Type': 'text/plain' },
-                    body: editor.value
+                    body: content
                 });
                 
                 if (response.ok) {
