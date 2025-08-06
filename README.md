@@ -8,6 +8,7 @@
 - ✅ 音频播放器
 - ✅ 响应式设计
 - ✅ 高性能静态部署
+- ✅ Cloudflare R2 CDN 加速
 
 ## 🚀 快速开始
 
@@ -32,21 +33,53 @@
 ./deploy.sh
 ```
 
+## 🌐 CDN 架构
+
+本网站采用**智能混合CDN架构**，结合nginx本地服务和Cloudflare R2全球CDN：
+
+```
+用户请求 → nginx → [本地文件存在?] → 是 → 直接返回 (小文件)
+                ↓ 否
+                → Cloudflare R2 CDN → 返回文件 (大文件)
+```
+
+### 🎯 文件分层策略
+
+| 文件类型 | 存储位置 | 说明 |
+|---------|---------|------|
+| HTML/CSS/JS | nginx本地 | 小文件，快速响应 |
+| 大PDF/图片 | Cloudflare R2 | >100KB文件，全球CDN加速 |
+| 字体文件 | Cloudflare R2 | woff2字体，缓存30天 |
+
+### 📊 优化成果
+
+- 🗂️ **文件去重**: 从269个文件优化到48个核心文件  
+- 📦 **存储优化**: 103.49MB CDN存储，节省带宽成本
+- ⚡ **加载提升**: 大文件全球CDN分发，显著提升访问速度
+- 🛡️ **智能回退**: nginx自动在本地和CDN间选择最优路径
+
 ## 📁 目录结构
 
 ```
-/home/mypodcast/
+/root/cuhkstudy/
 ├── content/
 │   ├── zh-cn/          # 简体中文内容
 │   └── zh-tw/          # 繁体中文内容
 ├── static/
-│   ├── pdfs/           # PDF 文件
-│   ├── audio/          # 音频文件
+│   ├── pdfs/           # PDF 文件 (CDN同步)
+│   ├── img/            # 图片文件 (CDN同步)
+│   ├── fonts/          # 字体文件 (CDN同步)
 │   └── pdfjs/          # PDF.js 阅读器
-├── themes/PaperMod/    # 主题文件
-├── hugo.toml           # 网站配置
-├── deploy.sh           # 部署脚本
-└── new-post.sh         # 新建文章脚本
+├── assets/             # 静态资源 (CDN同步)
+├── public/             # Hugo生成文件
+├── scripts/            # 自动化脚本
+│   ├── upload_to_r2.py        # R2批量上传
+│   ├── hugo_r2_sync.py        # Hugo构建后同步
+│   └── r2_cleanup_optimize.py # CDN优化清理
+├── nginx-r2-optimized.conf    # nginx CDN配置
+├── .env.example               # 环境变量模板
+├── hugo.toml                  # 网站配置
+└── README.md                  # 本文档
 ```
 
 ## 🔧 常用操作
@@ -89,7 +122,33 @@ baseURL = 'https://您的域名/'
 title = '您的播客站名称'
 ```
 
-### 4. SSL 证书配置
+### 4. CDN 管理
+
+**同步文件到CDN：**
+```bash
+# Hugo构建后自动同步静态资源到R2
+python3 scripts/hugo_r2_sync.py --build
+
+# 只同步现有文件（不重新构建）
+python3 scripts/hugo_r2_sync.py
+```
+
+**清理和优化CDN：**
+```bash
+# 清理冗余文件，优化存储
+python3 scripts/r2_cleanup_optimize.py
+```
+
+**检查CDN状态：**
+```bash
+# 查看nginx CDN状态
+curl http://localhost/api/r2-status
+
+# 测试文件CDN回退
+curl -I http://localhost/static/pdfs/UGFN中文版ver2.1.pdf
+```
+
+### 5. SSL 证书配置
 
 ```bash
 # 安装SSL证书（需要先配置域名DNS）
