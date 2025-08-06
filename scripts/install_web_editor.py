@@ -14,7 +14,8 @@ from pathlib import Path
 
 class MarkdownEditorHandler(http.server.SimpleHTTPRequestHandler):
     def do_GET(self):
-        if self.path == '/' or self.path == '/editor':
+        # 处理nginx代理路径
+        if self.path == '/' or self.path == '/editor' or self.path.startswith('/editor'):
             self.serve_editor()
         elif self.path.startswith('/api/files'):
             self.list_files()
@@ -33,46 +34,167 @@ class MarkdownEditorHandler(http.server.SimpleHTTPRequestHandler):
         """提供编辑器界面"""
         html = '''
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
     <meta charset="utf-8">
-    <title>Markdown Editor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📝 Markdown 编辑器 - CUHK Study</title>
     <style>
-        body { margin: 0; font-family: Arial, sans-serif; }
+        * { box-sizing: border-box; }
+        body { 
+            margin: 0; 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: #f8f9fa;
+        }
         .container { display: flex; height: 100vh; }
-        .sidebar { width: 300px; background: #f5f5f5; padding: 20px; overflow-y: auto; }
+        .sidebar { 
+            width: 300px; 
+            background: #fff; 
+            padding: 20px; 
+            overflow-y: auto; 
+            border-right: 1px solid #e9ecef;
+            box-shadow: 2px 0 4px rgba(0,0,0,0.1);
+        }
         .editor { flex: 1; display: flex; flex-direction: column; }
-        .toolbar { background: #333; color: white; padding: 10px; }
+        .toolbar { 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+            color: white; 
+            padding: 15px 20px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: space-between;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
         .content { flex: 1; display: flex; }
-        .input { flex: 1; }
-        .preview { flex: 1; background: white; padding: 20px; overflow-y: auto; }
-        textarea { width: 100%; height: 100%; border: none; padding: 20px; font-family: 'Courier New', monospace; font-size: 14px; resize: none; outline: none; }
-        .file-item { padding: 8px; cursor: pointer; border-radius: 4px; margin: 4px 0; }
-        .file-item:hover { background: #e0e0e0; }
-        .file-item.active { background: #007acc; color: white; }
-        button { background: #007acc; color: white; border: none; padding: 8px 16px; margin: 0 4px; cursor: pointer; border-radius: 4px; }
-        button:hover { background: #005a9e; }
+        .input { flex: 1; background: #fff; }
+        .preview { 
+            flex: 1; 
+            background: white; 
+            padding: 20px; 
+            overflow-y: auto; 
+            border-left: 1px solid #e9ecef;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+        }
+        textarea { 
+            width: 100%; 
+            height: 100%; 
+            border: none; 
+            padding: 20px; 
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
+            font-size: 14px; 
+            line-height: 1.6;
+            resize: none; 
+            outline: none; 
+            background: #fff;
+            color: #2c3e50;
+        }
+        .file-item { 
+            padding: 12px 16px; 
+            cursor: pointer; 
+            border-radius: 8px; 
+            margin: 4px 0; 
+            transition: all 0.2s ease;
+            border: 1px solid transparent;
+            font-size: 14px;
+        }
+        .file-item:hover { 
+            background: #f8f9fa; 
+            border-color: #dee2e6;
+            transform: translateY(-1px);
+        }
+        .file-item.active { 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+            color: white; 
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+        button { 
+            background: rgba(255,255,255,0.2); 
+            color: white; 
+            border: 1px solid rgba(255,255,255,0.3); 
+            padding: 8px 16px; 
+            margin: 0 4px; 
+            cursor: pointer; 
+            border-radius: 6px; 
+            font-size: 14px;
+            transition: all 0.2s ease;
+        }
+        button:hover { 
+            background: rgba(255,255,255,0.3); 
+            transform: translateY(-1px);
+        }
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        .sidebar h3 {
+            color: #495057;
+            margin-top: 0;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .current-file {
+            font-weight: 500;
+            font-size: 16px;
+        }
+        .toolbar-right {
+            display: flex;
+            gap: 8px;
+        }
+        /* 中文字体优化 */
+        .preview h1, .preview h2, .preview h3, .preview h4, .preview h5, .preview h6 {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            color: #2c3e50;
+        }
+        .preview p, .preview li {
+            line-height: 1.8;
+            color: #34495e;
+        }
+        .preview code {
+            background: #f8f9fa;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', monospace;
+        }
+        .preview pre {
+            background: #f8f9fa;
+            padding: 16px;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
     </style>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
     <div class="container">
         <div class="sidebar">
-            <h3>📁 Markdown Files</h3>
+            <h3>📁 Markdown 文件</h3>
             <div id="fileList"></div>
         </div>
         <div class="editor">
             <div class="toolbar">
-                <span id="currentFile">Select a file to edit</span>
-                <button onclick="saveFile()" id="saveBtn" disabled>💾 Save</button>
-                <button onclick="refreshFiles()">🔄 Refresh</button>
+                <span class="current-file" id="currentFile">选择一个文件开始编辑</span>
+                <div class="toolbar-right">
+                    <button onclick="saveFile()" id="saveBtn" disabled>💾 保存</button>
+                    <button onclick="refreshFiles()">🔄 刷新</button>
+                </div>
             </div>
             <div class="content">
                 <div class="input">
-                    <textarea id="editor" placeholder="Select a markdown file to start editing..." disabled></textarea>
+                    <textarea id="editor" placeholder="选择一个 Markdown 文件开始编辑...
+
+支持中文字符输入，包括：
+- 简体中文
+- 繁体中文  
+- 中文标点符号
+- 混合中英文内容
+
+快捷键：
+Ctrl+S: 保存文件" disabled></textarea>
                 </div>
                 <div class="preview" id="preview">
-                    <p>Preview will appear here...</p>
+                    <h3>📖 预览窗口</h3>
+                    <p>Markdown 预览内容将在这里显示...</p>
+                    <p>支持完整的中文字符渲染，包括中英文混排和中文标点。</p>
                 </div>
             </div>
         </div>
@@ -87,9 +209,32 @@ class MarkdownEditorHandler(http.server.SimpleHTTPRequestHandler):
         
         editor.addEventListener('input', updatePreview);
         
+        // 添加键盘快捷键支持
+        document.addEventListener('keydown', function(e) {
+            // Ctrl+S 保存文件
+            if (e.ctrlKey && e.key === 's') {
+                e.preventDefault();
+                saveFile();
+            }
+            // Ctrl+R 刷新文件列表
+            if (e.ctrlKey && e.key === 'r') {
+                e.preventDefault();
+                refreshFiles();
+            }
+        });
+        
         function updatePreview() {
             const markdown = editor.value;
-            preview.innerHTML = marked.parse(markdown);
+            try {
+                // 配置 marked 以更好地支持中文
+                marked.setOptions({
+                    breaks: true,  // 支持 GitHub 风格的换行
+                    gfm: true,     // 启用 GitHub 风格的 Markdown
+                });
+                preview.innerHTML = marked.parse(markdown);
+            } catch (error) {
+                preview.innerHTML = '<p style="color: red;">预览解析错误: ' + error.message + '</p>';
+            }
         }
         
         async function loadFiles() {
@@ -107,7 +252,9 @@ class MarkdownEditorHandler(http.server.SimpleHTTPRequestHandler):
                     fileList.appendChild(div);
                 });
             } catch (error) {
-                console.error('Error loading files:', error);
+                console.error('加载文件列表时出错:', error);
+                const fileList = document.getElementById('fileList');
+                fileList.innerHTML = '<p style="color: red; padding: 8px;">❌ 无法加载文件列表</p>';
             }
         }
         
@@ -129,7 +276,7 @@ class MarkdownEditorHandler(http.server.SimpleHTTPRequestHandler):
                 
                 updatePreview();
             } catch (error) {
-                alert('Error loading file: ' + error.message);
+                alert('❌ 加载文件时出错：' + error.message);
             }
         }
         
@@ -144,12 +291,12 @@ class MarkdownEditorHandler(http.server.SimpleHTTPRequestHandler):
                 });
                 
                 if (response.ok) {
-                    alert('✅ File saved successfully!');
+                    alert('✅ 文件保存成功！');
                 } else {
-                    throw new Error('Save failed');
+                    throw new Error('保存失败');
                 }
             } catch (error) {
-                alert('❌ Error saving file: ' + error.message);
+                alert('❌ 保存文件时出错：' + error.message);
             }
         }
         
@@ -165,9 +312,10 @@ class MarkdownEditorHandler(http.server.SimpleHTTPRequestHandler):
         '''
         
         self.send_response(200)
-        self.send_header('Content-type', 'text/html')
+        self.send_header('Content-type', 'text/html; charset=utf-8')
+        self.send_header('Cache-Control', 'no-cache')
         self.end_headers()
-        self.wfile.write(html.encode())
+        self.wfile.write(html.encode('utf-8'))
     
     def list_files(self):
         """列出markdown文件"""
@@ -180,9 +328,9 @@ class MarkdownEditorHandler(http.server.SimpleHTTPRequestHandler):
                 md_files.append(str(rel_path))
         
         self.send_response(200)
-        self.send_header('Content-type', 'application/json')
+        self.send_header('Content-type', 'application/json; charset=utf-8')
         self.end_headers()
-        self.wfile.write(json.dumps(sorted(md_files)).encode())
+        self.wfile.write(json.dumps(sorted(md_files), ensure_ascii=False).encode('utf-8'))
     
     def read_file(self):
         """读取文件内容"""
@@ -216,9 +364,9 @@ class MarkdownEditorHandler(http.server.SimpleHTTPRequestHandler):
                 f.write(content)
             
             self.send_response(200)
-            self.send_header('Content-type', 'text/plain')
+            self.send_header('Content-type', 'text/plain; charset=utf-8')
             self.end_headers()
-            self.wfile.write(b'OK')
+            self.wfile.write('保存成功'.encode('utf-8'))
         except Exception as e:
             self.send_error(500, str(e))
 
