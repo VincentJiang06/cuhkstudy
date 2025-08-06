@@ -116,21 +116,138 @@ class MarkdownEditorHandler(http.server.SimpleHTTPRequestHandler):
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
-        .file-item { 
-            padding: 12px 16px; 
-            cursor: pointer; 
-            border-radius: 8px; 
-            margin: 4px 0; 
+        
+        /* CodeMirror 编辑器样式修复 */
+        .CodeMirror {
+            width: 100%;
+            height: 100% !important;
+            border: none;
+            font-family: 
+                'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono',
+                'Source Code Pro', 'Menlo', 'Consolas', 
+                'DejaVu Sans Mono', 'Ubuntu Mono', 'Courier New',
+                'Microsoft YaHei UI', 'Microsoft YaHei', monospace;
+            font-size: 16px;
+            line-height: 1.8;
+            background: #212121 !important;
+        }
+        
+        .CodeMirror-scroll {
+            height: 100% !important;
+            overflow: auto !important;
+            padding: 20px;
+        }
+        
+        .CodeMirror-sizer {
+            min-height: 100% !important;
+        }
+        /* 文件夹样式 */
+        .folder-main {
+            margin-bottom: 16px;
+        }
+        
+        .folder-header {
+            display: flex;
+            align-items: center;
+            padding: 12px 16px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            cursor: pointer;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 16px;
+            margin-bottom: 8px;
             transition: all 0.2s ease;
+            user-select: none;
+        }
+        
+        .folder-header:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+        }
+        
+        .folder-icon {
+            margin-right: 8px;
+            font-size: 18px;
+        }
+        
+        .folder-title {
+            flex: 1;
+        }
+        
+        .folder-toggle {
+            transition: transform 0.2s ease;
+            margin-left: 8px;
+        }
+        
+        .folder-content {
+            padding-left: 16px;
+        }
+        
+        .folder-sub {
+            margin-bottom: 8px;
+        }
+        
+        .subfolder-header {
+            display: flex;
+            align-items: center;
+            padding: 8px 12px;
+            background: #f8f9fa;
             border: 1px solid #e9ecef;
-            font-size: 15px;
+            cursor: pointer;
+            border-radius: 6px;
+            font-weight: 500;
+            font-size: 14px;
+            margin-bottom: 4px;
+            transition: all 0.2s ease;
+            user-select: none;
+        }
+        
+        .subfolder-header:hover {
+            background: #e9ecef;
+        }
+        
+        .subfolder-icon {
+            margin-right: 6px;
+        }
+        
+        .subfolder-title {
+            flex: 1;
+        }
+        
+        .file-count {
+            color: #6c757d;
+            font-size: 12px;
+            margin-left: 4px;
+        }
+        
+        .subfolder-toggle {
+            transition: transform 0.2s ease;
+            margin-left: 8px;
+            font-size: 12px;
+        }
+        
+        .subfolder-content {
+            padding-left: 16px;
+            margin-top: 4px;
+        }
+        
+        .file-item { 
+            padding: 8px 12px; 
+            cursor: pointer; 
+            border-radius: 6px; 
+            margin: 2px 0; 
+            transition: all 0.2s ease;
+            border: 1px solid transparent;
+            font-size: 14px;
             background: #fff;
             color: #000;
+            position: relative;
+            overflow: hidden;
         }
         .file-item:hover { 
-            transform: translateY(-1px);
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
             background: #f8f9fa;
+            border-color: #e9ecef;
         }
         .file-item.active { 
             background: #667eea;
@@ -325,7 +442,7 @@ class MarkdownEditorHandler(http.server.SimpleHTTPRequestHandler):
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <!-- CodeMirror for markdown syntax highlighting -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/theme/default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/theme/material-darker.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/markdown/markdown.min.js"></script>
 </head>
@@ -379,7 +496,7 @@ Ctrl+S: 保存文件" disabled></textarea>
                 mode: 'markdown',
                 lineNumbers: false,
                 lineWrapping: true,
-                theme: 'default',
+                theme: 'material-darker',
                 styleActiveLine: true,
                 matchBrackets: true,
                 autoCloseBrackets: true,
@@ -619,16 +736,59 @@ Ctrl+S: 保存文件" disabled></textarea>
         async function loadFiles() {
             try {
                 const response = await fetch('/api/files');
-                const files = await response.json();
+                const categorizedFiles = await response.json();
                 const fileList = document.getElementById('fileList');
                 fileList.innerHTML = '';
                 
-                files.forEach(file => {
-                    const div = document.createElement('div');
-                    div.className = 'file-item ' + getFileCategory(file);
-                    div.textContent = file;
-                    div.onclick = () => loadFile(file);
-                    fileList.appendChild(div);
+                // 渲染分类文件夹结构
+                Object.entries(categorizedFiles).forEach(([mainCategory, subCategories]) => {
+                    // 主分类标题
+                    const mainCategoryDiv = document.createElement('div');
+                    mainCategoryDiv.className = 'folder-main';
+                    mainCategoryDiv.innerHTML = `
+                        <div class="folder-header" onclick="toggleFolder(this)">
+                            <span class="folder-icon">📂</span>
+                            <span class="folder-title">${mainCategory}</span>
+                            <span class="folder-toggle">▼</span>
+                        </div>
+                        <div class="folder-content">
+                        </div>
+                    `;
+                    
+                    const folderContent = mainCategoryDiv.querySelector('.folder-content');
+                    
+                    // 子分类
+                    Object.entries(subCategories).forEach(([subCategory, files]) => {
+                        if (files.length > 0) {
+                            const subCategoryDiv = document.createElement('div');
+                            subCategoryDiv.className = 'folder-sub';
+                            subCategoryDiv.innerHTML = `
+                                <div class="subfolder-header" onclick="toggleSubfolder(this)">
+                                    <span class="subfolder-icon">📁</span>
+                                    <span class="subfolder-title">${subCategory}</span>
+                                    <span class="file-count">(${files.length})</span>
+                                    <span class="subfolder-toggle">▼</span>
+                                </div>
+                                <div class="subfolder-content">
+                                </div>
+                            `;
+                            
+                            const subfolderContent = subCategoryDiv.querySelector('.subfolder-content');
+                            
+                            // 文件列表
+                            files.forEach(filename => {
+                                const fileItem = document.createElement('div');
+                                fileItem.className = 'file-item';
+                                fileItem.textContent = filename;
+                                fileItem.onclick = () => loadFile(filename);
+                                subfolderContent.appendChild(fileItem);
+                            });
+                            
+                            folderContent.appendChild(subCategoryDiv);
+                        }
+                    });
+                    
+                    fileList.appendChild(mainCategoryDiv);
                 });
             } catch (error) {
                 console.error('加载文件列表时出错:', error);
@@ -688,6 +848,35 @@ Ctrl+S: 保存文件" disabled></textarea>
             loadFiles();
         }
         
+        // 文件夹折叠展开功能
+        function toggleFolder(header) {
+            const folderMain = header.closest('.folder-main');
+            const content = folderMain.querySelector('.folder-content');
+            const toggle = header.querySelector('.folder-toggle');
+            
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+                toggle.textContent = '▼';
+            } else {
+                content.style.display = 'none';
+                toggle.textContent = '▶';
+            }
+        }
+        
+        function toggleSubfolder(header) {
+            const folderSub = header.closest('.folder-sub');
+            const content = folderSub.querySelector('.subfolder-content');
+            const toggle = header.querySelector('.subfolder-toggle');
+            
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+                toggle.textContent = '▼';
+            } else {
+                content.style.display = 'none';
+                toggle.textContent = '▶';
+            }
+        }
+        
         // Load files on startup
         loadFiles();
     </script>
@@ -702,7 +891,7 @@ Ctrl+S: 保存文件" disabled></textarea>
         self.wfile.write(html.encode('utf-8'))
     
     def list_files(self):
-        """列出markdown文件"""
+        """列出markdown文件并按文件夹分类"""
         md_files = []
         base_dir = Path('/root/cuhkstudy')
         
@@ -711,10 +900,73 @@ Ctrl+S: 保存文件" disabled></textarea>
                 rel_path = file_path.relative_to(base_dir)
                 md_files.append(str(rel_path))
         
+        # 创建分类结构
+        categorized = {
+            "📚 课程内容": {
+                "🔬 UGFN课程": [],
+                "🎨 UGFH课程": [],
+                "🗂️ 杂项内容": []
+            },
+            "📂 基础文件": {
+                "📖 README": [],
+                "🏠 基础页面": []
+            },
+            "🏷️ 标签分类": {
+                "🎯 主要内容 (Main)": [],
+                "📚 UGFN标签": [],
+                "🎨 UGFH标签": []
+            }
+        }
+        
+        # 分类文件
+        for file_path in md_files:
+            file_lower = file_path.lower()
+            
+            # 1. README 文件
+            if 'readme' in file_lower:
+                categorized["📂 基础文件"]["📖 README"].append(file_path)
+                continue
+                
+            # 2. 基础页面 (authors, info等)
+            if any(keyword in file_lower for keyword in ['author', 'info', '_index', 'about']):
+                categorized["📂 基础文件"]["🏠 基础页面"].append(file_path)
+                continue
+            
+            # 3. 读取文件内容检查标签
+            try:
+                full_path = base_dir / file_path
+                with open(full_path, 'r', encoding='utf-8') as f:
+                    content = f.read()
+                    
+                # 检查 Front Matter 中的标签
+                if 'tags:' in content or 'categories:' in content:
+                    # 主要内容标签
+                    if '"Main"' in content or "'Main'" in content or '- Main' in content:
+                        categorized["🏷️ 标签分类"]["🎯 主要内容 (Main)"].append(file_path)
+                        continue
+                    # UGFN标签
+                    elif any(tag in content for tag in ['"UGFN"', "'UGFN'", '- UGFN', 'ugfn']):
+                        categorized["🏷️ 标签分类"]["📚 UGFN标签"].append(file_path)
+                        continue
+                    # UGFH标签  
+                    elif any(tag in content for tag in ['"UGFH"', "'UGFH'", '- UGFH', 'ugfh']):
+                        categorized["🏷️ 标签分类"]["🎨 UGFH标签"].append(file_path)
+                        continue
+            except:
+                pass
+            
+            # 4. 按路径分类课程内容
+            if 'ugfn' in file_lower:
+                categorized["📚 课程内容"]["🔬 UGFN课程"].append(file_path)
+            elif 'ugfh' in file_lower:
+                categorized["📚 课程内容"]["🎨 UGFH课程"].append(file_path)
+            else:
+                categorized["📚 课程内容"]["🗂️ 杂项内容"].append(file_path)
+        
         self.send_response(200)
         self.send_header('Content-type', 'application/json; charset=utf-8')
         self.end_headers()
-        self.wfile.write(json.dumps(sorted(md_files), ensure_ascii=False).encode('utf-8'))
+        self.wfile.write(json.dumps(categorized, ensure_ascii=False).encode('utf-8'))
     
     def read_file(self):
         """读取文件内容"""
