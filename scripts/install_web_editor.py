@@ -54,22 +54,23 @@ class MarkdownEditorHandler(http.server.SimpleHTTPRequestHandler):
                 'Microsoft YaHei UI', 'Microsoft YaHei', 
                 'Source Han Sans SC', 'Noto Sans CJK SC', 
                 'WenQuanYi Micro Hei', sans-serif;
-            background: #f8f9fa;
+            background: #f9fafb;
             font-size: 14px;
             line-height: 1.6;
+            color: #1a1b23;
         }
         .container { display: flex; height: 100vh; }
         .sidebar { 
             width: 300px; 
-            background: #fff; 
+            background: #ffffff; 
             padding: 20px; 
             overflow-y: auto; 
-            border-right: 1px solid #e9ecef;
-            box-shadow: 2px 0 4px rgba(0,0,0,0.1);
+            border-right: 1px solid #e1e4e8;
+            box-shadow: 0 0 0 1px rgba(27, 31, 36, 0.08);
         }
         .editor { flex: 1; display: flex; flex-direction: column; }
         .toolbar { 
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+            background: linear-gradient(135deg, #7aa2f7 0%, #9d7cd8 100%); 
             color: white; 
             padding: 15px 20px; 
             display: flex; 
@@ -129,7 +130,7 @@ class MarkdownEditorHandler(http.server.SimpleHTTPRequestHandler):
                 'Microsoft YaHei UI', 'Microsoft YaHei', monospace;
             font-size: 16px;
             line-height: 1.8;
-            background: #212121 !important;
+            background: #f7f7f7 !important;
         }
         
         .CodeMirror-scroll {
@@ -150,7 +151,7 @@ class MarkdownEditorHandler(http.server.SimpleHTTPRequestHandler):
             display: flex;
             align-items: center;
             padding: 12px 16px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #7aa2f7 0%, #9d7cd8 100%);
             color: white;
             cursor: pointer;
             border-radius: 8px;
@@ -163,7 +164,7 @@ class MarkdownEditorHandler(http.server.SimpleHTTPRequestHandler):
         
         .folder-header:hover {
             transform: translateY(-1px);
-            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+            box-shadow: 0 4px 12px rgba(122, 162, 247, 0.3);
         }
         
         .folder-icon {
@@ -192,8 +193,8 @@ class MarkdownEditorHandler(http.server.SimpleHTTPRequestHandler):
             display: flex;
             align-items: center;
             padding: 8px 12px;
-            background: #f8f9fa;
-            border: 1px solid #e9ecef;
+            background: #f6f8fa;
+            border: 1px solid #e1e4e8;
             cursor: pointer;
             border-radius: 6px;
             font-weight: 500;
@@ -204,7 +205,7 @@ class MarkdownEditorHandler(http.server.SimpleHTTPRequestHandler):
         }
         
         .subfolder-header:hover {
-            background: #e9ecef;
+            background: #e1e4e8;
         }
         
         .subfolder-icon {
@@ -250,9 +251,9 @@ class MarkdownEditorHandler(http.server.SimpleHTTPRequestHandler):
             border-color: #e9ecef;
         }
         .file-item.active { 
-            background: #667eea;
+            background: #7aa2f7;
             color: white; 
-            box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+            box-shadow: 0 2px 8px rgba(122, 162, 247, 0.3);
             font-weight: 500;
         }
         
@@ -442,7 +443,7 @@ class MarkdownEditorHandler(http.server.SimpleHTTPRequestHandler):
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <!-- CodeMirror for markdown syntax highlighting -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/theme/material-darker.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/theme/base16-light.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/markdown/markdown.min.js"></script>
 </head>
@@ -496,7 +497,7 @@ Ctrl+S: 保存文件" disabled></textarea>
                 mode: 'markdown',
                 lineNumbers: false,
                 lineWrapping: true,
-                theme: 'material-darker',
+                theme: 'base16-light',
                 styleActiveLine: true,
                 matchBrackets: true,
                 autoCloseBrackets: true,
