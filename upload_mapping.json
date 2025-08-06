@@ -1,0 +1,1616 @@
+{
+  "/var/www/cuhkstudy/resource/IMGs/Author_icon.jpg": {
+    "r2_key": "resource/IMGs/Author_icon.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/resource/IMGs/Author_icon.jpg",
+    "size": 52950,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/public/ugfn/background.jpg": {
+    "r2_key": "public/ugfn/background.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/public/ugfn/background.jpg",
+    "size": 379802,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/public/ugfn/background_hu_dcd5384cc13d9ca3.jpg": {
+    "r2_key": "public/ugfn/background_hu_dcd5384cc13d9ca3.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/public/ugfn/background_hu_dcd5384cc13d9ca3.jpg",
+    "size": 243145,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/resource/IMGs/wechat_info.jpg": {
+    "r2_key": "resource/IMGs/wechat_info.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/resource/IMGs/wechat_info.jpg",
+    "size": 151481,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/public/apple-touch-icon.png": {
+    "r2_key": "public/apple-touch-icon.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/public/apple-touch-icon.png",
+    "size": 54554,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/public/ai-literacy/background_hu_dcd5384cc13d9ca3.jpg": {
+    "r2_key": "public/ai-literacy/background_hu_dcd5384cc13d9ca3.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/public/ai-literacy/background_hu_dcd5384cc13d9ca3.jpg",
+    "size": 243145,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/public/ugfn/background_optimized.jpg": {
+    "r2_key": "public/ugfn/background_optimized.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/public/ugfn/background_optimized.jpg",
+    "size": 379802,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/public/img/Author_icon.jpg": {
+    "r2_key": "public/img/Author_icon.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/public/img/Author_icon.jpg",
+    "size": 52950,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/public/img/blowfish_banner.png": {
+    "r2_key": "public/img/blowfish_banner.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/public/img/blowfish_banner.png",
+    "size": 99792,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/public/ai-literacy/background.jpg": {
+    "r2_key": "public/ai-literacy/background.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/public/ai-literacy/background.jpg",
+    "size": 379802,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/public/pdfjs/web/compressed.tracemonkey-pldi-09.pdf": {
+    "r2_key": "public/pdfjs/web/compressed.tracemonkey-pldi-09.pdf",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/public/pdfjs/web/compressed.tracemonkey-pldi-09.pdf",
+    "size": 1016315,
+    "content_type": "application/pdf"
+  },
+  "/var/www/cuhkstudy/public/img/Author_icon_hu_a105c5bd4793773d.jpg": {
+    "r2_key": "public/img/Author_icon_hu_a105c5bd4793773d.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/public/img/Author_icon_hu_a105c5bd4793773d.jpg",
+    "size": 7788,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/public/img/logo_hu_251dc8a63603b7.png": {
+    "r2_key": "public/img/logo_hu_251dc8a63603b7.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/public/img/logo_hu_251dc8a63603b7.png",
+    "size": 120540,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/resource/IMGs/website_logo.png": {
+    "r2_key": "resource/IMGs/website_logo.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/resource/IMGs/website_logo.png",
+    "size": 1423109,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/public/img/wechat_info.jpg": {
+    "r2_key": "public/img/wechat_info.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/public/img/wechat_info.jpg",
+    "size": 151481,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/public/main/background_hu_dcd5384cc13d9ca3.jpg": {
+    "r2_key": "public/main/background_hu_dcd5384cc13d9ca3.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/public/main/background_hu_dcd5384cc13d9ca3.jpg",
+    "size": 243145,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/public/img/logo.png": {
+    "r2_key": "public/img/logo.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/public/img/logo.png",
+    "size": 1423109,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/resource/IMGs/mix2.png": {
+    "r2_key": "resource/IMGs/mix2.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/resource/IMGs/mix2.png",
+    "size": 1791639,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/public/main/background.jpg": {
+    "r2_key": "public/main/background.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/public/main/background.jpg",
+    "size": 379802,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/public/android-chrome-192x192.png": {
+    "r2_key": "public/android-chrome-192x192.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/public/android-chrome-192x192.png",
+    "size": 61441,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/public/android-chrome-512x512.png": {
+    "r2_key": "public/android-chrome-512x512.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/public/android-chrome-512x512.png",
+    "size": 372103,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/public/favicon-48x48.png": {
+    "r2_key": "public/favicon-48x48.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/public/favicon-48x48.png",
+    "size": 4901,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/public/favicon-32x32.png": {
+    "r2_key": "public/favicon-32x32.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/public/favicon-32x32.png",
+    "size": 2435,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/public/mess/background_hu_10d6afaabfd49bcb.jpg": {
+    "r2_key": "public/mess/background_hu_10d6afaabfd49bcb.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/public/mess/background_hu_10d6afaabfd49bcb.jpg",
+    "size": 243547,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/public/mess/background.jpg": {
+    "r2_key": "public/mess/background.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/public/mess/background.jpg",
+    "size": 444491,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/public/favicon-16x16.png": {
+    "r2_key": "public/favicon-16x16.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/public/favicon-16x16.png",
+    "size": 815,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/public/ugfh/background_hu_10d6afaabfd49bcb.jpg": {
+    "r2_key": "public/ugfh/background_hu_10d6afaabfd49bcb.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/public/ugfh/background_hu_10d6afaabfd49bcb.jpg",
+    "size": 243547,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/public/img/mix2.png": {
+    "r2_key": "public/img/mix2.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/public/img/mix2.png",
+    "size": 1791639,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/public/img/website_logo.png": {
+    "r2_key": "public/img/website_logo.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/public/img/website_logo.png",
+    "size": 1423109,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/public/ugfh/background.jpg": {
+    "r2_key": "public/ugfh/background.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/public/ugfh/background.jpg",
+    "size": 444491,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/public/pdfs/新生资料/校历CHI.pdf": {
+    "r2_key": "public/pdfs/新生资料/校历CHI.pdf",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/public/pdfs/新生资料/校历CHI.pdf",
+    "size": 130215,
+    "content_type": "application/pdf"
+  },
+  "/var/www/cuhkstudy/public/img/CU_pic_hu_2c130ce477cf8ea1.png": {
+    "r2_key": "public/img/CU_pic_hu_2c130ce477cf8ea1.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/public/img/CU_pic_hu_2c130ce477cf8ea1.png",
+    "size": 2243260,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/resources/_gen/images/ugfn/background_hu_dcd5384cc13d9ca3.jpg": {
+    "r2_key": "resources/_gen/images/ugfn/background_hu_dcd5384cc13d9ca3.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/resources/_gen/images/ugfn/background_hu_dcd5384cc13d9ca3.jpg",
+    "size": 243145,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/resources/_gen/images/ai-literacy/background_hu_dcd5384cc13d9ca3.jpg": {
+    "r2_key": "resources/_gen/images/ai-literacy/background_hu_dcd5384cc13d9ca3.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/resources/_gen/images/ai-literacy/background_hu_dcd5384cc13d9ca3.jpg",
+    "size": 243145,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/resources/_gen/images/img/logo_hu_251dc8a63603b7.png": {
+    "r2_key": "resources/_gen/images/img/logo_hu_251dc8a63603b7.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/resources/_gen/images/img/logo_hu_251dc8a63603b7.png",
+    "size": 120540,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/resources/_gen/images/img/Author_icon_hu_a105c5bd4793773d.jpg": {
+    "r2_key": "resources/_gen/images/img/Author_icon_hu_a105c5bd4793773d.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/resources/_gen/images/img/Author_icon_hu_a105c5bd4793773d.jpg",
+    "size": 7788,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/public/pdfs/新生资料/新生手册 by 李堂默.pdf": {
+    "r2_key": "public/pdfs/新生资料/新生手册 by 李堂默.pdf",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/public/pdfs/新生资料/新生手册 by 李堂默.pdf",
+    "size": 2361661,
+    "content_type": "application/pdf"
+  },
+  "/var/www/cuhkstudy/resources/_gen/images/main/background_hu_dcd5384cc13d9ca3.jpg": {
+    "r2_key": "resources/_gen/images/main/background_hu_dcd5384cc13d9ca3.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/resources/_gen/images/main/background_hu_dcd5384cc13d9ca3.jpg",
+    "size": 243145,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/public/pdfs/新生资料/CUSIS tips.pdf": {
+    "r2_key": "public/pdfs/新生资料/CUSIS tips.pdf",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/public/pdfs/新生资料/CUSIS tips.pdf",
+    "size": 2090082,
+    "content_type": "application/pdf"
+  },
+  "/var/www/cuhkstudy/public/pdfs/美工指南.pdf": {
+    "r2_key": "public/pdfs/美工指南.pdf",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/public/pdfs/美工指南.pdf",
+    "size": 2529392,
+    "content_type": "application/pdf"
+  },
+  "/var/www/cuhkstudy/resources/_gen/images/mess/background_hu_10d6afaabfd49bcb.jpg": {
+    "r2_key": "resources/_gen/images/mess/background_hu_10d6afaabfd49bcb.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/resources/_gen/images/mess/background_hu_10d6afaabfd49bcb.jpg",
+    "size": 243547,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/resources/_gen/images/ugfh/background_hu_10d6afaabfd49bcb.jpg": {
+    "r2_key": "resources/_gen/images/ugfh/background_hu_10d6afaabfd49bcb.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/resources/_gen/images/ugfh/background_hu_10d6afaabfd49bcb.jpg",
+    "size": 243547,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/content/ugfn/background.jpg": {
+    "r2_key": "content/ugfn/background.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/content/ugfn/background.jpg",
+    "size": 379802,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/content/ugfn/background_optimized.jpg": {
+    "r2_key": "content/ugfn/background_optimized.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/content/ugfn/background_optimized.jpg",
+    "size": 379802,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/content/ai-literacy/background.jpg": {
+    "r2_key": "content/ai-literacy/background.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/content/ai-literacy/background.jpg",
+    "size": 379802,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/content/main/background.jpg": {
+    "r2_key": "content/main/background.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/content/main/background.jpg",
+    "size": 379802,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/resources/_gen/images/img/CU_pic_hu_2c130ce477cf8ea1.png": {
+    "r2_key": "resources/_gen/images/img/CU_pic_hu_2c130ce477cf8ea1.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/resources/_gen/images/img/CU_pic_hu_2c130ce477cf8ea1.png",
+    "size": 2243260,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/content/ugfh/background.jpg": {
+    "r2_key": "content/ugfh/background.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/content/ugfh/background.jpg",
+    "size": 444491,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/content/mess/background.jpg": {
+    "r2_key": "content/mess/background.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/content/mess/background.jpg",
+    "size": 444491,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/assets/img/Author_icon.jpg": {
+    "r2_key": "assets/img/Author_icon.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/assets/img/Author_icon.jpg",
+    "size": 52950,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/Uploads/美工指南.pdf": {
+    "r2_key": "Uploads/美工指南.pdf",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/Uploads/美工指南.pdf",
+    "size": 2529392,
+    "content_type": "application/pdf"
+  },
+  "/var/www/cuhkstudy/assets/img/logo.png": {
+    "r2_key": "assets/img/logo.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/assets/img/logo.png",
+    "size": 1423109,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/static/apple-touch-icon.png": {
+    "r2_key": "static/apple-touch-icon.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/static/apple-touch-icon.png",
+    "size": 54554,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/assets/img/mix2.png": {
+    "r2_key": "assets/img/mix2.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/assets/img/mix2.png",
+    "size": 1791639,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/static/pdfjs/web/compressed.tracemonkey-pldi-09.pdf": {
+    "r2_key": "static/pdfjs/web/compressed.tracemonkey-pldi-09.pdf",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/static/pdfjs/web/compressed.tracemonkey-pldi-09.pdf",
+    "size": 1016315,
+    "content_type": "application/pdf"
+  },
+  "/var/www/cuhkstudy/static/img/Author_icon.jpg": {
+    "r2_key": "static/img/Author_icon.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/static/img/Author_icon.jpg",
+    "size": 52950,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/static/img/mix2.png": {
+    "r2_key": "static/img/mix2.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/static/img/mix2.png",
+    "size": 1791639,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/static/img/logo.png": {
+    "r2_key": "static/img/logo.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/static/img/logo.png",
+    "size": 1423109,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/static/img/wechat_info.jpg": {
+    "r2_key": "static/img/wechat_info.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/static/img/wechat_info.jpg",
+    "size": 151481,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/static/img/website_logo.png": {
+    "r2_key": "static/img/website_logo.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/static/img/website_logo.png",
+    "size": 1423109,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/static/android-chrome-192x192.png": {
+    "r2_key": "static/android-chrome-192x192.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/static/android-chrome-192x192.png",
+    "size": 61441,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/static/favicon-48x48.png": {
+    "r2_key": "static/favicon-48x48.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/static/favicon-48x48.png",
+    "size": 4901,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/static/favicon-32x32.png": {
+    "r2_key": "static/favicon-32x32.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/static/favicon-32x32.png",
+    "size": 2435,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/static/favicon-16x16.png": {
+    "r2_key": "static/favicon-16x16.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/static/favicon-16x16.png",
+    "size": 815,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/static/android-chrome-512x512.png": {
+    "r2_key": "static/android-chrome-512x512.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/static/android-chrome-512x512.png",
+    "size": 372103,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/resource/IMGs/CU_pic.png": {
+    "r2_key": "resource/IMGs/CU_pic.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/resource/IMGs/CU_pic.png",
+    "size": 11436944,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/public/img/CU_pic.png": {
+    "r2_key": "public/img/CU_pic.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/public/img/CU_pic.png",
+    "size": 11436944,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/static/pdfs/新生资料/新生手册 by 李堂默.pdf": {
+    "r2_key": "static/pdfs/新生资料/新生手册 by 李堂默.pdf",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/static/pdfs/新生资料/新生手册 by 李堂默.pdf",
+    "size": 2361661,
+    "content_type": "application/pdf"
+  },
+  "/var/www/cuhkstudy/static/pdfs/新生资料/校历CHI.pdf": {
+    "r2_key": "static/pdfs/新生资料/校历CHI.pdf",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/static/pdfs/新生资料/校历CHI.pdf",
+    "size": 130215,
+    "content_type": "application/pdf"
+  },
+  "/var/www/cuhkstudy/static/pdfs/新生资料/CUSIS tips.pdf": {
+    "r2_key": "static/pdfs/新生资料/CUSIS tips.pdf",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/static/pdfs/新生资料/CUSIS tips.pdf",
+    "size": 2090082,
+    "content_type": "application/pdf"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/blowfish_logo.png": {
+    "r2_key": "themes/blowfish/blowfish_logo.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/blowfish_logo.png",
+    "size": 531131,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/images/home-hero.png": {
+    "r2_key": "themes/blowfish/images/home-hero.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/images/home-hero.png",
+    "size": 350328,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/images/home-mobile.png": {
+    "r2_key": "themes/blowfish/images/home-mobile.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/images/home-mobile.png",
+    "size": 191454,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/images/home-profile.png": {
+    "r2_key": "themes/blowfish/images/home-profile.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/images/home-profile.png",
+    "size": 80693,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/static/pdfs/美工指南.pdf": {
+    "r2_key": "static/pdfs/美工指南.pdf",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/static/pdfs/美工指南.pdf",
+    "size": 2529392,
+    "content_type": "application/pdf"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/images/home-background.png": {
+    "r2_key": "themes/blowfish/images/home-background.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/images/home-background.png",
+    "size": 308645,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/images/screenshot.png": {
+    "r2_key": "themes/blowfish/images/screenshot.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/images/screenshot.png",
+    "size": 347303,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/images/tn.png": {
+    "r2_key": "themes/blowfish/images/tn.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/images/tn.png",
+    "size": 83774,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/assets/img/CU_pic.png": {
+    "r2_key": "assets/img/CU_pic.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/assets/img/CU_pic.png",
+    "size": 11436944,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/assets/img/blowfish_logo.png": {
+    "r2_key": "themes/blowfish/assets/img/blowfish_logo.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/assets/img/blowfish_logo.png",
+    "size": 227816,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/assets/img/blowfish_banner.png": {
+    "r2_key": "themes/blowfish/assets/img/blowfish_banner.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/assets/img/blowfish_banner.png",
+    "size": 99792,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/assets/img/blowfish_logo_transparent.png": {
+    "r2_key": "themes/blowfish/assets/img/blowfish_logo_transparent.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/assets/img/blowfish_logo_transparent.png",
+    "size": 180422,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/images/home-page.png": {
+    "r2_key": "themes/blowfish/images/home-page.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/images/home-page.png",
+    "size": 1389667,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/assets/img/blowfish_banner_transparent.png": {
+    "r2_key": "themes/blowfish/assets/img/blowfish_banner_transparent.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/assets/img/blowfish_banner_transparent.png",
+    "size": 88042,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/static/apple-touch-icon.png": {
+    "r2_key": "themes/blowfish/static/apple-touch-icon.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/static/apple-touch-icon.png",
+    "size": 16152,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/logo.png": {
+    "r2_key": "themes/blowfish/logo.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/logo.png",
+    "size": 99792,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/static/android-chrome-192x192.png": {
+    "r2_key": "themes/blowfish/static/android-chrome-192x192.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/static/android-chrome-192x192.png",
+    "size": 17874,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/static/android-chrome-512x512.png": {
+    "r2_key": "themes/blowfish/static/android-chrome-512x512.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/static/android-chrome-512x512.png",
+    "size": 37648,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/resource/PDFs/UGFN AI GUIDE V2.1.pdf": {
+    "r2_key": "resource/PDFs/UGFN AI GUIDE V2.1.pdf",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/resource/PDFs/UGFN AI GUIDE V2.1.pdf",
+    "size": 20423830,
+    "content_type": "application/pdf"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/static/favicon-32x32.png": {
+    "r2_key": "themes/blowfish/static/favicon-32x32.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/static/favicon-32x32.png",
+    "size": 1823,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/static/favicon-16x16.png": {
+    "r2_key": "themes/blowfish/static/favicon-16x16.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/static/favicon-16x16.png",
+    "size": 737,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/guides/template/img/example.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/guides/template/img/example.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/guides/template/img/example.jpg",
+    "size": 95131,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/guides/template/featured.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/guides/template/featured.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/guides/template/featured.jpg",
+    "size": 95070,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/firebaseoptions.png": {
+    "r2_key": "themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/firebaseoptions.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/firebaseoptions.png",
+    "size": 172751,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/article.png.png": {
+    "r2_key": "themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/article.png.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/article.png.png",
+    "size": 367450,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/search.png": {
+    "r2_key": "themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/search.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/search.png",
+    "size": 294100,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/images/home-card.png": {
+    "r2_key": "themes/blowfish/images/home-card.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/images/home-card.png",
+    "size": 3715726,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/githubactions.png.png": {
+    "r2_key": "themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/githubactions.png.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/githubactions.png.png",
+    "size": 128797,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/profile.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/profile.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/profile.jpg",
+    "size": 51664,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/firebasecli.png": {
+    "r2_key": "themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/firebasecli.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/firebasecli.png",
+    "size": 56627,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/01.png.png": {
+    "r2_key": "themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/01.png.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/01.png.png",
+    "size": 674959,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/static/img/CU_pic.png": {
+    "r2_key": "static/img/CU_pic.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/static/img/CU_pic.png",
+    "size": 11436944,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/blowfishempty.png.png": {
+    "r2_key": "themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/blowfishempty.png.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/blowfishempty.png.png",
+    "size": 25770,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/blowfishnoarticles.png.png": {
+    "r2_key": "themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/blowfishnoarticles.png.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/blowfishnoarticles.png.png",
+    "size": 661215,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/tag.png": {
+    "r2_key": "themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/tag.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/tag.png",
+    "size": 478013,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/search.png.png": {
+    "r2_key": "themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/search.png.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/search.png.png",
+    "size": 189086,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/article.png": {
+    "r2_key": "themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/article.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/article.png",
+    "size": 1071522,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/blowfishrecent.png.png": {
+    "r2_key": "themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/blowfishrecent.png.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/blowfishrecent.png.png",
+    "size": 672002,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/tag.png.png": {
+    "r2_key": "themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/tag.png.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/tag.png.png",
+    "size": 164977,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/githubactions.png": {
+    "r2_key": "themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/githubactions.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/githubactions.png",
+    "size": 204073,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/firebaseconsole.png.png": {
+    "r2_key": "themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/firebaseconsole.png.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/firebaseconsole.png.png",
+    "size": 70285,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/blowfishrecent.png": {
+    "r2_key": "themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/blowfishrecent.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/blowfishrecent.png",
+    "size": 2277598,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/ghcreate.png.png": {
+    "r2_key": "themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/ghcreate.png.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/ghcreate.png.png",
+    "size": 63754,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/background.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/background.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/background.jpg",
+    "size": 132859,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/blowfishempty.png": {
+    "r2_key": "themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/blowfishempty.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/blowfishempty.png",
+    "size": 38549,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/firebasecli.png.png": {
+    "r2_key": "themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/firebasecli.png.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/firebasecli.png.png",
+    "size": 77847,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/ghcreate.png": {
+    "r2_key": "themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/ghcreate.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/ghcreate.png",
+    "size": 40504,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/featured.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/featured.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/featured.jpg",
+    "size": 23129,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/blowfishnoarticles.png": {
+    "r2_key": "themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/blowfishnoarticles.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/blowfishnoarticles.png",
+    "size": 2249677,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/firebaseconsole.png": {
+    "r2_key": "themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/firebaseconsole.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/firebaseconsole.png",
+    "size": 135497,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/firebaseoptions.png.png": {
+    "r2_key": "themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/firebaseoptions.png.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/firebaseoptions.png.png",
+    "size": 177311,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/background.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/background.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/background.jpg",
+    "size": 104089,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/eb23ebd26738c98db323eff207dc7c0e/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/eb23ebd26738c98db323eff207dc7c0e/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/eb23ebd26738c98db323eff207dc7c0e/feature.jpg",
+    "size": 24502,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/080a851b486ff5be4201f6fbe1f9616d/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/080a851b486ff5be4201f6fbe1f9616d/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/080a851b486ff5be4201f6fbe1f9616d/feature.jpg",
+    "size": 45154,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/e8b2eb823290677fbba3390d5cef2c35/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/e8b2eb823290677fbba3390d5cef2c35/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/e8b2eb823290677fbba3390d5cef2c35/feature.jpg",
+    "size": 40000,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/3bfa5ccb77cf79199527df4c0259d0dc/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/3bfa5ccb77cf79199527df4c0259d0dc/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/3bfa5ccb77cf79199527df4c0259d0dc/feature.jpg",
+    "size": 36228,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/3ec093539269bc4ce9498fe9c36a2b7d/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/3ec093539269bc4ce9498fe9c36a2b7d/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/3ec093539269bc4ce9498fe9c36a2b7d/feature.jpg",
+    "size": 42534,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/129162dc71b9d40ee7948e51910d415a/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/129162dc71b9d40ee7948e51910d415a/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/129162dc71b9d40ee7948e51910d415a/feature.jpg",
+    "size": 44150,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/9d028495840ad385e6cb3ccf051dca22/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/9d028495840ad385e6cb3ccf051dca22/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/9d028495840ad385e6cb3ccf051dca22/feature.jpg",
+    "size": 11204,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/25036bf87aa99ef82e09089a1ddbb9eb/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/25036bf87aa99ef82e09089a1ddbb9eb/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/25036bf87aa99ef82e09089a1ddbb9eb/feature.jpg",
+    "size": 25286,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/706590b7d6a58b77f0eadb22b1dc6cd5/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/706590b7d6a58b77f0eadb22b1dc6cd5/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/706590b7d6a58b77f0eadb22b1dc6cd5/feature.jpg",
+    "size": 37534,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/427cec3309be77abe6f19b006b2a3dc0/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/427cec3309be77abe6f19b006b2a3dc0/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/427cec3309be77abe6f19b006b2a3dc0/feature.jpg",
+    "size": 9902,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/ee5d5eca13c3742f7a454a52424f9d73/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/ee5d5eca13c3742f7a454a52424f9d73/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/ee5d5eca13c3742f7a454a52424f9d73/feature.jpg",
+    "size": 21516,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/8032d46bf9c96ae4b59c419032c7ad89/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/8032d46bf9c96ae4b59c419032c7ad89/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/8032d46bf9c96ae4b59c419032c7ad89/feature.jpg",
+    "size": 20342,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/d9e559aaa0c3488012725cc4699ff9c4/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/d9e559aaa0c3488012725cc4699ff9c4/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/d9e559aaa0c3488012725cc4699ff9c4/feature.jpg",
+    "size": 25198,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/e4f1c9a4c352ea63707824576d889c8f/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/e4f1c9a4c352ea63707824576d889c8f/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/e4f1c9a4c352ea63707824576d889c8f/feature.jpg",
+    "size": 8230,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/46ea5d4b3698fa18fc0b79faa3d89bef/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/46ea5d4b3698fa18fc0b79faa3d89bef/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/46ea5d4b3698fa18fc0b79faa3d89bef/feature.jpg",
+    "size": 32828,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/27cc5a091bef86a9b5dcfa2c035308ed/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/27cc5a091bef86a9b5dcfa2c035308ed/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/27cc5a091bef86a9b5dcfa2c035308ed/feature.jpg",
+    "size": 29720,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/d8ebb1396d8c7d2233b33a6b3ca0adc4/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/d8ebb1396d8c7d2233b33a6b3ca0adc4/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/d8ebb1396d8c7d2233b33a6b3ca0adc4/feature.jpg",
+    "size": 24700,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/0805e986c2f7265e3bbbfc7bc647ed92/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/0805e986c2f7265e3bbbfc7bc647ed92/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/0805e986c2f7265e3bbbfc7bc647ed92/feature.jpg",
+    "size": 18510,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/4f0c88168fb7a348b4393a56ede2e799/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/4f0c88168fb7a348b4393a56ede2e799/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/4f0c88168fb7a348b4393a56ede2e799/feature.jpg",
+    "size": 36246,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/a615163aad4c6bb5746a697a9450d563/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/a615163aad4c6bb5746a697a9450d563/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/a615163aad4c6bb5746a697a9450d563/feature.jpg",
+    "size": 31952,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/e263f9bb6dcec27003a8f5f947ba5abb/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/e263f9bb6dcec27003a8f5f947ba5abb/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/e263f9bb6dcec27003a8f5f947ba5abb/feature.jpg",
+    "size": 22960,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/01.png": {
+    "r2_key": "themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/01.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/guides/202310-blowfish-tutorial/img/01.png",
+    "size": 2360966,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/43d57d92cc54037519270a0cb07dbb83/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/43d57d92cc54037519270a0cb07dbb83/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/43d57d92cc54037519270a0cb07dbb83/feature.jpg",
+    "size": 58636,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/af89464ac25ab9445658a3541e623778/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/af89464ac25ab9445658a3541e623778/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/af89464ac25ab9445658a3541e623778/feature.jpg",
+    "size": 37096,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/447e2f0f6f439b915e0b57f93e49b7d6/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/447e2f0f6f439b915e0b57f93e49b7d6/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/447e2f0f6f439b915e0b57f93e49b7d6/feature.jpg",
+    "size": 52764,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/4d4fb24dca11a144122fa0bb831d9d03/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/4d4fb24dca11a144122fa0bb831d9d03/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/4d4fb24dca11a144122fa0bb831d9d03/feature.jpg",
+    "size": 30520,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/4de384e83ae8af3834cad28f6dfc6966/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/4de384e83ae8af3834cad28f6dfc6966/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/4de384e83ae8af3834cad28f6dfc6966/feature.jpg",
+    "size": 41370,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/d52c3523ad809eb1d9ddbcbe32e92661/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/d52c3523ad809eb1d9ddbcbe32e92661/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/d52c3523ad809eb1d9ddbcbe32e92661/feature.jpg",
+    "size": 70812,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/98f15180691d43fbfcbaf685e1b9ab06/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/98f15180691d43fbfcbaf685e1b9ab06/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/98f15180691d43fbfcbaf685e1b9ab06/feature.jpg",
+    "size": 11138,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/7c98d8b7ba531e032abcd675d4f49c17/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/7c98d8b7ba531e032abcd675d4f49c17/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/7c98d8b7ba531e032abcd675d4f49c17/feature.jpg",
+    "size": 32480,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/fd12be5b9c01f6b6089b8b1cbff1350d/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/fd12be5b9c01f6b6089b8b1cbff1350d/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/fd12be5b9c01f6b6089b8b1cbff1350d/feature.jpg",
+    "size": 37152,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/915a897f2ea3ba018728d7dce3540b1b/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/915a897f2ea3ba018728d7dce3540b1b/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/915a897f2ea3ba018728d7dce3540b1b/feature.jpg",
+    "size": 51624,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/a322d57671bf49fe0f2539096f9ed57f/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/a322d57671bf49fe0f2539096f9ed57f/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/a322d57671bf49fe0f2539096f9ed57f/feature.jpg",
+    "size": 42984,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/5bf94b5c1e0c4a40d81816df85e1444f/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/5bf94b5c1e0c4a40d81816df85e1444f/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/5bf94b5c1e0c4a40d81816df85e1444f/feature.jpg",
+    "size": 31064,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/72d71e304faaa40b3d547d5357edc450/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/72d71e304faaa40b3d547d5357edc450/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/72d71e304faaa40b3d547d5357edc450/feature.jpg",
+    "size": 27232,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/02c452502ee9a03866c720c14bf86f9e/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/02c452502ee9a03866c720c14bf86f9e/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/02c452502ee9a03866c720c14bf86f9e/feature.jpg",
+    "size": 9980,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/9eed597b03512bc7b7b4b3cf81814a37/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/9eed597b03512bc7b7b4b3cf81814a37/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/9eed597b03512bc7b7b4b3cf81814a37/feature.jpg",
+    "size": 34170,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/c0d9928ff3857960ec230178bdec1b8d/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/c0d9928ff3857960ec230178bdec1b8d/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/c0d9928ff3857960ec230178bdec1b8d/feature.jpg",
+    "size": 24796,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/54b73306674ec7e6778b54a0a8b18b36/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/54b73306674ec7e6778b54a0a8b18b36/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/54b73306674ec7e6778b54a0a8b18b36/feature.jpg",
+    "size": 22420,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/c506ded8078df151fc8ce943e7ac1c8a/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/c506ded8078df151fc8ce943e7ac1c8a/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/c506ded8078df151fc8ce943e7ac1c8a/feature.jpg",
+    "size": 31818,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/82b432ad2bfc873ec725001f0b3ac495/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/82b432ad2bfc873ec725001f0b3ac495/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/82b432ad2bfc873ec725001f0b3ac495/feature.jpg",
+    "size": 29336,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/0327ac1993f378aa2fc5bbb8a840c9cb/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/0327ac1993f378aa2fc5bbb8a840c9cb/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/0327ac1993f378aa2fc5bbb8a840c9cb/feature.jpg",
+    "size": 69746,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/1b3c507d9cd618565898e6d099c0427d/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/1b3c507d9cd618565898e6d099c0427d/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/1b3c507d9cd618565898e6d099c0427d/feature.jpg",
+    "size": 37780,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/1a328ae325c5da884a5b15a1b4d4a446/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/1a328ae325c5da884a5b15a1b4d4a446/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/1a328ae325c5da884a5b15a1b4d4a446/feature.jpg",
+    "size": 24898,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/1b3da762734b4fb503e49822ed506dbb/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/1b3da762734b4fb503e49822ed506dbb/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/1b3da762734b4fb503e49822ed506dbb/feature.jpg",
+    "size": 27304,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/5440c85ea880d93157088032515962d3/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/5440c85ea880d93157088032515962d3/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/5440c85ea880d93157088032515962d3/feature.jpg",
+    "size": 27454,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/4ea7eb30d575afb5183b02f31a661c42/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/4ea7eb30d575afb5183b02f31a661c42/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/4ea7eb30d575afb5183b02f31a661c42/feature.jpg",
+    "size": 30600,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/e3f304eacd2f79e31f294cae0ff8162e/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/e3f304eacd2f79e31f294cae0ff8162e/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/e3f304eacd2f79e31f294cae0ff8162e/feature.jpg",
+    "size": 27154,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/b66472425d53d4e270e85ba4f160e7a1/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/b66472425d53d4e270e85ba4f160e7a1/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/b66472425d53d4e270e85ba4f160e7a1/feature.jpg",
+    "size": 32322,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/64faf41f22317a170125dd7b2cd642e2/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/64faf41f22317a170125dd7b2cd642e2/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/64faf41f22317a170125dd7b2cd642e2/feature.jpg",
+    "size": 24242,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/66a61706d45b77b559869cd1247fe8fc/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/66a61706d45b77b559869cd1247fe8fc/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/66a61706d45b77b559869cd1247fe8fc/feature.jpg",
+    "size": 37880,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/e07582d573aa187c3c15bb042872ca4a/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/e07582d573aa187c3c15bb042872ca4a/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/e07582d573aa187c3c15bb042872ca4a/feature.jpg",
+    "size": 73730,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/fec44f5dd2be29e37c305696d018f99f/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/fec44f5dd2be29e37c305696d018f99f/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/fec44f5dd2be29e37c305696d018f99f/feature.jpg",
+    "size": 35500,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/1a882ded73613252bb07c2c13f40b9e3/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/1a882ded73613252bb07c2c13f40b9e3/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/1a882ded73613252bb07c2c13f40b9e3/feature.jpg",
+    "size": 26674,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/e518dc969af1ea65a3d0b55630705047/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/e518dc969af1ea65a3d0b55630705047/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/e518dc969af1ea65a3d0b55630705047/feature.jpg",
+    "size": 34430,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/4bc0917e04c4859cedb32a48bff27846/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/4bc0917e04c4859cedb32a48bff27846/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/4bc0917e04c4859cedb32a48bff27846/feature.jpg",
+    "size": 43216,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/6a603c5d465ecb2422ed7a96fd55c99c/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/6a603c5d465ecb2422ed7a96fd55c99c/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/6a603c5d465ecb2422ed7a96fd55c99c/feature.jpg",
+    "size": 13124,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/public/pdfs/UGFN AI GUIDE V2.1.pdf": {
+    "r2_key": "public/pdfs/UGFN AI GUIDE V2.1.pdf",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/public/pdfs/UGFN AI GUIDE V2.1.pdf",
+    "size": 20423830,
+    "content_type": "application/pdf"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/2d29fadfaf8ddfaee0b69b563bae8d2d/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/2d29fadfaf8ddfaee0b69b563bae8d2d/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/2d29fadfaf8ddfaee0b69b563bae8d2d/feature.jpg",
+    "size": 35736,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/bdd6b2db27fb40b3fa79a37659b2f285/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/bdd6b2db27fb40b3fa79a37659b2f285/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/bdd6b2db27fb40b3fa79a37659b2f285/feature.jpg",
+    "size": 17146,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/c562b0e606584dd96159faf763291fe1/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/c562b0e606584dd96159faf763291fe1/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/c562b0e606584dd96159faf763291fe1/feature.jpg",
+    "size": 28078,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/7596a225b244e0859da338621e680481/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/7596a225b244e0859da338621e680481/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/7596a225b244e0859da338621e680481/feature.jpg",
+    "size": 23878,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/c8eb3ba4d0e565e041ead9aabe6fc770/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/c8eb3ba4d0e565e041ead9aabe6fc770/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/c8eb3ba4d0e565e041ead9aabe6fc770/feature.jpg",
+    "size": 35520,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/9d162f4046cb83c367d8d8ab57240711/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/9d162f4046cb83c367d8d8ab57240711/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/9d162f4046cb83c367d8d8ab57240711/feature.jpg",
+    "size": 21846,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/069e8f01e7ef48830ebea5239e2189b4/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/069e8f01e7ef48830ebea5239e2189b4/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/069e8f01e7ef48830ebea5239e2189b4/feature.jpg",
+    "size": 56720,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/9901f5943260b32ac3002c1002408f19/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/9901f5943260b32ac3002c1002408f19/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/9901f5943260b32ac3002c1002408f19/feature.jpg",
+    "size": 8664,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/6e57b74d392f64f3698aee7046cc2606/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/6e57b74d392f64f3698aee7046cc2606/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/6e57b74d392f64f3698aee7046cc2606/feature.jpg",
+    "size": 30178,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/9f984d61b6086212e76291d2698d0498/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/9f984d61b6086212e76291d2698d0498/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/9f984d61b6086212e76291d2698d0498/feature.jpg",
+    "size": 30168,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/8a994f70010fa98dac2838ddd246224e/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/8a994f70010fa98dac2838ddd246224e/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/8a994f70010fa98dac2838ddd246224e/feature.jpg",
+    "size": 54586,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/039ca94b0aeeb9ab4c95226615bfb840/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/039ca94b0aeeb9ab4c95226615bfb840/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/039ca94b0aeeb9ab4c95226615bfb840/feature.jpg",
+    "size": 13396,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/48ff442c7de299911eab10b72b02cc84/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/48ff442c7de299911eab10b72b02cc84/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/48ff442c7de299911eab10b72b02cc84/feature.jpg",
+    "size": 26810,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/8fc3ba43309eb4210c5da59847dab5ac/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/8fc3ba43309eb4210c5da59847dab5ac/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/8fc3ba43309eb4210c5da59847dab5ac/feature.jpg",
+    "size": 3238,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/04bb53c19a5a817c1a0630b65260909d/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/04bb53c19a5a817c1a0630b65260909d/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/04bb53c19a5a817c1a0630b65260909d/feature.jpg",
+    "size": 40708,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/d965f981aa39336ef7be5efac83c96b2/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/d965f981aa39336ef7be5efac83c96b2/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/d965f981aa39336ef7be5efac83c96b2/feature.jpg",
+    "size": 18030,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/d6d2aa4cd9e351e749136df67a27c136/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/d6d2aa4cd9e351e749136df67a27c136/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/d6d2aa4cd9e351e749136df67a27c136/feature.jpg",
+    "size": 63906,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/96d3e57dcc931de55cc23a825d40be2c/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/96d3e57dcc931de55cc23a825d40be2c/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/96d3e57dcc931de55cc23a825d40be2c/feature.jpg",
+    "size": 32284,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/64ef36564d497eed256b9f4c56b1184e/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/64ef36564d497eed256b9f4c56b1184e/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/64ef36564d497eed256b9f4c56b1184e/feature.jpg",
+    "size": 27164,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/1f88d7c1e8e83b761f84b38daaa8016d/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/1f88d7c1e8e83b761f84b38daaa8016d/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/1f88d7c1e8e83b761f84b38daaa8016d/feature.jpg",
+    "size": 27328,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/4b8c5f7ee72baf8411dae867f9206b63/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/4b8c5f7ee72baf8411dae867f9206b63/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/4b8c5f7ee72baf8411dae867f9206b63/feature.jpg",
+    "size": 36086,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/954584ca9b811d77ac600cf7c426be45/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/954584ca9b811d77ac600cf7c426be45/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/954584ca9b811d77ac600cf7c426be45/feature.jpg",
+    "size": 27454,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/8168c3eeb157c9c9b1ca287393393f9c/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/8168c3eeb157c9c9b1ca287393393f9c/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/8168c3eeb157c9c9b1ca287393393f9c/feature.jpg",
+    "size": 17710,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/6057b72b4986ae88640d46262a4be0a0/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/6057b72b4986ae88640d46262a4be0a0/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/6057b72b4986ae88640d46262a4be0a0/feature.jpg",
+    "size": 13688,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/9327a7a2a271822354f23963b0557368/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/9327a7a2a271822354f23963b0557368/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/9327a7a2a271822354f23963b0557368/feature.jpg",
+    "size": 26292,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/15cf92fba36f0319bd4b176da554fdb9/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/15cf92fba36f0319bd4b176da554fdb9/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/15cf92fba36f0319bd4b176da554fdb9/feature.jpg",
+    "size": 13608,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/1314bf3d7ce70ad90f1fc7666032e147/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/1314bf3d7ce70ad90f1fc7666032e147/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/1314bf3d7ce70ad90f1fc7666032e147/feature.jpg",
+    "size": 23386,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/1f94add7b0ba58983ff507632b822401/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/1f94add7b0ba58983ff507632b822401/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/1f94add7b0ba58983ff507632b822401/feature.jpg",
+    "size": 27118,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/6ed0dcb17b6e24c166f7da0bdfb0c1f5/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/6ed0dcb17b6e24c166f7da0bdfb0c1f5/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/6ed0dcb17b6e24c166f7da0bdfb0c1f5/feature.jpg",
+    "size": 29750,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/405727a6fae1350173ef8915b4c9eb7d/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/405727a6fae1350173ef8915b4c9eb7d/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/405727a6fae1350173ef8915b4c9eb7d/feature.jpg",
+    "size": 34714,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/6e0c28f8b70015dd35f332d927960d06/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/6e0c28f8b70015dd35f332d927960d06/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/6e0c28f8b70015dd35f332d927960d06/feature.jpg",
+    "size": 40536,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/7ee8520d5e9eadae8557be82f46ff18d/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/7ee8520d5e9eadae8557be82f46ff18d/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/7ee8520d5e9eadae8557be82f46ff18d/feature.jpg",
+    "size": 26326,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/ad989702a19d1fd8add147d6771c6c02/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/ad989702a19d1fd8add147d6771c6c02/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/ad989702a19d1fd8add147d6771c6c02/feature.jpg",
+    "size": 40296,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/e2ca3d6494c32151235beabe7567b23d/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/e2ca3d6494c32151235beabe7567b23d/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/e2ca3d6494c32151235beabe7567b23d/feature.jpg",
+    "size": 14990,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/db20512c1ee8daab423ea18268cb5910/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/db20512c1ee8daab423ea18268cb5910/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/db20512c1ee8daab423ea18268cb5910/feature.jpg",
+    "size": 11660,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/7d028665dc1cf54485e6e82a7083ce69/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/7d028665dc1cf54485e6e82a7083ce69/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/7d028665dc1cf54485e6e82a7083ce69/feature.jpg",
+    "size": 31332,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/837b47128639b5359ade845eae461c3a/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/837b47128639b5359ade845eae461c3a/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/837b47128639b5359ade845eae461c3a/feature.jpg",
+    "size": 19154,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/6c20c1af90023ed60919801cfba0f08f/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/6c20c1af90023ed60919801cfba0f08f/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/6c20c1af90023ed60919801cfba0f08f/feature.jpg",
+    "size": 17292,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/033c87b7e950b82ea500c552c9523367/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/033c87b7e950b82ea500c552c9523367/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/033c87b7e950b82ea500c552c9523367/feature.jpg",
+    "size": 40670,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/620af4c12a7ee8932fadb45ae52bba7e/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/620af4c12a7ee8932fadb45ae52bba7e/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/620af4c12a7ee8932fadb45ae52bba7e/feature.jpg",
+    "size": 12178,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/807a03786a63504a144bb3b947a2969c/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/807a03786a63504a144bb3b947a2969c/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/807a03786a63504a144bb3b947a2969c/feature.jpg",
+    "size": 45642,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/bfe9e12b443e96f40b05b584166636f5/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/bfe9e12b443e96f40b05b584166636f5/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/bfe9e12b443e96f40b05b584166636f5/feature.jpg",
+    "size": 24852,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/5801e67070cd59e592c82693a1bda773/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/5801e67070cd59e592c82693a1bda773/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/5801e67070cd59e592c82693a1bda773/feature.jpg",
+    "size": 34768,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/ef51c7b9654a4f2d13525eb80ee46cdf/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/ef51c7b9654a4f2d13525eb80ee46cdf/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/ef51c7b9654a4f2d13525eb80ee46cdf/feature.jpg",
+    "size": 65588,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/80d4420e686d5a055bab647fa03d281b/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/80d4420e686d5a055bab647fa03d281b/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/80d4420e686d5a055bab647fa03d281b/feature.jpg",
+    "size": 24564,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/24577d47b9474b6bc72eba9a6009dba4/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/24577d47b9474b6bc72eba9a6009dba4/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/24577d47b9474b6bc72eba9a6009dba4/feature.jpg",
+    "size": 28754,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/examples/blowfish-template/featured.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/examples/blowfish-template/featured.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/examples/blowfish-template/featured.jpg",
+    "size": 15817,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/examples/repo-blowfish-lowkey/featured.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/examples/repo-blowfish-lowkey/featured.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/examples/repo-blowfish-lowkey/featured.jpg",
+    "size": 35522,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/examples/repo-blowfish-artist/featured.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/examples/repo-blowfish-artist/featured.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/examples/repo-blowfish-artist/featured.jpg",
+    "size": 32122,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/examples/blowfish-lite/featured.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/examples/blowfish-lite/featured.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/examples/blowfish-lite/featured.jpg",
+    "size": 32066,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/examples/blowfish-template-repo/featured.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/examples/blowfish-template-repo/featured.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/examples/blowfish-template-repo/featured.jpg",
+    "size": 15817,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/examples/blowfish-artist/featured.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/examples/blowfish-artist/featured.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/examples/blowfish-artist/featured.jpg",
+    "size": 32122,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/examples/repo-blowfish-lite/featured.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/examples/repo-blowfish-lite/featured.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/examples/repo-blowfish-lite/featured.jpg",
+    "size": 32066,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/examples/blowfish-tutorial/featured.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/examples/blowfish-tutorial/featured.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/examples/blowfish-tutorial/featured.jpg",
+    "size": 49033,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/examples/blowfish-lowkey/featured.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/examples/blowfish-lowkey/featured.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/examples/blowfish-lowkey/featured.jpg",
+    "size": 35522,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/docs/hosting-deployment/render-settings.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/docs/hosting-deployment/render-settings.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/docs/hosting-deployment/render-settings.jpg",
+    "size": 29209,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/tags/advanced/featured.png": {
+    "r2_key": "themes/blowfish/exampleSite/content/tags/advanced/featured.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/tags/advanced/featured.png",
+    "size": 650977,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/examples/repo-blowfish-tutorial/featured.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/examples/repo-blowfish-tutorial/featured.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/examples/repo-blowfish-tutorial/featured.jpg",
+    "size": 49033,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/docs/hosting-deployment/github-pages-source.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/docs/hosting-deployment/github-pages-source.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/docs/hosting-deployment/github-pages-source.jpg",
+    "size": 18137,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/docs/shortcodes/abstract.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/docs/shortcodes/abstract.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/docs/shortcodes/abstract.jpg",
+    "size": 17714,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/docs/welcome/lighthouse.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/docs/welcome/lighthouse.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/docs/welcome/lighthouse.jpg",
+    "size": 22687,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/docs/hosting-deployment/netlify-build-settings.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/docs/hosting-deployment/netlify-build-settings.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/docs/hosting-deployment/netlify-build-settings.jpg",
+    "size": 37581,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/docs/welcome/image-resizing.png": {
+    "r2_key": "themes/blowfish/exampleSite/content/docs/welcome/image-resizing.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/docs/welcome/image-resizing.png",
+    "size": 98941,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/docs/shortcodes/gallery/01.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/docs/shortcodes/gallery/01.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/docs/shortcodes/gallery/01.jpg",
+    "size": 46943,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/docs/shortcodes/gallery/04.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/docs/shortcodes/gallery/04.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/docs/shortcodes/gallery/04.jpg",
+    "size": 90169,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/docs/shortcodes/gallery/06.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/docs/shortcodes/gallery/06.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/docs/shortcodes/gallery/06.jpg",
+    "size": 170602,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/docs/shortcodes/gallery/02.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/docs/shortcodes/gallery/02.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/docs/shortcodes/gallery/02.jpg",
+    "size": 48984,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/docs/shortcodes/gallery/03.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/docs/shortcodes/gallery/03.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/docs/shortcodes/gallery/03.jpg",
+    "size": 72447,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/docs/shortcodes/gallery/05.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/docs/shortcodes/gallery/05.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/docs/shortcodes/gallery/05.jpg",
+    "size": 77626,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/docs/homepage-layout/img/home-profile.png": {
+    "r2_key": "themes/blowfish/exampleSite/content/docs/homepage-layout/img/home-profile.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/docs/homepage-layout/img/home-profile.png",
+    "size": 515897,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/docs/homepage-layout/img/home-background.png": {
+    "r2_key": "themes/blowfish/exampleSite/content/docs/homepage-layout/img/home-background.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/docs/homepage-layout/img/home-background.png",
+    "size": 754498,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/docs/homepage-layout/img/home-hero.png": {
+    "r2_key": "themes/blowfish/exampleSite/content/docs/homepage-layout/img/home-hero.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/docs/homepage-layout/img/home-hero.png",
+    "size": 913580,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/docs/homepage-layout/img/home-list.png": {
+    "r2_key": "themes/blowfish/exampleSite/content/docs/homepage-layout/img/home-list.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/docs/homepage-layout/img/home-list.png",
+    "size": 511031,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/docs/homepage-layout/img/home-card.png": {
+    "r2_key": "themes/blowfish/exampleSite/content/docs/homepage-layout/img/home-card.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/docs/homepage-layout/img/home-card.png",
+    "size": 830642,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/assets/img/nuno_avatar.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/assets/img/nuno_avatar.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/assets/img/nuno_avatar.jpg",
+    "size": 113497,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/docs/homepage-layout/img/home-page.png": {
+    "r2_key": "themes/blowfish/exampleSite/content/docs/homepage-layout/img/home-page.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/docs/homepage-layout/img/home-page.png",
+    "size": 521106,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/3fa4eb553f5d984050d2ee4954960034/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/3fa4eb553f5d984050d2ee4954960034/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/3fa4eb553f5d984050d2ee4954960034/feature.jpg",
+    "size": 56770,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/users/c7116358255c4f5ccb306f7012306e22/feature.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/users/c7116358255c4f5ccb306f7012306e22/feature.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/users/c7116358255c4f5ccb306f7012306e22/feature.jpg",
+    "size": 37554,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/content/docs/shortcodes/gallery/07.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/content/docs/shortcodes/gallery/07.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/content/docs/shortcodes/gallery/07.jpg",
+    "size": 57042,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/assets/img/author2.png": {
+    "r2_key": "themes/blowfish/exampleSite/assets/img/author2.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/assets/img/author2.png",
+    "size": 1552535,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/assets/img/blowfish.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/assets/img/blowfish.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/assets/img/blowfish.jpg",
+    "size": 2076716,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/assets/img/paint.png": {
+    "r2_key": "themes/blowfish/exampleSite/assets/img/paint.png",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/assets/img/paint.png",
+    "size": 1864112,
+    "content_type": "image/png"
+  },
+  "/var/www/cuhkstudy/static/pdfs/UGFN AI GUIDE V2.1.pdf": {
+    "r2_key": "static/pdfs/UGFN AI GUIDE V2.1.pdf",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/static/pdfs/UGFN AI GUIDE V2.1.pdf",
+    "size": 20423830,
+    "content_type": "application/pdf"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/assets/img/bg.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/assets/img/bg.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/assets/img/bg.jpg",
+    "size": 2021825,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/assets/img/iceland.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/assets/img/iceland.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/assets/img/iceland.jpg",
+    "size": 5000159,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/themes/blowfish/exampleSite/assets/img/ocean.jpg": {
+    "r2_key": "themes/blowfish/exampleSite/assets/img/ocean.jpg",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/themes/blowfish/exampleSite/assets/img/ocean.jpg",
+    "size": 5097493,
+    "content_type": "image/jpeg"
+  },
+  "/var/www/cuhkstudy/resource/PDFs/UGFN中文版ver2.1.pdf": {
+    "r2_key": "resource/PDFs/UGFN中文版ver2.1.pdf",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/resource/PDFs/UGFN中文版ver2.1.pdf",
+    "size": 43283837,
+    "content_type": "application/pdf"
+  },
+  "/var/www/cuhkstudy/public/pdfs/UGFN中文版ver2.1.pdf": {
+    "r2_key": "public/pdfs/UGFN中文版ver2.1.pdf",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/public/pdfs/UGFN中文版ver2.1.pdf",
+    "size": 43283837,
+    "content_type": "application/pdf"
+  },
+  "/var/www/cuhkstudy/static/pdfs/UGFN中文版ver2.1.pdf": {
+    "r2_key": "static/pdfs/UGFN中文版ver2.1.pdf",
+    "public_url": "https://447991a9c9d7dad31c67040315d483b2.r2.cloudflarestorage.com/cuhkstudy/static/pdfs/UGFN中文版ver2.1.pdf",
+    "size": 43283837,
+    "content_type": "application/pdf"
+  }
+}
