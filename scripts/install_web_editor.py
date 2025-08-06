@@ -347,6 +347,68 @@ class MarkdownEditorHandler(http.server.SimpleHTTPRequestHandler):
             padding: 0;
             color: #24292e;
         }
+        
+        /* Hugo Front Matter 样式 */
+        .preview .hugo-front-matter {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: 2px solid #5A67D8;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 16px 0;
+            color: white;
+            font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
+            font-size: 13px;
+            line-height: 1.5;
+            position: relative;
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+        }
+        
+        .preview .hugo-front-matter::before {
+            content: "🚀 Hugo Front Matter";
+            position: absolute;
+            top: -12px;
+            left: 16px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            border: 2px solid #5A67D8;
+        }
+        
+        .preview .hugo-front-matter .fm-field {
+            display: flex;
+            margin: 4px 0;
+            align-items: flex-start;
+        }
+        
+        .preview .hugo-front-matter .fm-key {
+            color: #FED7D7;
+            font-weight: 600;
+            min-width: 100px;
+            margin-right: 8px;
+        }
+        
+        .preview .hugo-front-matter .fm-value {
+            color: #E6FFFA;
+            flex: 1;
+        }
+        
+        .preview .hugo-front-matter .fm-array {
+            color: #D6F5D6;
+        }
+        
+        .preview .hugo-front-matter .fm-string {
+            color: #FFF5B7;
+        }
+        
+        .preview .hugo-front-matter .fm-boolean {
+            color: #FFB8E1;
+        }
+        
+        .preview .hugo-front-matter .fm-date {
+            color: #B8E6FF;
+        }
         .preview blockquote {
             border-left: 4px solid #dfe2e5;
             padding-left: 16px;
@@ -494,15 +556,142 @@ Ctrl+S: 保存文件" disabled></textarea>
         function updatePreview() {
             const markdown = editor.value;
             try {
+                // 处理 Hugo Front Matter
+                const processedMarkdown = processHugoFrontMatter(markdown);
+                
                 // 配置 marked 以更好地支持中文
                 marked.setOptions({
                     breaks: true,  // 支持 GitHub 风格的换行
                     gfm: true,     // 启用 GitHub 风格的 Markdown
                 });
-                preview.innerHTML = marked.parse(markdown);
+                preview.innerHTML = marked.parse(processedMarkdown);
             } catch (error) {
                 preview.innerHTML = '<p style="color: red;">预览解析错误: ' + error.message + '</p>';
             }
+        }
+        
+        // 处理 Hugo Front Matter
+        function processHugoFrontMatter(content) {
+            // 检测 YAML Front Matter (---)
+            const yamlMatch = content.match(/^---\\s*\\n([\\s\\S]*?)\\n---\\s*\\n([\\s\\S]*)$/);
+            if (yamlMatch) {
+                const frontMatter = yamlMatch[1];
+                const markdownContent = yamlMatch[2];
+                return renderFrontMatter(frontMatter, 'yaml') + '\\n\\n' + markdownContent;
+            }
+            
+            // 检测 TOML Front Matter (+++)
+            const tomlMatch = content.match(/^\\+\\+\\+\\s*\\n([\\s\\S]*?)\\n\\+\\+\\+\\s*\\n([\\s\\S]*)$/);
+            if (tomlMatch) {
+                const frontMatter = tomlMatch[1];
+                const markdownContent = tomlMatch[2];
+                return renderFrontMatter(frontMatter, 'toml') + '\\n\\n' + markdownContent;
+            }
+            
+            // 检测 JSON Front Matter
+            const jsonMatch = content.match(/^{([\\s\\S]*?)}\\s*\\n([\\s\\S]*)$/);
+            if (jsonMatch) {
+                const frontMatter = '{' + jsonMatch[1] + '}';
+                const markdownContent = jsonMatch[2];
+                return renderFrontMatter(frontMatter, 'json') + '\\n\\n' + markdownContent;
+            }
+            
+            return content;
+        }
+        
+        // 渲染 Front Matter
+        function renderFrontMatter(frontMatter, type) {
+            let html = '<div class="hugo-front-matter">';
+            
+            try {
+                if (type === 'yaml') {
+                    html += parseYamlFrontMatter(frontMatter);
+                } else if (type === 'toml') {
+                    html += '<pre>' + escapeHtml(frontMatter) + '</pre>';
+                } else if (type === 'json') {
+                    const parsed = JSON.parse(frontMatter);
+                    html += formatJsonFrontMatter(parsed);
+                }
+            } catch (error) {
+                html += '<pre>' + escapeHtml(frontMatter) + '</pre>';
+            }
+            
+            html += '</div>';
+            return html;
+        }
+        
+        // 解析 YAML Front Matter
+        function parseYamlFrontMatter(yaml) {
+            const lines = yaml.split('\\n');
+            let html = '';
+            
+            for (let line of lines) {
+                line = line.trim();
+                if (!line || line.startsWith('#')) continue;
+                
+                if (line.includes(':')) {
+                    const [key, ...valueParts] = line.split(':');
+                    const value = valueParts.join(':').trim();
+                    
+                    html += '<div class="fm-field">';
+                    html += '<span class="fm-key">' + escapeHtml(key.trim()) + ':</span>';
+                    html += '<span class="fm-value ' + getValueClass(value) + '">' + escapeHtml(value) + '</span>';
+                    html += '</div>';
+                } else if (line.startsWith('-')) {
+                    html += '<div class="fm-field">';
+                    html += '<span class="fm-key"></span>';
+                    html += '<span class="fm-value fm-array">' + escapeHtml(line) + '</span>';
+                    html += '</div>';
+                } else {
+                    html += '<div class="fm-field">';
+                    html += '<span class="fm-value">' + escapeHtml(line) + '</span>';
+                    html += '</div>';
+                }
+            }
+            
+            return html;
+        }
+        
+        // 格式化 JSON Front Matter
+        function formatJsonFrontMatter(obj, indent = 0) {
+            let html = '';
+            const spaces = '&nbsp;'.repeat(indent * 2);
+            
+            for (const [key, value] of Object.entries(obj)) {
+                html += '<div class="fm-field">';
+                html += '<span class="fm-key">' + spaces + escapeHtml(key) + ':</span>';
+                
+                if (Array.isArray(value)) {
+                    html += '<span class="fm-value fm-array">[' + value.map(v => '"' + escapeHtml(String(v)) + '"').join(', ') + ']</span>';
+                } else if (typeof value === 'object') {
+                    html += '<span class="fm-value">{...}</span>';
+                } else {
+                    html += '<span class="fm-value ' + getValueClass(String(value)) + '">' + escapeHtml(String(value)) + '</span>';
+                }
+                html += '</div>';
+            }
+            
+            return html;
+        }
+        
+        // 获取值的CSS类
+        function getValueClass(value) {
+            if (!value) return '';
+            
+            const trimmed = value.trim().replace(/["']/g, '');
+            
+            if (trimmed === 'true' || trimmed === 'false') return 'fm-boolean';
+            if (trimmed.match(/^\\d{4}-\\d{2}-\\d{2}/)) return 'fm-date';
+            if (value.includes('"') || value.includes("'")) return 'fm-string';
+            
+            return '';
+        }
+        
+        // HTML转义
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
         }
         
         async function loadFiles() {
