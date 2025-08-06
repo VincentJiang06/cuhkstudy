@@ -40,11 +40,23 @@ class MarkdownEditorHandler(http.server.SimpleHTTPRequestHandler):
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>📝 Markdown 编辑器 - CUHK Study</title>
     <style>
-        * { box-sizing: border-box; }
+        * { 
+            box-sizing: border-box; 
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
         body { 
             margin: 0; 
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            font-family: 
+                -apple-system, BlinkMacSystemFont, 
+                'Segoe UI', 'Roboto', 'Helvetica Neue', 
+                'PingFang SC', 'Hiragino Sans GB', 
+                'Microsoft YaHei UI', 'Microsoft YaHei', 
+                'Source Han Sans SC', 'Noto Sans CJK SC', 
+                'WenQuanYi Micro Hei', sans-serif;
             background: #f8f9fa;
+            font-size: 14px;
+            line-height: 1.6;
         }
         .container { display: flex; height: 100vh; }
         .sidebar { 
@@ -73,20 +85,36 @@ class MarkdownEditorHandler(http.server.SimpleHTTPRequestHandler):
             padding: 20px; 
             overflow-y: auto; 
             border-left: 1px solid #e9ecef;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            font-family: 
+                -apple-system, BlinkMacSystemFont, 
+                'Segoe UI', 'Roboto', 'Helvetica Neue',
+                'PingFang SC', 'Hiragino Sans GB', 
+                'Microsoft YaHei UI', 'Microsoft YaHei', 
+                'Source Han Sans SC', 'Noto Sans CJK SC', 
+                'WenQuanYi Micro Hei', sans-serif;
+            font-size: 14px;
+            line-height: 1.8;
+            color: #2c3e50;
         }
         textarea { 
             width: 100%; 
             height: 100%; 
             border: none; 
             padding: 20px; 
-            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
+            font-family: 
+                'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono',
+                'Source Code Pro', 'Menlo', 'Consolas', 
+                'DejaVu Sans Mono', 'Ubuntu Mono', 'Courier New',
+                'Microsoft YaHei UI', 'Microsoft YaHei', monospace;
             font-size: 14px; 
-            line-height: 1.6;
+            line-height: 1.8;
             resize: none; 
             outline: none; 
             background: #fff;
             color: #2c3e50;
+            font-feature-settings: "liga" 0;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
         .file-item { 
             padding: 12px 16px; 
@@ -140,26 +168,71 @@ class MarkdownEditorHandler(http.server.SimpleHTTPRequestHandler):
             display: flex;
             gap: 8px;
         }
-        /* 中文字体优化 */
+        /* 中文字体和排版优化 */
         .preview h1, .preview h2, .preview h3, .preview h4, .preview h5, .preview h6 {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            font-family: 
+                -apple-system, BlinkMacSystemFont, 
+                'Segoe UI', 'Roboto', 'Helvetica Neue',
+                'PingFang SC', 'Hiragino Sans GB', 
+                'Microsoft YaHei UI', 'Microsoft YaHei', 
+                'Source Han Sans SC', 'Noto Sans CJK SC', sans-serif;
             color: #2c3e50;
+            font-weight: 600;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+            line-height: 1.4;
         }
         .preview p, .preview li {
             line-height: 1.8;
             color: #34495e;
+            margin: 0.8em 0;
+            word-break: break-word;
+            word-wrap: break-word;
         }
         .preview code {
-            background: #f8f9fa;
+            background: #f1f3f4;
             padding: 2px 6px;
             border-radius: 4px;
-            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', monospace;
+            font-family: 
+                'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono',
+                'Source Code Pro', 'Menlo', 'Consolas', 
+                'Microsoft YaHei UI', monospace;
+            font-size: 0.9em;
+            color: #d73a49;
         }
         .preview pre {
-            background: #f8f9fa;
+            background: #f6f8fa;
             padding: 16px;
-            border-radius: 8px;
+            border-radius: 6px;
             overflow-x: auto;
+            border: 1px solid #e1e4e8;
+            line-height: 1.6;
+        }
+        .preview pre code {
+            background: none;
+            padding: 0;
+            color: #24292e;
+        }
+        .preview blockquote {
+            border-left: 4px solid #dfe2e5;
+            padding-left: 16px;
+            margin: 16px 0;
+            color: #6a737d;
+            font-style: italic;
+        }
+        .preview table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 16px 0;
+        }
+        .preview th, .preview td {
+            border: 1px solid #dfe2e5;
+            padding: 8px 12px;
+            text-align: left;
+        }
+        .preview th {
+            background: #f6f8fa;
+            font-weight: 600;
         }
     </style>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
@@ -383,5 +456,5 @@ def start_editor(port=8080):
 
 if __name__ == "__main__":
     import sys
-    port = int(sys.argv[1]) if len(sys.argv) > 1 else 8080
+    port = int(sys.argv[1]) if len(sys.argv) > 1 else 8888
     start_editor(port)
