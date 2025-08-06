@@ -124,151 +124,17 @@ class MarkdownEditorHandler(http.server.SimpleHTTPRequestHandler):
             transition: all 0.2s ease;
             border: 1px solid transparent;
             font-size: 14px;
-            position: relative;
-            overflow: hidden;
         }
         .file-item:hover { 
-            transform: translateY(-2px);
-            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+            background: #f8f9fa; 
+            border-color: #dee2e6;
+            transform: translateY(-1px);
         }
         .file-item.active { 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
             color: white; 
-            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-            font-weight: 500;
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
         }
-        
-        /* 配色方案 - README文件 */
-        .file-item.readme {
-            background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%);
-            border-left: 4px solid #FF4757;
-        }
-        .file-item.readme:hover {
-            background: linear-gradient(135deg, #FF5252 0%, #FF7043 100%);
-        }
-        .file-item.readme.active {
-            background: linear-gradient(135deg, #E53E3E 0%, #DD6B20 100%);
-        }
-        
-        /* 配色方案 - 基础页面 */
-        .file-item.basic-page {
-            background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
-            border-left: 4px solid #26D0CE;
-        }
-        .file-item.basic-page:hover {
-            background: linear-gradient(135deg, #38B2AC 0%, #319795 100%);
-        }
-        .file-item.basic-page.active {
-            background: linear-gradient(135deg, #2C7A7B 0%, #285E61 100%);
-        }
-        
-        /* 配色方案 - 主要内容 */
-        .file-item.main-content {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-left: 4px solid #5A67D8;
-        }
-        .file-item.main-content:hover {
-            background: linear-gradient(135deg, #5A67D8 0%, #6B46C1 100%);
-        }
-        .file-item.main-content.active {
-            background: linear-gradient(135deg, #4C51BF 0%, #553C9A 100%);
-        }
-        
-        /* 配色方案 - UGFN课程 */
-        .file-item.ugfn {
-            background: linear-gradient(135deg, #FEE68A 0%, #FBBF24 100%);
-            border-left: 4px solid #F59E0B;
-            color: #744210;
-        }
-        .file-item.ugfn:hover {
-            background: linear-gradient(135deg, #FDE047 0%, #FACC15 100%);
-        }
-        .file-item.ugfn.active {
-            background: linear-gradient(135deg, #EAB308 0%, #CA8A04 100%);
-            color: white;
-        }
-        
-        /* 配色方案 - UGFH课程 */
-        .file-item.ugfh {
-            background: linear-gradient(135deg, #A78BFA 0%, #8B5CF6 100%);
-            border-left: 4px solid #7C3AED;
-        }
-        .file-item.ugfh:hover {
-            background: linear-gradient(135deg, #9333EA 0%, #7C2D12 100%);
-        }
-        .file-item.ugfh.active {
-            background: linear-gradient(135deg, #7C2D12 0%, #581C87 100%);
-        }
-        
-        /* 配色方案 - 杂项内容 */
-        .file-item.misc {
-            background: linear-gradient(135deg, #F687B3 0%, #ED64A6 100%);
-            border-left: 4px solid #D53F8C;
-        }
-        .file-item.misc:hover {
-            background: linear-gradient(135deg, #ED64A6 0%, #D53F8C 100%);
-        }
-        .file-item.misc.active {
-            background: linear-gradient(135deg, #C53030 0%, #9C4221 100%);
-        }
-        
-        /* 配色方案 - 文档资料 */
-        .file-item.docs {
-            background: linear-gradient(135deg, #90CDF4 0%, #63B3ED 100%);
-            border-left: 4px solid #3182CE;
-            color: #1A365D;
-        }
-        .file-item.docs:hover {
-            background: linear-gradient(135deg, #63B3ED 0%, #4299E1 100%);
-        }
-        .file-item.docs.active {
-            background: linear-gradient(135deg, #3182CE 0%, #2C5282 100%);
-            color: white;
-        }
-        
-        /* 配色方案 - 上传文件 */
-        .file-item.uploads {
-            background: linear-gradient(135deg, #68D391 0%, #48BB78 100%);
-            border-left: 4px solid #38A169;
-            color: #1A202C;
-        }
-        .file-item.uploads:hover {
-            background: linear-gradient(135deg, #48BB78 0%, #38A169 100%);
-        }
-        .file-item.uploads.active {
-            background: linear-gradient(135deg, #2F855A 0%, #276749 100%);
-            color: white;
-        }
-        
-        /* 配色方案 - 备份文件 */
-        .file-item.backup {
-            background: linear-gradient(135deg, #CBD5E0 0%, #A0AEC0 100%);
-            border-left: 4px solid #718096;
-            color: #2D3748;
-        }
-        .file-item.backup:hover {
-            background: linear-gradient(135deg, #A0AEC0 0%, #718096 100%);
-        }
-        .file-item.backup.active {
-            background: linear-gradient(135deg, #718096 0%, #4A5568 100%);
-            color: white;
-        }
-        
-        /* 文件类型图标 */
-        .file-item::before {
-            content: "";
-            font-size: 16px;
-            margin-right: 8px;
-            font-weight: bold;
-        }
-        .file-item.readme::before { content: "📖 "; }
-        .file-item.basic-page::before { content: "🏠 "; }
-        .file-item.main-content::before { content: "📝 "; }
-        .file-item.ugfn::before { content: "🔬 "; }
-        .file-item.ugfh::before { content: "🎨 "; }
-        .file-item.misc::before { content: "🗂️ "; }
-        .file-item.docs::before { content: "📋 "; }
-        .file-item.uploads::before { content: "📁 "; }
-        .file-item.backup::before { content: "🗄️ "; }
         button { 
             background: rgba(255,255,255,0.2); 
             color: white; 
@@ -293,6 +159,67 @@ class MarkdownEditorHandler(http.server.SimpleHTTPRequestHandler):
             margin-top: 0;
             font-size: 16px;
             font-weight: 600;
+        }
+        .category {
+            margin-bottom: 16px;
+        }
+        .category-header {
+            display: flex;
+            align-items: center;
+            padding: 8px 12px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            color: #495057;
+            border: 1px solid #dee2e6;
+            transition: all 0.2s ease;
+            user-select: none;
+        }
+        .category-header:hover {
+            background: linear-gradient(135deg, #e9ecef 0%, #dee2e6 100%);
+            transform: translateY(-1px);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .category-header.collapsed {
+            border-radius: 6px 6px 0 0;
+        }
+        .category-icon {
+            margin-right: 8px;
+            font-size: 14px;
+        }
+        .category-title {
+            flex: 1;
+            font-size: 13px;
+        }
+        .category-count {
+            background: rgba(102, 126, 234, 0.1);
+            color: #667eea;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 500;
+            margin-left: 8px;
+        }
+        .category-arrow {
+            margin-left: 8px;
+            transition: transform 0.2s ease;
+            font-size: 12px;
+            color: #6c757d;
+        }
+        .category-header.collapsed .category-arrow {
+            transform: rotate(180deg);
+        }
+        .category-files {
+            border: 1px solid #dee2e6;
+            border-top: none;
+            border-radius: 0 0 6px 6px;
+            background: #fff;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        .category-files.collapsed {
+            display: none;
         }
         .current-file {
             font-weight: 500;
@@ -374,7 +301,7 @@ class MarkdownEditorHandler(http.server.SimpleHTTPRequestHandler):
 <body>
     <div class="container">
         <div class="sidebar">
-            <h3>📁 Markdown 文件</h3>
+            <h3>📂 文件浏览器</h3>
             <div id="fileList"></div>
         </div>
         <div class="editor">
@@ -416,67 +343,6 @@ Ctrl+S: 保存文件" disabled></textarea>
         
         editor.addEventListener('input', updatePreview);
         
-        // 文件分类函数
-        function getFileCategory(filePath) {
-            const file = filePath.toLowerCase();
-            
-            // README文件
-            if (file.includes('readme')) {
-                return 'readme';
-            }
-            
-            // 基础页面
-            if (file.includes('content/authors/') || 
-                file.includes('content/info.md') || 
-                file.includes('content/_index.md') || 
-                file.includes('info.md') || 
-                file.includes('archetypes/')) {
-                return 'basic-page';
-            }
-            
-            // 主要内容
-            if (file.includes('content/main/')) {
-                return 'main-content';
-            }
-            
-            // UGFN课程
-            if (file.includes('content/ugfn/') || file.includes('ugfn')) {
-                return 'ugfn';
-            }
-            
-            // UGFH课程
-            if (file.includes('content/ugfh/') || file.includes('ugfh')) {
-                return 'ugfh';
-            }
-            
-            // 杂项内容
-            if (file.includes('content/mess/') || file.includes('mess')) {
-                return 'misc';
-            }
-            
-            // 文档资料
-            if (file.includes('docs/') || 
-                file.includes('deployment') || 
-                file.includes('test-')) {
-                return 'docs';
-            }
-            
-            // 上传文件
-            if (file.includes('uploads/')) {
-                return 'uploads';
-            }
-            
-            // 备份文件
-            if (file.includes('.backup/') || 
-                file.includes('backup') || 
-                file.includes('resource')) {
-                return 'backup';
-            }
-            
-            // 默认为文档类型
-            return 'docs';
-        }
-        
         // 添加键盘快捷键支持
         document.addEventListener('keydown', function(e) {
             // Ctrl+S 保存文件
@@ -508,17 +374,80 @@ Ctrl+S: 保存文件" disabled></textarea>
         async function loadFiles() {
             try {
                 const response = await fetch('/api/files');
-                const files = await response.json();
+                const categories = await response.json();
                 const fileList = document.getElementById('fileList');
                 fileList.innerHTML = '';
                 
-                files.forEach(file => {
-                    const div = document.createElement('div');
-                    div.className = 'file-item ' + getFileCategory(file);
-                    div.textContent = file;
-                    div.onclick = () => loadFile(file);
-                    fileList.appendChild(div);
+                // 创建分类文件树
+                Object.entries(categories).forEach(([categoryName, categoryData]) => {
+                    const categoryDiv = document.createElement('div');
+                    categoryDiv.className = 'category';
+                    
+                    // 分类标题
+                    const headerDiv = document.createElement('div');
+                    headerDiv.className = 'category-header';
+                    
+                    const iconSpan = document.createElement('span');
+                    iconSpan.className = 'category-icon';
+                    iconSpan.textContent = categoryData.icon;
+                    
+                    const titleSpan = document.createElement('span');
+                    titleSpan.className = 'category-title';
+                    titleSpan.textContent = categoryName.replace(/^[^\\s]+\\s/, ''); // 移除emoji前缀
+                    
+                    const countSpan = document.createElement('span');
+                    countSpan.className = 'category-count';
+                    countSpan.textContent = categoryData.files.length;
+                    
+                    const arrowSpan = document.createElement('span');
+                    arrowSpan.className = 'category-arrow';
+                    arrowSpan.textContent = '▼';
+                    
+                    headerDiv.appendChild(iconSpan);
+                    headerDiv.appendChild(titleSpan);
+                    headerDiv.appendChild(countSpan);
+                    headerDiv.appendChild(arrowSpan);
+                    
+                    // 文件列表
+                    const filesDiv = document.createElement('div');
+                    filesDiv.className = 'category-files';
+                    
+                    categoryData.files.forEach(file => {
+                        const fileDiv = document.createElement('div');
+                        fileDiv.className = 'file-item';
+                        
+                        // 显示文件名（移除路径前缀）
+                        const fileName = file.split('/').pop();
+                        const filePath = file.replace(fileName, '');
+                        
+                        if (filePath) {
+                            fileDiv.innerHTML = `
+                                <div style="font-size: 12px; color: #6c757d; margin-bottom: 2px;">
+                                    ${filePath}
+                                </div>
+                                <div>${fileName}</div>
+                            `;
+                        } else {
+                            fileDiv.textContent = fileName;
+                        }
+                        
+                        fileDiv.onclick = () => loadFile(file);
+                        fileDiv.title = file; // 完整路径作为提示
+                        filesDiv.appendChild(fileDiv);
+                    });
+                    
+                    // 点击分类标题折叠/展开
+                    headerDiv.onclick = () => {
+                        const isCollapsed = filesDiv.classList.contains('collapsed');
+                        filesDiv.classList.toggle('collapsed');
+                        headerDiv.classList.toggle('collapsed', !isCollapsed);
+                    };
+                    
+                    categoryDiv.appendChild(headerDiv);
+                    categoryDiv.appendChild(filesDiv);
+                    fileList.appendChild(categoryDiv);
                 });
+                
             } catch (error) {
                 console.error('加载文件列表时出错:', error);
                 const fileList = document.getElementById('fileList');
@@ -539,7 +468,11 @@ Ctrl+S: 保存文件" disabled></textarea>
                 
                 // Update active file
                 document.querySelectorAll('.file-item').forEach(item => {
-                    item.classList.toggle('active', item.textContent === filename);
+                    item.classList.remove('active');
+                    // 检查文件项是否对应当前文件
+                    if (item.title === filename || item.textContent.trim() === filename) {
+                        item.classList.add('active');
+                    }
                 });
                 
                 updatePreview();
@@ -586,19 +519,112 @@ Ctrl+S: 保存文件" disabled></textarea>
         self.wfile.write(html.encode('utf-8'))
     
     def list_files(self):
-        """列出markdown文件"""
-        md_files = []
+        """列出markdown文件并按分类组织"""
         base_dir = Path('/root/cuhkstudy')
         
+        # 定义文件分类
+        categories = {
+            "📖 README 编辑": {
+                "files": [],
+                "patterns": ["README*.md", "*readme*.md"],
+                "icon": "📖"
+            },
+            "🏠 基础页面编辑": {
+                "files": [],
+                "patterns": [
+                    "content/authors/**/*.md",
+                    "content/info.md",
+                    "content/_index.md",
+                    "info.md",
+                    "archetypes/**/*.md"
+                ],
+                "icon": "🏠"
+            },
+            "📝 主要内容编辑": {
+                "files": [],
+                "patterns": ["content/main/**/*.md"],
+                "icon": "📝"
+            },
+            "🔬 UGFN 课程内容": {
+                "files": [],
+                "patterns": ["content/ugfn/**/*.md"],
+                "icon": "🔬"
+            },
+            "🎨 UGFH 课程内容": {
+                "files": [],
+                "patterns": ["content/ugfh/**/*.md"],
+                "icon": "🎨"
+            },
+            "🗂️ 杂项内容": {
+                "files": [],
+                "patterns": ["content/mess/**/*.md"],
+                "icon": "🗂️"
+            },
+            "📋 文档资料": {
+                "files": [],
+                "patterns": [
+                    "docs/**/*.md",
+                    "DEPLOYMENT*.md",
+                    "test-*.md"
+                ],
+                "icon": "📋"
+            },
+            "📁 上传文件": {
+                "files": [],
+                "patterns": ["Uploads/**/*.md"],
+                "icon": "📁"
+            },
+            "🗄️ 备份文件": {
+                "files": [],
+                "patterns": [
+                    "resource.backup/**/*.md",
+                    "resources.backup/**/*.md",
+                    "*.backup/**/*.md"
+                ],
+                "icon": "🗄️"
+            }
+        }
+        
+        # 收集所有文件
+        all_files = []
         for pattern in ['**/*.md', '**/*.markdown']:
             for file_path in base_dir.glob(pattern):
                 rel_path = file_path.relative_to(base_dir)
-                md_files.append(str(rel_path))
+                all_files.append(str(rel_path))
+        
+        # 将文件分类
+        categorized_files = set()
+        
+        for category_name, category_info in categories.items():
+            for pattern in category_info["patterns"]:
+                for file_path in base_dir.glob(pattern):
+                    if file_path.is_file():
+                        rel_path = str(file_path.relative_to(base_dir))
+                        if rel_path in all_files:
+                            category_info["files"].append(rel_path)
+                            categorized_files.add(rel_path)
+        
+        # 未分类的文件
+        uncategorized = [f for f in all_files if f not in categorized_files]
+        if uncategorized:
+            categories["❓ 其他文件"] = {
+                "files": sorted(uncategorized),
+                "icon": "❓"
+            }
+        
+        # 清理空分类并排序文件
+        result = {}
+        for category_name, category_info in categories.items():
+            if category_info["files"]:
+                result[category_name] = {
+                    "icon": category_info["icon"],
+                    "files": sorted(category_info["files"])
+                }
         
         self.send_response(200)
         self.send_header('Content-type', 'application/json; charset=utf-8')
         self.end_headers()
-        self.wfile.write(json.dumps(sorted(md_files), ensure_ascii=False).encode('utf-8'))
+        self.wfile.write(json.dumps(result, ensure_ascii=False).encode('utf-8'))
     
     def read_file(self):
         """读取文件内容"""
