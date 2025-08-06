@@ -348,32 +348,33 @@ class MarkdownEditorHandler(http.server.SimpleHTTPRequestHandler):
             color: #24292e;
         }
         
-        /* Hugo Front Matter 样式 */
+        /* Hugo Front Matter 样式 - 温和版本 */
         .preview .hugo-front-matter {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border: 2px solid #5A67D8;
-            border-radius: 8px;
-            padding: 16px;
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-left: 4px solid #667eea;
+            border-radius: 4px;
+            padding: 12px 16px;
             margin: 16px 0;
-            color: white;
+            color: #495057;
             font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
-            font-size: 13px;
-            line-height: 1.5;
+            font-size: 12px;
+            line-height: 1.4;
             position: relative;
-            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
         }
         
         .preview .hugo-front-matter::before {
-            content: "🚀 Hugo Front Matter";
+            content: "⚙️ Hugo配置";
             position: absolute;
-            top: -12px;
-            left: 16px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            border: 2px solid #5A67D8;
+            top: -8px;
+            left: 12px;
+            background: #f8f9fa;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 500;
+            color: #667eea;
+            border: 1px solid #e9ecef;
         }
         
         .preview .hugo-front-matter .fm-field {
@@ -383,31 +384,31 @@ class MarkdownEditorHandler(http.server.SimpleHTTPRequestHandler):
         }
         
         .preview .hugo-front-matter .fm-key {
-            color: #FED7D7;
+            color: #495057;
             font-weight: 600;
-            min-width: 100px;
+            min-width: 80px;
             margin-right: 8px;
         }
         
         .preview .hugo-front-matter .fm-value {
-            color: #E6FFFA;
+            color: #6c757d;
             flex: 1;
         }
         
         .preview .hugo-front-matter .fm-array {
-            color: #D6F5D6;
+            color: #28a745;
         }
         
         .preview .hugo-front-matter .fm-string {
-            color: #FFF5B7;
+            color: #6f42c1;
         }
         
         .preview .hugo-front-matter .fm-boolean {
-            color: #FFB8E1;
+            color: #e83e8c;
         }
         
         .preview .hugo-front-matter .fm-date {
-            color: #B8E6FF;
+            color: #17a2b8;
         }
         .preview blockquote {
             border-left: 4px solid #dfe2e5;
