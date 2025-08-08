@@ -56,7 +56,7 @@ fileCDN = "https://pub-12287e23d91e4005b39b37b16efc1c42.r2.dev"
 
 [homepage]
   layout = "background" # valid options: page, profile, hero, card, background, custom
-  homepageImage = "img/background.svg" # used in: hero, and card
+  homepageImage = "img/background.webp" # used in: hero, and card
   showRecent = true
   showRecentItems = 6
   showMoreLink = false
