@@ -1,203 +1,159 @@
-# CUHKstudy - CUHK 课程资料分享网站
+# CUHKstudy 网站
 
-## 🎯 项目概述
+一个基于 Hugo 的静态网站，用于分享香港中文大学（深圳）课程资料。
 
-CUHKstudy 是一个基于 Hugo 静态网站生成器的学术资料分享平台，专为中文大学（CUHK）学生设计。网站采用现代化的架构，提供高性能的内容访问体验。
+- 线上地址：`https://cuhkstudy.com`
+- 主题：`blowfish`
+- 开发方式：使用 Cursor 辅助进行开发与运维
 
-### ✨ 核心特性
+## 架构概览
+- **Hugo** 构建静态页面，源码位于 `content/`、`layouts/`、`assets/`、`static/`
+- **Nginx** 作为 Web 服务器，直接服务 `public/` 构建产物
+- **Cloudflare R2** 用作 PDF 的公共 CDN（浏览器地址栏直接显示 R2 公网地址）
+- **Certbot/Let’s Encrypt** 自动签发与续期证书，实现全站 HTTPS + HSTS
+- **部署脚本**：`deploy.sh` 统一执行图片优化与生产构建
+- **图片优化**：`optimize-images.sh` 将大图压缩为 WebP 并剥离元数据
+- **ICP备案号**：通过生产环境参数注入并在页脚稳定展示
 
-- 🌍 **多语言支持**：简体中文为主，支持多语言扩展
-- 📚 **学术资料管理**：PDF 文档在线预览和下载
-- 🏗️ **模块化架构**：按课程类型组织内容（UGFN、UGFH、Main等）
-- 📱 **响应式设计**：完美适配桌面和移动设备
-- ⚡ **高性能优化**：静态生成，CDN友好
-- 🎨 **现代UI**：基于 Blowfish 主题，支持暗色模式
+目录速览：
+- `config/_default/params.toml`：公共站点参数（含 `fileCDN`）
+- `config/production/params.toml`：生产环境参数（注入 `icp`，不纳入 Git）
+- `layouts/partials/footer.html`：全局页脚，固定展示备案号
+- `layouts/_default/_markup/render-link.html`：Markdown 链接重写（将 `/pdfs/` 改写到 R2）
+- `layouts/partials/article-link/_external-link.html`：卡片/外链的 PDF 链接重写
+- `themes/blowfish/layouts/_default/single.html`：禁用文章底部“上一页/下一页”导航
+- `server-config/nginx/`：Nginx 样例与说明（生产在 `/etc/nginx/`）
 
-## 🏗️ 网站架构
+## 快速开始（开发）
+1. 安装依赖
+   - Hugo Extended ≥ 0.148
+   - Node（如需 Tailwind/PostCSS 处理）
+2. 启动本地预览
+   ```bash
+   hugo server -D
+   # 浏览器打开 http://localhost:1313
+   ```
+3. 重要：开发时无需 ICP 值；生产注入由 `--environment production` 控制。
 
-### 技术栈
-- **静态网站生成器**：[Hugo](https://gohugo.io/) v0.148.2
-- **主题框架**：[Blowfish](https://blowfish.page/) v2.89.0
-- **Web服务器**：Nginx 1.18.0
-- **部署环境**：Ubuntu 22.04 LTS
-- **版本控制**：Git + GitHub
-
-### 目录结构
-
-```
-/var/www/cuhkstudy/
-├── config/_default/           # Hugo 配置文件
-│   ├── hugo.toml             # 主配置文件
-│   ├── params.toml           # 主题参数配置
-│   ├── menus.zh-cn.toml      # 中文菜单配置
-│   └── languages.zh-cn.toml  # 语言配置
-├── content/                  # 内容源文件
-│   ├── main/                 # 主要内容版块
-│   ├── ugfn/                 # 大学国文课程
-│   ├── ugfh/                 # 大学中史课程
-│   ├── mess/                 # 杂聊内容
-│   └── info/                 # 网站信息
-├── static/                   # 静态资源
-│   ├── pdfs/                 # PDF 文档
-│   ├── img/                  # 图片资源
-│   └── fonts/                # 字体文件
-├── layouts/                  # 自定义布局模板
-│   ├── partials/home/        # 首页组件
-│   └── partials/recent-articles/ # 文章列表组件
-├── assets/css/               # 自定义样式
-├── themes/blowfish/          # 主题文件
-├── public/                   # 生成的静态网站
-├── deploy.sh                 # 自动化部署脚本
-└── new-post.sh              # 新建文章脚本
-```
-
-## 📚 内容架构
-
-### 学术内容分类
-
-1. **UGFN (大学国文)**
-   - 经典文本阅读
-   - 课程指导材料
-   - AI 辅助学习指南
-
-2. **UGFH (大学中史)**  
-   - 历史文献资料
-   - 研究方法指导
-
-3. **Main (主要内容)**
-   - 跨学科学习资源
-   - 通识教育材料
-
-4. **杂聊 (Mess)**
-   - 学习心得分享
-   - 校园生活话题
-
-### 内容格式支持
-
-- **Markdown 文章**：支持丰富的 Markdown 语法
-- **PDF 文档**：在线预览，支持下载
-- **图片媒体**：自动优化，支持多格式
-- **外部链接**：智能标记，新窗口打开
-
-## 🚀 开发与部署
-
-### 本地开发环境
-
+## 构建与部署（生产）
+推荐使用 `deploy.sh`，它会先优化图片再进行生产构建：
 ```bash
-# 克隆项目
-git clone git@github.com:VincentJiang06/cuhkstudy.git
-cd cuhkstudy
-
-# 初始化子模块（主题）
-git submodule update --init --recursive
-
-# 启动开发服务器
-hugo server -D
-
-# 访问 http://localhost:1313
+bash deploy.sh
 ```
-
-### 生产环境部署
-
+等价于：
 ```bash
-# 1. 构建网站
-hugo --minify
+bash optimize-images.sh
+hugo --environment production --minify
+```
+构建产物在 `public/`，Nginx `root` 指向该目录即可。
 
-# 2. 使用自动化部署脚本
-./deploy.sh
+### 生产参数注入（ICP）
+- 文件：`config/production/params.toml`
+- 内容：
+  ```toml
+  icp = "浙ICP备2025176709号-3"
+  ```
+- 说明：该文件被 `.gitignore` 排除，避免备案号进仓库。构建时需加 `--environment production`。
 
-# 3. 手动部署（如果需要）
-cp -r public/* /var/www/cuhkstudy/public/
-chown -R www-data:www-data /var/www/cuhkstudy/public/
-systemctl reload nginx
+### PDF 加速与链接改写（R2）
+- `config/_default/params.toml` 中配置统一前缀：
+  ```toml
+  [params]
+  fileCDN = "https://pub-12287e23d91e4005b39b37b16efc1c42.r2.dev"
+  ```
+- Hugo 渲染阶段自动改写：
+  - Markdown：`layouts/_default/_markup/render-link.html`
+  - 卡片/外链：`layouts/partials/article-link/_external-link.html`
+- Nginx 层：对以 `.pdf` 结尾的请求做 302 重定向到 R2 公网（地址栏直接显示 R2 域名）。
+
+### Nginx 配置要点（示例）
+```nginx
+server {
+    listen 80;
+    server_name cuhkstudy.com www.cuhkstudy.com;
+    return 301 https://$host$request_uri;
+}
+
+server {
+    listen 443 ssl;
+    server_name cuhkstudy.com www.cuhkstudy.com;
+
+    root /var/www/cuhkstudy/public;
+    index index.html index.htm;
+
+    # R2 公网地址
+    set $r2_endpoint "https://pub-12287e23d91e4005b39b37b16efc1c42.r2.dev";
+
+    # PDF 改为 302 跳转至 R2-dev（地址栏显示 r2.dev）
+    location ~* \.pdf$ {
+        add_header Cache-Control "public, max-age=300";
+        add_header Access-Control-Allow-Origin "*";
+        return 302 $r2_endpoint$uri;
+    }
+
+    # 图片/字体 本地直出 + 强缓存
+    location ~* \.(png|jpg|jpeg|webp)$ {
+        try_files $uri =404;
+        expires 30d;
+        add_header Cache-Control "public, immutable";
+        access_log off;
+    }
+    location ~* \.(woff|woff2|ttf)$ {
+        try_files $uri =404;
+        expires 1y;
+        add_header Cache-Control "public, immutable";
+        access_log off;
+    }
+
+    location / {
+        try_files $uri $uri/ /index.html;
+        add_header Strict-Transport-Security "max-age=63072000; includeSubDomains; preload" always;
+    }
+
+    # Certbot（示例，实际以 certbot 注入为准）
+    ssl_certificate /etc/letsencrypt/live/cuhkstudy.com/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/cuhkstudy.com/privkey.pem;
+    include /etc/letsencrypt/options-ssl-nginx.conf;
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
+}
 ```
 
-### 配置管理
-
-#### 网站基础配置 (`config/_default/hugo.toml`)
-```toml
-title = "CUHKstudy"
-baseURL = "https://cuhkstudy.com/"  # 域名配置
-defaultContentLanguage = "zh-cn"
-theme = "blowfish"
-```
-
-#### 主题参数配置 (`config/_default/params.toml`)
-```toml
-# 首页布局
-[homepage]
-  layout = "background"
-  showRecent = true
-  showRecentItems = 6
-
-# 列表显示
-[list]
-  showCards = false  # 简洁列表视图
-  constrainItemsWidth = true
-```
-
-## 🔧 内容管理
-
-### 创建新文章
-
+### 启用 HTTPS（Certbot）
 ```bash
-# 使用脚本创建新文章
-./new-post.sh "文章标题" [zh-cn|zh-tw|both]
-
-# 手动创建
-hugo new content/ugfn/new-article.md
+sudo apt update && sudo apt install -y certbot python3-certbot-nginx
+sudo certbot --nginx -d cuhkstudy.com -d www.cuhkstudy.com
+# 验证并重载
+sudo nginx -t && sudo systemctl reload nginx --no-pager
 ```
+证书续期由 Certbot 自动安装的定时任务处理，可用 `sudo certbot renew --dry-run` 验证。
 
-### 文章Front Matter示例
+### 服务器资源优化
+- 图片在构建前使用 `optimize-images.sh` 统一压缩到 WebP、限制最大宽度并剥离元数据
+- Nginx 对图片/字体关闭 `access_log`，降低 I/O
+- Hugo 构建使用 `--minify`，产物更小
 
-```yaml
----
-title: "文章标题"
-description: "文章描述"
-date: 2025-01-01T00:00:00+08:00
-draft: false
-categories: ["课程资料"]
-tags: ["UGFN", "Guide"]
----
+## 页脚与备案号（极其重要）
+- 模板：`layouts/partials/footer.html`
+- 逻辑：优先读取 `.Site.Params.icp`（生产注入），次要兜底读取 `HUGO_PARAMS_ICP`
+- 要求：页脚始终渲染备案号，链接 `https://beian.miit.gov.cn/`
 
-文章内容...
+## 其他定制
+- 文章页底部“上一页/下一页”分页导航已禁用，避免误跳到 PDF 卡片
+- 首页背景恢复为 SVG（按需可自定义 `assets/img/`）
 
-## PDF 下载
-[点击下载 PDF](/pdfs/document.pdf)
-```
+## 常见问题
+- Hugo 读取环境变量报 `access denied ... security.funcs.getenv`：请改为通过 `config/production/params.toml` 注入 `.Site.Params` 来读取
+- R2 中文 PDF 文件名 400：已改为 302 跳转模式，浏览器直接访问 R2 公网地址，规避代理编码问题
 
-### 上传资源文件
+## 发布与版本
+- 正常工作流：
+  ```bash
+  git add -A
+  git commit -m "feat/fix: ..."
+  git tag vX.Y
+  ```
+- 本次版本：`v1.2`
 
-```bash
-# PDF 文档
-cp document.pdf static/pdfs/
-
-# 图片文件  
-cp image.jpg content/ugfn/
-
-# 重新构建
-hugo --minify
-```
-
-## 🎨 自定义与扩展
-
-### 主题颜色定制
-
-主品牌色：`#0EB185`
-
-自定义CSS位置：`assets/css/custom.css`
-
-### 布局组件
-
-- **首页布局**：`layouts/partials/home/background.html`
-- **文章列表**：`layouts/partials/recent-articles/list.html`
-- **文章链接**：`layouts/partials/article-link/simple.html`
-
-### 功能特性
-
-- ✅ 图片自动优化（11MB → 371KB）
-- ✅ 简洁列表视图（移除卡片边框）
-- ✅ 禁用编辑链接（生产环境友好）
-- ✅ 中文字体优化（Inter字体）
-- ✅ 暗色模式支持
+## 开发说明
+本项目使用 Cursor 进行开发、调试与文档编写，提升了协作效率与交付质量。
 
