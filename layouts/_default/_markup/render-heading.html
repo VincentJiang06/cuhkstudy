@@ -1,0 +1,26 @@
+{{/*
+  Custom render hook for headings
+  - Skip rendering H1 in body when it duplicates the page title (case-insensitive, trimmed)
+  - Otherwise render heading with anchor and optional hash link per site settings
+*/}}
+
+{{ $isH1 := eq .Level 1 }}
+{{ $headingText := lower (strings.TrimSpace (plainify .Text)) }}
+{{ $pageTitle := lower (strings.TrimSpace (plainify .Page.Title)) }}
+
+{{ if and $isH1 (eq $headingText $pageTitle) }}
+  {{/* Do not render duplicate H1 heading in body */}}
+{{ else }}
+  {{ $anchor := anchorize .Anchor }}
+  <h{{ .Level }} class="relative group">{{ .Text | safeHTML }}
+    <div id="{{ $anchor }}" class="anchor"></div>
+    {{ if .Page.Params.showHeadingAnchors | default (.Page.Site.Params.article.showHeadingAnchors | default true) }}
+      <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100 select-none">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700 !no-underline" href="#{{ $anchor }}" aria-label="{{ i18n "article.anchor_label" }}">#</a>
+      </span>
+    {{ end }}
+  </h{{ .Level }}>
+{{ end }}
+
+
