@@ -42,6 +42,21 @@
             &copy; {{ now.Format "2006" }} CUHKstudy
           </a>
         </p>
+<<<<<<< HEAD
+=======
+        {{ with .Site.Params.icp }}
+          <p class="mt-1">
+            <a
+              href="https://beian.miit.gov.cn/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+            >
+              {{ . }}
+            </a>
+          </p>
+        {{ end }}
+>>>>>>> 9457d8f (feat: 页脚ICP使用可配置参数；Nginx PDF走R2-dev并对400/5xx回退本地)
       </div>
     {{ end }}
     {{/* Theme attribution on the right */}}

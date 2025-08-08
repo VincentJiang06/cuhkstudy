@@ -24,12 +24,28 @@ server {
     # 设置R2 CDN变量 (Cloudflare 开发链接)
     set $r2_endpoint "https://pub-12287e23d91e4005b39b37b16efc1c42.r2.dev";
 
-    # PDF 本地直出
+    # PDF 走 R2-dev（失败自动回退本地）
     location ~* \.pdf$ {
+        resolver 8.8.8.8 8.8.4.4 valid=300s;
+        resolver_timeout 5s;
+        proxy_pass $r2_endpoint$uri;
+        proxy_set_header Host pub-12287e23d91e4005b39b37b16efc1c42.r2.dev;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_ssl_verify off;
+        proxy_ssl_server_name on;
+        expires 30d;
+        add_header Cache-Control "public, immutable";
+        add_header X-Served-From "cdn-direct";
+        proxy_intercept_errors on;
+        # R2 对部分中文或编码路径可能返回 400，这里一并回退
+        error_page 400 403 404 500 502 503 504 = @pdf_local;
+    }
+
+    location @pdf_local {
+        root /var/www/cuhkstudy/public;
         try_files $uri =404;
-        types { application/pdf pdf; }
-        expires 7d;
-        add_header Cache-Control "public";
+        add_header X-Served-From "local-fallback";
     }
     
 
