@@ -6,8 +6,8 @@
 # https://blowfish.page/docs/configuration/#theme-parameters
 
 colorScheme = "slate"
-defaultAppearance = "dark" # valid options: light or dark
-autoSwitchAppearance = true
+defaultAppearance = "light" # valid options: light or dark
+autoSwitchAppearance = false
 
 # Custom fonts
 # 自定义CSS现在通过assets/css/custom.css文件提供
