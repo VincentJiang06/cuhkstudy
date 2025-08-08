@@ -29,3 +29,4 @@ Thumbs.db
 # 本地配置文件（如有）
 local.toml
 .env
+config/production/**

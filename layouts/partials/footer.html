@@ -34,17 +34,18 @@
     {{ end }}
   {{ end }}
   <div class="flex items-center justify-between">
-    {{/* Copyright on the left */}}
-    {{ if .Site.Params.footer.showCopyright | default true }}
+    {{/* Copyright & ICP on the left (ICP 永远显示，只要配置存在) */}}
+    {{ $icp := or .Site.Params.icp (getenv "HUGO_PARAMS_ICP") }}
+    {{ if or (.Site.Params.footer.showCopyright | default true) $icp }}
       <div class="text-sm text-neutral-500 dark:text-neutral-400">
+        {{ if .Site.Params.footer.showCopyright | default true }}
         <p>
           <a href="/info/" class="hover:underline hover:decoration-primary-400 hover:text-primary-500">
             &copy; {{ now.Format "2006" }} CUHKstudy
           </a>
         </p>
-<<<<<<< HEAD
-=======
-        {{ with .Site.Params.icp }}
+        {{ end }}
+        {{ with $icp }}
           <p class="mt-1">
             <a
               href="https://beian.miit.gov.cn/"
@@ -56,7 +57,6 @@
             </a>
           </p>
         {{ end }}
->>>>>>> 9457d8f (feat: 页脚ICP使用可配置参数；Nginx PDF走R2-dev并对400/5xx回退本地)
       </div>
     {{ end }}
     {{/* Theme attribution on the right */}}

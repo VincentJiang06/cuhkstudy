@@ -29,9 +29,13 @@ git pull origin master
 echo "🔄 更新主题子模块..."
 git submodule update --remote --recursive
 
-# 构建网站
+# 压缩图片（常态化优化）
+echo "🗜️  优化图片资源(生成 WebP、限制宽度、剥离元数据)..."
+bash ./optimize-images.sh || true
+
+# 构建网站（使用 production 环境配置，稳定输出备案号）
 echo "🔨 构建 Hugo 网站..."
-hugo $DRAFT_FLAG --minify
+hugo --environment production $DRAFT_FLAG --minify
 
 # 检查构建是否成功
 if [ $? -eq 0 ]; then
