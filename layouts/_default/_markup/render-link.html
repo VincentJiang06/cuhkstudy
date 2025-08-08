@@ -1,0 +1,8 @@
+{{/* Hugo render hook for Markdown links: rewrite /pdfs/ to fileCDN */}}
+{{ $cdn := .Page.Site.Params.fileCDN }}
+{{ $href := .Destination }}
+{{ if and $cdn (hasPrefix $href "/pdfs/") }}
+  <a href="{{ $cdn }}{{ $href }}"{{ with .Title}} title="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</a>
+{{ else }}
+  <a href="{{ $href }}"{{ with .Title}} title="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</a>
+{{ end }}

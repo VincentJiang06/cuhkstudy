@@ -1,0 +1,11 @@
+{{ with .Params.externalUrl }}
+  {{ $url := . }}
+  {{ $cdn := $.Site.Params.fileCDN }}
+  {{ if and $cdn (hasPrefix $url "/pdfs/") }}
+    href="{{ $cdn }}{{ $url }}" target="_blank" rel="external"
+  {{ else }}
+    href="{{ $url }}" target="_blank" rel="external"
+  {{ end }}
+{{ else }}
+  href="{{ .RelPermalink }}"
+{{- end -}}
