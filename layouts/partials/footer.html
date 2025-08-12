@@ -1,0 +1,78 @@
+{{/* 站点级自定义 footer：在不修改主题子模块的前提下复制并调整 blowfish 页脚 */}}
+<footer id="site-footer" class="py-10 print:hidden">
+  {{/* Footer menu（过滤掉“作者”一项） */}}
+  {{ if .Site.Params.footer.showMenu | default true }}
+    {{ if .Site.Menus.footer }}
+      <nav class="flex flex-row pb-4 text-base font-medium text-neutral-500 dark:text-neutral-400">
+        <ul class="flex flex-col list-none sm:flex-row">
+          {{ range .Site.Menus.footer }}
+            {{/* 跳过作者菜单项（按名称或URL粗略匹配） */}}
+            {{ $n := .Name | markdownify }}
+            {{ if or (eq $n "作者") (strings.Contains .URL "/authors") }}
+            {{ else }}
+              <li class="flex mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0">
+                <a class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2 flex items-center"
+                   href="{{ .URL }}" title="{{ .Title }}">
+                  {{ if .Pre }}
+                    <span {{ if and .Pre .Name }}class="mr-1"{{ end }}>{{ partial "icon.html" .Pre }}</span>
+                  {{ end }}
+                  {{ $n }}
+                </a>
+              </li>
+            {{ end }}
+          {{ end }}
+        </ul>
+      </nav>
+    {{ end }}
+  {{ end }}
+
+  <div class="flex items-center justify-between">
+    {{/* Copyright */}}
+    {{ if .Site.Params.footer.showCopyright | default true }}
+      <p class="text-sm text-neutral-500 dark:text-neutral-400">
+        {{- with replace .Site.Params.footer.copyrightNotice "{ year }" now.Year -}}
+          {{ . | markdownify }}
+        {{- else -}}
+          &copy; {{ now.Format "2006" }} {{ .Site.Params.Author.name | markdownify }}
+        {{- end -}}
+      </p>
+    {{ end }}
+
+    {{/* Theme attribution */}}
+    {{ if .Site.Params.footer.showThemeAttribution | default true }}
+      <p class="text-xs text-neutral-500 dark:text-neutral-400">
+        {{ $hugo := printf `<a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a>` }}
+        {{ $blowfish := printf `<a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a>` }}
+        {{ i18n "footer.powered_by" (dict "Hugo" $hugo "Theme" $blowfish) | safeHTML }}
+      </p>
+    {{ end }}
+  </div>
+
+  {{/* 自定义：ICP备案号，位于页脚最底部，稳定显示 */}}
+  {{ with .Site.Params.icp }}
+    {{ if .code }}
+      <div class="mt-3 text-xs text-neutral-500 dark:text-neutral-400">
+        <a href="{{ .url | default "https://beian.miit.gov.cn/" }}" target="_blank" rel="noopener noreferrer" class="hover:underline hover:decoration-primary-400 hover:text-primary-500">
+          {{ .code }}
+        </a>
+      </div>
+    {{ end }}
+  {{ end }}
+
+  {{/* 主题原有的 zoom 与 process 脚本保持 */}}
+  <script>
+    {{ if not .Site.Params.disableImageZoom | default true }}
+    mediumZoom(document.querySelectorAll("img:not(.nozoom)"), { margin: 24, background: 'rgba(0,0,0,0.5)', scrollOffset: 0 })
+    {{ end }}
+  </script>
+  {{ $jsProcess := resources.Get "js/process.js" }}
+  {{ $jsProcess = $jsProcess | resources.Minify | resources.Fingerprint (.Site.Params.fingerprintAlgorithm | default "sha512") }}
+  <script type="text/javascript" src="{{ $jsProcess.RelPermalink }}" integrity="{{ $jsProcess.Data.Integrity }}"></script>
+
+  {{/* 兼容主题扩展位 */}}
+  {{ if templates.Exists "partials/extend-footer.html" }}
+    {{ partialCached "extend-footer.html" . }}
+  {{ end }}
+</footer>
+
+

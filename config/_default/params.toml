@@ -28,7 +28,7 @@ disableImageOptimizationMD = false
 disableTextInHeader = false
 # backgroundImageWidth = 1200
 
-defaultBackgroundImage = "img/CU_pic.png"
+defaultBackgroundImage = "https://pub-12287e23d91e4005b39b37b16efc1c42.r2.dev/img/CU_pic.png"
 defaultFeaturedImage = "img/cover/1.svg"
 defaultSocialImage = "/img/blowfish_banner.png"
 
@@ -52,9 +52,13 @@ fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384",
   showAppearanceSwitcher = true
   showScrollToTop = true
 
+[icp]
+  code = "浙ICP备2025176709号"
+  url = "https://beian.miit.gov.cn/"
+
 [homepage]
   layout = "background" # valid options: page, profile, hero, card, background, custom
-  homepageImage = "img/background.svg" # used in: hero, and card
+  homepageImage = "https://pub-12287e23d91e4005b39b37b16efc1c42.r2.dev/img/CU_pic.png" # 显式使用CDN的CU背景图
   showRecent = true
   showRecentItems = 6
   showMoreLink = true
@@ -107,6 +111,8 @@ fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384",
   heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   layoutBackgroundBlur = true # only used when heroStyle equals background
   layoutBackgroundHeaderSpace = true
+  # 显式指定默认背景图（标签/分类等列表页也能回退到CDN图）
+  defaultBackgroundImage = "https://pub-12287e23d91e4005b39b37b16efc1c42.r2.dev/img/CU_pic.png"
   showBreadcrumbs = true
   showSummary = false
   showViews = false

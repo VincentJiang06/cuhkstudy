@@ -1,0 +1,47 @@
+{{/* 自定义首页背景：使用站点 params 的 homepageImage，叠加两层渐变，与站点级 partial 同步 */}}
+{{ $disableImageOptimization := .Site.Params.disableImageOptimization | default false }}
+<article class="max-w-full prose dark:prose-invert">
+  <div class="relative">
+    <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100"></div>
+    <div class="mx-auto max-w-7xl p-0">
+      <div class="relative sm:overflow-hidden">
+        <div class="fixed inset-x-0 top-0 -z-10">
+          {{ $homepageImage := "" }}
+          {{ with .Site.Params.defaultBackgroundImage }}
+            {{ if or (strings.HasPrefix . "http:") (strings.HasPrefix . "https:") }}
+              {{ $homepageImage = resources.GetRemote . }}
+            {{ else }}
+              {{ $homepageImage = resources.Get . }}
+            {{ end }}
+          {{ end }}
+          {{ with .Site.Params.homepage.homepageImage }}
+            {{ if or (strings.HasPrefix . "http:") (strings.HasPrefix . "https:") }}
+              {{ $homepageImage = resources.GetRemote . }}
+            {{ else }}
+              {{ $homepageImage = resources.Get . }}
+            {{ end }}
+          {{ end }}
+          {{ if $homepageImage }}
+            <img class="w-full h-[600px] object-cover nozoom mt-0 mr-0 mb-0 ml-0" src="{{ $homepageImage.RelPermalink }}" role="presentation">
+            <div class="absolute inset-0 h-[600px] bg-gradient-to-t from-neutral dark:from-neutral-800 to-transparent mix-blend-normal"></div>
+            <div class="opacity-60 absolute inset-0 h-[600px] bg-gradient-to-t from-neutral dark:from-neutral-800 to-neutral-100 dark:to-neutral-800 mix-blend-normal"></div>
+          {{ end }}
+        </div>
+        <div class="relative px-1 py-1 flex flex-col items-center justify-center text-center">
+          <h1 class="mb-2 text-4xl font-extrabold text-neutral-800 dark:text-neutral">{{ .Site.Params.homepage.site.name | default .Site.Title }}</h1>
+          {{ with .Site.Params.homepage.site.headline }}
+            <h2 class="mt-0 mb-0 text-xl text-neutral-800 dark:text-neutral-300">{{ . | markdownify }}</h2>
+          {{ end }}
+          {{ with .Site.Params.homepage.site.bio }}
+            <p class="mt-4 mb-6 text-lg text-neutral-700 dark:text-neutral-300">{{ . | markdownify }}</p>
+          {{ end }}
+          <section class="prose dark:prose-invert w-full">{{ .Content }}</section>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+<section>
+  {{ partial "recent-articles/main.html" . }}
+</section>
+
