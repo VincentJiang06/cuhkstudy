@@ -19,46 +19,18 @@ body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-/* 调整全局文字颜色优先级 - 只在必要时使用!important */
-/* 亮色模式下的深色文字 */
-h1, h2, h3, h4, h5, h6 {
-  color: #111827; /* neutral-900 */
-}
-
-p, div, span, li, td {
-  color: #374151; /* neutral-700 */
-}
-
-a {
-  color: #1e293b; /* primary-800 */
-}
-
-/* 暗色模式下的浅色文字 */
-@media (prefers-color-scheme: dark) {
-  h1, h2, h3, h4, h5, h6 {
-    color: #f9fafb; /* neutral-50 */
-  }
-  
-  p, div, span, li, td {
-    color: #d1d5db; /* neutral-300 */
-  }
-  
-  a {
-    color: #94a3b8; /* primary-400 */
-  }
-}
-
-/* 为有dark类的元素也应用暗色样式 */
+/* 简化全局文字颜色 - 只依赖Tailwind类和.dark类，移除@media规则避免冲突 */
+/* 只在有.dark类时应用暗色样式，默认依赖Tailwind的亮色类 */
 .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
-  color: #f9fafb; /* neutral-50 */
+  color: #f9fafb !important; /* neutral-50 */
 }
 
 .dark p, .dark div, .dark span, .dark li, .dark td {
-  color: #d1d5db; /* neutral-300 */
+  color: #d1d5db !important; /* neutral-300 */
 }
 
 .dark a {
-  color: #94a3b8; /* primary-400 */
+  color: #94a3b8 !important; /* primary-400 */
 }
 
 /* 首页背景图片：去饱和 + 降亮度，略增对比，让色彩趋于灰色调 */
@@ -72,58 +44,8 @@ a {
   box-shadow: 0 0 14px rgba(255,140,0,0.85), 0 0 28px rgba(255,140,0,0.45);
 }
 
-/* 确保亮色模式下文字足够深 */
-.prose {
-  --tw-prose-body: rgba(55, 65, 81, 1) !important; /* neutral-700 深灰色 */
-  --tw-prose-headings: rgba(17, 24, 39, 1) !important; /* neutral-900 最深色 */
-  --tw-prose-links: rgba(30, 41, 59, 1) !important; /* primary-800 深蓝色 */
-  --tw-prose-bold: rgba(17, 24, 39, 1) !important; /* neutral-900 */
-}
-
-/* 亮色模式下强制应用深色文字 */
-.prose p, .prose li, .prose td, .prose span {
-  color: rgba(55, 65, 81, 1) !important; /* neutral-700 */
-}
-
-.prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
-  color: rgba(17, 24, 39, 1) !important; /* neutral-900 */
-}
-
-.prose a {
-  color: rgba(30, 41, 59, 1) !important; /* primary-800 */
-}
-
-.prose strong, .prose b {
-  color: rgba(17, 24, 39, 1) !important; /* neutral-900 */
-}
-
-/* 暗色模式下的文字颜色 */
-@media (prefers-color-scheme: dark) {
-  .prose {
-    --tw-prose-body: rgba(209, 213, 219, 1) !important; /* neutral-300 浅灰色 */
-    --tw-prose-headings: rgba(249, 250, 251, 1) !important; /* neutral-50 接近白色 */
-    --tw-prose-links: rgba(148, 163, 184, 1) !important; /* primary-400 蓝灰色 */
-    --tw-prose-bold: rgba(249, 250, 251, 1) !important; /* neutral-50 */
-  }
-  
-  .prose p, .prose li, .prose td, .prose span {
-    color: rgba(209, 213, 219, 1) !important; /* neutral-300 */
-  }
-  
-  .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
-    color: rgba(249, 250, 251, 1) !important; /* neutral-50 */
-  }
-  
-  .prose a {
-    color: rgba(148, 163, 184, 1) !important; /* primary-400 */
-  }
-  
-  .prose strong, .prose b {
-    color: rgba(249, 250, 251, 1) !important; /* neutral-50 */
-  }
-}
-
-/* 为有dark类的元素也应用暗色样式 */
+/* 简化prose样式 - 让Tailwind的prose dark:prose-invert正常工作 */
+/* 只在暗色模式下增强对比度 */
 .dark .prose {
   --tw-prose-body: rgba(209, 213, 219, 1) !important; /* neutral-300 */
   --tw-prose-headings: rgba(249, 250, 251, 1) !important; /* neutral-50 */
