@@ -30,26 +30,66 @@ body {
   box-shadow: 0 0 14px rgba(255,140,0,0.85), 0 0 28px rgba(255,140,0,0.45);
 }
 
-/* 强制修复暗色模式下的文字颜色 */
+/* 确保亮色模式下文字足够深 */
+.prose {
+  --tw-prose-body: rgba(55, 65, 81, 1) !important; /* neutral-700 深灰色 */
+  --tw-prose-headings: rgba(17, 24, 39, 1) !important; /* neutral-900 最深色 */
+  --tw-prose-links: rgba(30, 41, 59, 1) !important; /* primary-800 深蓝色 */
+  --tw-prose-bold: rgba(17, 24, 39, 1) !important; /* neutral-900 */
+}
+
+/* 亮色模式下强制应用深色文字 */
+.prose p, .prose li, .prose td, .prose span {
+  color: rgba(55, 65, 81, 1) !important; /* neutral-700 */
+}
+
+.prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
+  color: rgba(17, 24, 39, 1) !important; /* neutral-900 */
+}
+
+.prose a {
+  color: rgba(30, 41, 59, 1) !important; /* primary-800 */
+}
+
+.prose strong, .prose b {
+  color: rgba(17, 24, 39, 1) !important; /* neutral-900 */
+}
+
+/* 暗色模式下的文字颜色 */
 @media (prefers-color-scheme: dark) {
-  /* 文章正文 */
-  .prose p, .prose li, .prose td {
+  .prose {
+    --tw-prose-body: rgba(209, 213, 219, 1) !important; /* neutral-300 浅灰色 */
+    --tw-prose-headings: rgba(249, 250, 251, 1) !important; /* neutral-50 接近白色 */
+    --tw-prose-links: rgba(148, 163, 184, 1) !important; /* primary-400 蓝灰色 */
+    --tw-prose-bold: rgba(249, 250, 251, 1) !important; /* neutral-50 */
+  }
+  
+  .prose p, .prose li, .prose td, .prose span {
     color: rgba(209, 213, 219, 1) !important; /* neutral-300 */
   }
   
-  /* 标题 */
   .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
     color: rgba(249, 250, 251, 1) !important; /* neutral-50 */
   }
   
-  /* 链接 */
   .prose a {
     color: rgba(148, 163, 184, 1) !important; /* primary-400 */
   }
+  
+  .prose strong, .prose b {
+    color: rgba(249, 250, 251, 1) !important; /* neutral-50 */
+  }
 }
 
-/* 为有dark类的元素也应用 */
-.dark .prose p, .dark .prose li, .dark .prose td {
+/* 为有dark类的元素也应用暗色样式 */
+.dark .prose {
+  --tw-prose-body: rgba(209, 213, 219, 1) !important; /* neutral-300 */
+  --tw-prose-headings: rgba(249, 250, 251, 1) !important; /* neutral-50 */
+  --tw-prose-links: rgba(148, 163, 184, 1) !important; /* primary-400 */
+  --tw-prose-bold: rgba(249, 250, 251, 1) !important; /* neutral-50 */
+}
+
+.dark .prose p, .dark .prose li, .dark .prose td, .dark .prose span {
   color: rgba(209, 213, 219, 1) !important; /* neutral-300 */
 }
 
@@ -59,4 +99,8 @@ body {
 
 .dark .prose a {
   color: rgba(148, 163, 184, 1) !important; /* primary-400 */
+}
+
+.dark .prose strong, .dark .prose b {
+  color: rgba(249, 250, 251, 1) !important; /* neutral-50 */
 }
