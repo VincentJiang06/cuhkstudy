@@ -461,6 +461,12 @@ class MarkdownEditorHandler(http.server.SimpleHTTPRequestHandler):
                     <button onclick="refreshFiles()">🔄 刷新</button>
                 </div>
             </div>
+            <div class="summary-section" style="padding: 10px; border-bottom: 1px solid #ddd; background: #f8f9fa;">
+                <label for="summaryInput" style="display: block; font-weight: bold; margin-bottom: 5px;">📄 文章摘要 (Summary):</label>
+                <textarea id="summaryInput" placeholder="在此输入文章摘要，用于首页显示和SEO优化..." 
+                    style="width: 100%; height: 60px; border: 1px solid #ddd; border-radius: 4px; padding: 8px; font-size: 14px; resize: vertical;" disabled></textarea>
+                <small style="color: #666;">摘要将自动添加到Front Matter的summary字段中</small>
+            </div>
             <div class="content">
                 <div class="input">
                     <textarea id="editor" placeholder="选择一个 Markdown 文件开始编辑...
@@ -809,6 +815,15 @@ Ctrl+S: 保存文件" disabled></textarea>
                     editor.value = content;
                     editor.disabled = false;
                 }
+                
+                // 提取并显示summary
+                const summaryInput = document.getElementById('summaryInput');
+                summaryInput.disabled = false;
+                
+                // 从Front Matter中提取summary
+                const summaryMatch = content.match(/summary:\s*["']?([^"'\\n\\r]+)["']?/i);
+                summaryInput.value = summaryMatch ? summaryMatch[1] : '';
+                
                 currentFile = filename;
                 currentFileSpan.textContent = filename;
                 saveBtn.disabled = false;
@@ -899,7 +914,17 @@ Ctrl+S: 保存文件" disabled></textarea>
         for pattern in ['**/*.md', '**/*.markdown']:
             for file_path in base_dir.glob(pattern):
                 rel_path = file_path.relative_to(base_dir)
-                md_files.append(str(rel_path))
+                rel_path_str = str(rel_path)
+                
+                # 排除调试和无关文件
+                if any(exclude in rel_path_str.lower() for exclude in [
+                    'test-', 'debug', 'temp-', '.backup', '.tmp', 
+                    'deployment', 'scripts/', 'public/', 'static/',
+                    '.git/', 'node_modules/', 'logs/'
+                ]):
+                    continue
+                    
+                md_files.append(rel_path_str)
         
         # 创建分类结构
         categorized = {
