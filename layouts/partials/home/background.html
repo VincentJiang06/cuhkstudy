@@ -22,7 +22,7 @@
           {{ end }}
           {{ if $homepageImage }}
             <img
-              class="w-full h-[600px] object-contain nozoom mt-0 mr-0 mb-0 ml-0"
+              class="w-full h-[600px] object-contain nozoom mt-0 mr-0 mb-0 ml-0 homepage-bg"
               src="{{ $homepageImage.RelPermalink }}"
               role="presentation">
             <div
@@ -44,7 +44,7 @@
                 {{ $siteImage = $siteImage.Fill (print "288x288 q96") }}
               {{ end }}
               <img
-                class="mb-2 rounded-full h-36 w-36"
+                class="mb-2 rounded-full h-36 w-36 homepage-logo"
                 width="144"
                 height="144"
                 alt="{{ $.Site.Params.homepage.site.name | default "Site Logo" }}"

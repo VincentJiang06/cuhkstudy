@@ -58,7 +58,7 @@ fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384",
 
 [homepage]
   layout = "background" # valid options: page, profile, hero, card, background, custom
-  homepageImage = "https://pub-12287e23d91e4005b39b37b16efc1c42.r2.dev/img/CU_pic.png" # 显式使用CDN的CU背景图
+  homepageImage = "img/background.svg" # 首页仅使用本地 svg 背景
   showRecent = true
   showRecentItems = 6
   showMoreLink = true
