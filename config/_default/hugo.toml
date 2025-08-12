@@ -2,9 +2,9 @@
 # Refer to the theme docs for more details about each of these parameters.
 # https://blowfish.page/docs/getting-started/
 
-theme = "blowfish"
+theme = ["cuhkstudy", "blowfish"]
 title = "CUHKstudy"
-baseURL = "https://您的域名/"  # 请替换为您的实际域名
+baseURL = "https://cuhkstudy.com/"
 defaultContentLanguage = "zh-cn"
 disableLanguages = ["en", "it", "ja"] # 只保留简体中文
 
