@@ -51,16 +51,16 @@
                 src="{{ $siteImage.RelPermalink }}">
             {{ end }}
           {{ end }}
-          <h1 class="mb-2 text-4xl font-extrabold text-neutral-800 dark:text-neutral-200">
+          <h1 class="mb-2 text-4xl font-extrabold text-neutral-900 dark:text-neutral-200">
             {{ .Site.Params.homepage.site.name | default .Site.Title }}
           </h1>
           {{ with .Site.Params.homepage.site.headline }}
-            <h2 class="mt-0 mb-0 text-xl text-neutral-800 dark:text-neutral-300">
+            <h2 class="mt-0 mb-0 text-xl text-neutral-900 dark:text-neutral-300">
               {{ . | markdownify }}
             </h2>
           {{ end }}
           {{ with .Site.Params.homepage.site.bio }}
-            <p class="mt-4 mb-6 text-lg text-neutral-700 dark:text-neutral-300">
+            <p class="mt-4 mb-6 text-lg text-neutral-800 dark:text-neutral-300">
               {{ . | markdownify }}
             </p>
           {{ end }}

@@ -19,6 +19,48 @@ body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
+/* 调整全局文字颜色优先级 - 只在必要时使用!important */
+/* 亮色模式下的深色文字 */
+h1, h2, h3, h4, h5, h6 {
+  color: #111827; /* neutral-900 */
+}
+
+p, div, span, li, td {
+  color: #374151; /* neutral-700 */
+}
+
+a {
+  color: #1e293b; /* primary-800 */
+}
+
+/* 暗色模式下的浅色文字 */
+@media (prefers-color-scheme: dark) {
+  h1, h2, h3, h4, h5, h6 {
+    color: #f9fafb; /* neutral-50 */
+  }
+  
+  p, div, span, li, td {
+    color: #d1d5db; /* neutral-300 */
+  }
+  
+  a {
+    color: #94a3b8; /* primary-400 */
+  }
+}
+
+/* 为有dark类的元素也应用暗色样式 */
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+  color: #f9fafb; /* neutral-50 */
+}
+
+.dark p, .dark div, .dark span, .dark li, .dark td {
+  color: #d1d5db; /* neutral-300 */
+}
+
+.dark a {
+  color: #94a3b8; /* primary-400 */
+}
+
 /* 首页背景图片：去饱和 + 降亮度，略增对比，让色彩趋于灰色调 */
 .homepage-bg {
   filter: saturate(0.3) grayscale(0.2) brightness(0.85) contrast(1.05);
