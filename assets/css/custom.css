@@ -5,18 +5,21 @@
                "Apple Color Emoji", "Segoe UI Emoji";
 }
 
-/* 首页背景图片：适度增强，保持在背景层级 */
-.homepage-bg {
-  filter: saturate(1.5) brightness(1.3) contrast(1.3) !important;
+/* 首页特定：隐藏img标签，使用背景图片模式 */
+body:has(.homepage-bg) .homepage-bg {
+  display: none !important;
 }
 
-/* 首页特定：大幅降低渐变遮挡，让背景透过 */
-body:has(.homepage-bg) .bg-gradient-to-t.from-neutral {
-  opacity: 0.1 !important;
+/* 首页特定：给背景容器添加background-image，模拟其他页面 */
+body:has(.homepage-bg) .fixed.inset-x-0.top-0 {
+  background-image: url(/img/background.svg) !important;
+  height: 800px !important;
+  z-index: auto !important;
 }
 
+/* 首页特定：调整渐变透明度，匹配其他页面的opacity-60 */
 body:has(.homepage-bg) .opacity-75.bg-gradient-to-t {
-  opacity: 0.05 !important;
+  opacity: 0.6 !important;
 }
 
 /* 首页 Logo：橙色粗边框 + 微光 */
