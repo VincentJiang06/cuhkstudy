@@ -5,76 +5,10 @@
                "Apple Color Emoji", "Segoe UI Emoji";
 }
 
-/* 首页布局：左右分栏 */
-.homepage-layout {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 60vh;
-  gap: 3rem;
-  padding: 2rem 0;
-}
-
-@media (max-width: 768px) {
-  .homepage-layout {
-    flex-direction: column;
-    text-align: center;
-    gap: 2rem;
-  }
-}
-
-/* 首页左侧文字区域：右对齐 */
-.homepage-content {
-  flex: 1;
-  text-align: right;
-  padding-right: 2rem;
-}
-
-@media (max-width: 768px) {
-  .homepage-content {
-    text-align: center;
-    padding-right: 0;
-  }
-}
-
 /* 首页 Logo：橙色粗边框 + 微光 */
 .homepage-logo {
   border: 5px solid #ff8c00;
   box-shadow: 0 0 14px rgba(255,140,0,0.85), 0 0 28px rgba(255,140,0,0.45);
-  margin: 0 auto 1.5rem auto;
-}
-
-/* 首页右侧：大圆形 Traffic 背景 */
-.homepage-circle {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  background-image: url(/img/background.svg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.7;
-  backdrop-filter: blur(2px);
-  border: 3px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 
-    0 0 20px rgba(255, 255, 255, 0.2),
-    inset 0 0 20px rgba(255, 255, 255, 0.1);
-  flex-shrink: 0;
-  position: relative;
-}
-
-.dark .homepage-circle {
-  border: 3px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 
-    0 0 20px rgba(255, 255, 255, 0.1),
-    inset 0 0 20px rgba(255, 255, 255, 0.05);
-}
-
-@media (max-width: 768px) {
-  .homepage-circle {
-    width: 250px;
-    height: 250px;
-  }
 }
 
 /* Blowfish背景透明度控制 */
