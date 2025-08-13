@@ -1,21 +1,40 @@
 /* 使用 Blowfish 原生字体系统，针对中文优化 */
 :root {
-  --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 
-               "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif, 
-               "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+               "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif,
+               "Apple Color Emoji", "Segoe UI Emoji";
 }
 
-/* 移除所有颜色覆盖，让Blowfish的原生颜色系统工作 */
-
-/* 首页背景图片：去饱和 + 降亮度，略增对比，让色彩趋于灰色调 */
-.homepage-bg {
-  filter: saturate(0.3) grayscale(0.2) brightness(0.85) contrast(1.05);
+/* 亮色模式下为SVG背景添加更浓的蒙版，让背景更淡 */
+.single_hero_background {
+  position: relative;
 }
 
-/* 首页 Logo：橙色粗边框 + 微光 */
+.single_hero_background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.85); /* 亮色模式：白色蒙版，85%透明度 */
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* 深色模式下蒙版较轻 */
+.dark .single_hero_background::before {
+  background: rgba(0, 0, 0, 0.3); /* 深色模式：黑色蒙版，30%透明度 */
+}
+
+/* 确保内容在蒙版之上 */
+.single_hero_background > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* 首页Logo样式保持 */
 .homepage-logo {
-  border: 5px solid #ff8c00;           /* 更粗的橙色边框 */
+  border: 5px solid #ff8c00;
   box-shadow: 0 0 14px rgba(255,140,0,0.85), 0 0 28px rgba(255,140,0,0.45);
 }
-
-/* 移除所有prose覆盖 - 让Blowfish的prose dark:prose-invert自然工作 */
