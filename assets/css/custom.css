@@ -5,9 +5,9 @@
                "Apple Color Emoji", "Segoe UI Emoji";
 }
 
-/* 首页背景图片：适度增强可见性 */
+/* 首页背景图片：精确调整 - 降低亮度，轻微增强饱和度 */
 .homepage-bg {
-  filter: saturate(1.2) brightness(1.2) contrast(1.1);
+  filter: saturate(1.3) brightness(1.0) contrast(1.2);
 }
 
 /* 首页 Logo：橙色粗边框 + 微光 */
