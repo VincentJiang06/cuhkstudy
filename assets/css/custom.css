@@ -5,12 +5,9 @@
                "Apple Color Emoji", "Segoe UI Emoji";
 }
 
-/* 首页背景图片：超强增强可见性，确保动画清晰显示 */
+/* 首页背景图片：适度增强可见性 */
 .homepage-bg {
-  filter: saturate(5.0) brightness(5.0) contrast(3.0) !important;
-  z-index: 1000 !important;
-  position: relative !important;
-  opacity: 1 !important;
+  filter: saturate(1.2) brightness(1.2) contrast(1.1);
 }
 
 /* 首页 Logo：橙色粗边框 + 微光 */
@@ -26,40 +23,4 @@
 
 .dark .hero-background {
   opacity: 0.25;
-}
-
-/* 超强控制渐变覆盖层透明度 - 让背景图片透过来 */
-.bg-gradient-to-t {
-  opacity: 0.05 !important;
-}
-
-/* 特别针对75%透明度的覆盖层，几乎完全透明 */
-.opacity-75 {
-  opacity: 0.01 !important;
-}
-
-/* 确保背景图片容器层级最高 */
-.fixed.inset-x-0.top-0.-z-10 {
-  z-index: 1 !important;
-}
-
-/* 极强背景可见 - 直接控制容器 */
-div[class*="fixed inset-x-0 top-0"] img[src*="background.svg"] {
-  filter: saturate(6.0) brightness(6.0) contrast(4.0) !important;
-  z-index: 999 !important;
-  position: relative !important;
-  opacity: 1 !important;
-}
-
-/* 直接通过类名控制 */
-img.homepage-bg[src*="background.svg"] {
-  filter: saturate(8.0) brightness(8.0) contrast(5.0) !important;
-  z-index: 1001 !important;
-  position: relative !important;
-  opacity: 1 !important;
-}
-
-/* 覆盖所有可能的遮挡 */
-div.absolute.inset-0 {
-  opacity: 0.02 !important;
 }
