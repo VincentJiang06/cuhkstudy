@@ -22,9 +22,9 @@
 
 /* Blowfish背景透明度控制 */
 .hero-background {
-  opacity: 0.3; /* 亮色模式下更透明 */
+  opacity: 0.15; /* 亮色模式下更透明 */
 }
 
 .dark .hero-background {
-  opacity: 0.5; /* 暗色模式下稍显眼 */
+  opacity: 0.25; /* 暗色模式下稍显眼 */
 }
