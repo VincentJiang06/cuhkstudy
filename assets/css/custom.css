@@ -18,3 +18,13 @@
 }
 
 /* 移除所有prose覆盖 - 让Blowfish的prose dark:prose-invert自然工作 */
+
+
+/* Blowfish背景透明度控制 */
+.hero-background {
+  opacity: 0.3; /* 亮色模式下更透明 */
+}
+
+.dark .hero-background {
+  opacity: 0.5; /* 暗色模式下稍显眼 */
+}
