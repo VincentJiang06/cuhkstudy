@@ -1,8 +1,0 @@
-{{/* 简化的 thumbAndBackground：移除fixed背景层，使用body背景 */}}
-
-{{/* 保留缩略图逻辑 */}}
-{{- $thumb := .Resources.GetMatch "*thumbnail*" -}}
-{{- if not $thumb }}{{ $thumb = .Resources.GetMatch "*feature*" }}{{ end -}}
-{{ with $thumb }}
-  <div class="w-full thumbnail_card nozoom" style="background-image:url({{ .RelPermalink }})"></div>
-{{ end }}

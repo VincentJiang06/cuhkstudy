@@ -7,29 +7,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="theme-color">
 
-  {{/* 立即激活暗色模式，避免闪烁 */}}
-  <script>
-  (function() {
-    const sitePreference = document.documentElement.getAttribute("data-default-appearance");
-    const userPreference = localStorage.getItem("appearance");
-    
-    // 立即应用暗色模式
-    if ((sitePreference === "dark" && userPreference === null) || userPreference === "dark") {
-      document.documentElement.classList.add("dark");
-    }
-    
-    // 自动模式处理
-    if (document.documentElement.getAttribute("data-auto-appearance") === "true") {
-      if (
-        window.matchMedia &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches &&
-        userPreference !== "light"
-      ) {
-        document.documentElement.classList.add("dark");
-      }
-    }
-  })();
-  </script>
 
   {{/* Title */}}
   {{ if .IsHome -}}

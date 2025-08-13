@@ -1,9 +1,0 @@
-{{/* 简化的 hero 背景：仅使用基础主题颜色，无背景图片和蒙版 */}}
-
-{{ $shouldAddHeaderSpace := .Site.Params.list.layoutBackgroundHeaderSpace | default true }}
-
-{{ if $shouldAddHeaderSpace | default true }}
-  <div id="hero" class="h-[150px] md:h-[200px]"></div>
-{{ end }}
-
-{{/* 移除fixed背景层 - 使用body的背景色即可 */}}

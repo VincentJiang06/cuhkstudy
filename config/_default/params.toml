@@ -28,7 +28,7 @@ disableImageOptimizationMD = false
 disableTextInHeader = false
 # backgroundImageWidth = 1200
 
-defaultBackgroundImage = "https://pub-12287e23d91e4005b39b37b16efc1c42.r2.dev/img/CU_pic.png"
+# defaultBackgroundImage = ""  # 让每个页面使用自己的背景或无背景
 defaultFeaturedImage = "img/cover/1.svg"
 defaultSocialImage = "/img/blowfish_banner.png"
 
@@ -66,7 +66,7 @@ fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384",
   cardView = true
   cardViewScreenWidth = false
   layoutBackgroundBlur = true # only used when layout equals background
-  disableHeroImageFilter = true # only used when layout equals hero
+  disableHeroImageFilter = false # 允许首页背景图片滤镜效果
   
   # 独立的首页网站信息（不是作者信息）
   [homepage.site]
