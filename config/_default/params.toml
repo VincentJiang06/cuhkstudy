@@ -42,7 +42,7 @@ smartTOCHideUnfocusedChildren = false
 fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384", "sha256"
 
 # 文件CDN前缀（用于重写 /pdfs/ 链接）。可设置为 R2-dev 或日后更优的 CDN 域名。
-fileCDN = "https://pub-12287e23d91e4005b39b37b16efc1c42.r2.dev"
+fileCDN = "https://cdn.cuhkstudy.com"
 
 [header]
   layout = "fixed-fill-blur" # valid options: basic, fixed, fixed-fill, fixed-gradient, fixed-fill-blur
