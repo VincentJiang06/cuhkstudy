@@ -19,7 +19,7 @@
 - `config/_default/params.toml`：公共站点参数（含 `fileCDN`）
 - `config/production/params.toml`：生产环境参数（注入 `icp`，不纳入 Git）
 - `layouts/partials/footer.html`：全局页脚，固定展示备案号
-- `layouts/_default/_markup/render-link.html`：Markdown 链接重写（将 `/pdfs/` 改写到 R2）
+- `layouts/_default/_markup/render-link.html`：Markdown 链接重写（将 `https://cdn.cuhkstudy.com/pdfs/` 改写到 R2）
 - `layouts/partials/article-link/_external-link.html`：卡片/外链的 PDF 链接重写
 - `themes/blowfish/layouts/_default/single.html`：禁用文章底部“上一页/下一页”导航
 - `server-config/nginx/`：Nginx 样例与说明（生产在 `/etc/nginx/`）
@@ -59,7 +59,7 @@ hugo --environment production --minify
 - `config/_default/params.toml` 中配置统一前缀：
   ```toml
   [params]
-  fileCDN = "https://pub-12287e23d91e4005b39b37b16efc1c42.r2.dev"
+  fileCDN = "https://cdn.cuhkstudy.com"
   ```
 - Hugo 渲染阶段自动改写：
   - Markdown：`layouts/_default/_markup/render-link.html`
@@ -82,9 +82,8 @@ server {
     index index.html index.htm;
 
     # R2 公网地址
-    set $r2_endpoint "https://pub-12287e23d91e4005b39b37b16efc1c42.r2.dev";
+    set $r2_endpoint "https://cdn.cuhkstudy.com";
 
-    # PDF 改为 302 跳转至 R2-dev（地址栏显示 r2.dev）
     location ~* \.pdf$ {
         add_header Cache-Control "public, max-age=300";
         add_header Access-Control-Allow-Origin "*";
@@ -139,7 +138,7 @@ sudo nginx -t && sudo systemctl reload nginx --no-pager
 
 ## 其他定制
 - 文章页底部“上一页/下一页”分页导航已禁用，避免误跳到 PDF 卡片
-- 首页背景恢复为 SVG（按需可自定义 `assets/img/`）
+- 首页背景恢复为 SVG（按需可自定义 `assetshttps://cdn.cuhkstudy.com/img/`）
 
 ## 常见问题
 - Hugo 读取环境变量报 `access denied ... security.funcs.getenv`：请改为通过 `config/production/params.toml` 注入 `.Site.Params` 来读取
