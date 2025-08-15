@@ -30,3 +30,10 @@ Thumbs.db
 local.toml
 .env
 config/production/**
+# OSS配置文件
+.ossutilconfig
+config/oss/
+*.ossconfig
+# 阿里云凭据
+*accessKey*
+*secret*
