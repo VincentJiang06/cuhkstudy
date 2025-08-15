@@ -28,7 +28,7 @@ disableImageOptimizationMD = false
 disableTextInHeader = false
 # backgroundImageWidth = 1200
 
-defaultBackgroundImage = "img/CU_pic.png"
+defaultBackgroundImage = "https://cdn.cuhkstudy.com/images/CU_pic_hu_2c130ce477cf8ea1.png"
 # defaultFeaturedImage = "img/cover/1.svg" # 已禁用，避免卡片显示默认图片
 defaultSocialImage = "/img/blowfish_banner.png"
 
