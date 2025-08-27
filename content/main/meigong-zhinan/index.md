@@ -3,8 +3,8 @@ title: "美工指南"
 date: 2024-08-09
 draft: false
 author: "xiajiang"
-tags: ["Main", "mess"]
-categories: ["杂项内容"]
+tags: ["Main", "设计", "指南"]
+categories: ["设计资料"]
 externalUrl: "/pdfs/美工指南.pdf"
 showSummary: false
 ---
