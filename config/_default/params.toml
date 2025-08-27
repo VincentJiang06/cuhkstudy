@@ -45,6 +45,9 @@ fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384",
   layout = "fixed" # valid options: basic, fixed, fixed-fill, fixed-gradient, fixed-fill-blur
 
 [footer]
+  # ICP备案配置
+  icpCode = "浙ICP备2025176709号"
+  icpUrl = "https://beian.miit.gov.cn/"
   showMenu = true
   showCopyright = true
   copyrightNotice = "2025 CUHKstudy"
@@ -52,9 +55,6 @@ fingerprintAlgorithm = "sha512" # Valid values are "sha512" (default), "sha384",
   showAppearanceSwitcher = true
   showScrollToTop = true
 
-[icp]
-  code = "浙ICP备2025176709号"
-  url = "https://beian.miit.gov.cn/"
 
 [homepage]
   layout = "background" # valid options: page, profile, hero, card, background, custom

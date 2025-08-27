@@ -5,7 +5,7 @@ draft: false
 author: "xiajiang"
 tags: ["Main", "mess"]
 categories: ["杂项内容"]
-externalUrl: "/pdfs/美工指南.pdf"
+externalUrl: "https://cdn.cuhkstudy.com/pdfs/美工指南.pdf"
 showSummary: false
 ---
 

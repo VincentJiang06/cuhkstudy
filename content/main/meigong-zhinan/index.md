@@ -5,7 +5,7 @@ draft: false
 author: "xiajiang"
 tags: ["Main", "设计", "指南"]
 categories: ["设计资料"]
-externalUrl: "/pdfs/美工指南.pdf"
+externalUrl: "https://cdn.cuhkstudy.com/pdfs/美工指南.pdf"
 showSummary: false
 ---
 
