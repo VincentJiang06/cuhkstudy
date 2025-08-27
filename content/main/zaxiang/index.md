@@ -3,7 +3,7 @@ title: "杂项"
 date: 2024-08-07
 draft: false
 author: "xiajiang"
-tags: ["Main", "mess"]
+tags: ["mess"]
 categories: ["杂项内容"]
 showSummary: false
 ---
